@@ -1,0 +1,8 @@
+altitude: 5
+station:
+  driver: wh1080
+units:
+  press: hPa
+  rain: mm
+  temp: C
+  wind: kt
