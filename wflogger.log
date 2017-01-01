@@ -1,0 +1,118 @@
+2016-12-30 16:18:08,181 ERROR [station.wh1080] unsupported operand type(s) for *: 'float' and 'NoneType'
+2016-12-30 16:22:08,178 ERROR [wflogger] Could not send event to <wfcommon.generic.YamlMultiElement object at 0x7fa109c0ef50>
+Traceback (most recent call last):
+  File "/home/var/opt/wfrog/wflogger/wflogger.py", line 127, in output_loop
+    self.collector.send_event(event, context=context)
+  File "/home/var/opt/wfrog/wfcommon/generic/multi.py", line 62, in _call
+    result[name] = r.__getattribute__(attr).__call__(*args, **keywords)
+  File "/home/var/opt/wfrog/wflogger/collector/flush.py", line 77, in send_event
+    self.collector.send_event(event, context)
+  File "/home/var/opt/wfrog/wfcommon/generic/user.py", line 65, in _call
+    return self.target.__getattribute__(attr).__call__(*args, **keywords)
+  File "/home/var/opt/wfrog/wflogger/collector/base.py", line 52, in send_event
+    self._report_wind(event.mean.speed, event.mean.dir, event.gust.speed, event.gust.dir)
+AttributeError: 'Event' object has no attribute 'gust'
+2016-12-30 16:23:44,187 ERROR [wflogger] Could not send event to <wfcommon.generic.YamlMultiElement object at 0x7fa109c0ef50>
+Traceback (most recent call last):
+  File "/home/var/opt/wfrog/wflogger/wflogger.py", line 127, in output_loop
+    self.collector.send_event(event, context=context)
+  File "/home/var/opt/wfrog/wfcommon/generic/multi.py", line 62, in _call
+    result[name] = r.__getattribute__(attr).__call__(*args, **keywords)
+  File "/home/var/opt/wfrog/wflogger/collector/flush.py", line 77, in send_event
+    self.collector.send_event(event, context)
+  File "/home/var/opt/wfrog/wfcommon/generic/user.py", line 65, in _call
+    return self.target.__getattribute__(attr).__call__(*args, **keywords)
+  File "/home/var/opt/wfrog/wflogger/collector/base.py", line 52, in send_event
+    self._report_wind(event.mean.speed, event.mean.dir, event.gust.speed, event.gust.dir)
+AttributeError: 'Event' object has no attribute 'gust'
+2016-12-30 16:26:56,182 ERROR [wflogger] Could not send event to <wfcommon.generic.YamlMultiElement object at 0x7fa109c0ef50>
+Traceback (most recent call last):
+  File "/home/var/opt/wfrog/wflogger/wflogger.py", line 127, in output_loop
+    self.collector.send_event(event, context=context)
+  File "/home/var/opt/wfrog/wfcommon/generic/multi.py", line 62, in _call
+    result[name] = r.__getattribute__(attr).__call__(*args, **keywords)
+  File "/home/var/opt/wfrog/wflogger/collector/flush.py", line 77, in send_event
+    self.collector.send_event(event, context)
+  File "/home/var/opt/wfrog/wfcommon/generic/user.py", line 65, in _call
+    return self.target.__getattribute__(attr).__call__(*args, **keywords)
+  File "/home/var/opt/wfrog/wflogger/collector/base.py", line 52, in send_event
+    self._report_wind(event.mean.speed, event.mean.dir, event.gust.speed, event.gust.dir)
+AttributeError: 'Event' object has no attribute 'gust'
+2016-12-30 16:28:32,183 ERROR [wflogger] Could not send event to <wfcommon.generic.YamlMultiElement object at 0x7fa109c0ef50>
+Traceback (most recent call last):
+  File "/home/var/opt/wfrog/wflogger/wflogger.py", line 127, in output_loop
+    self.collector.send_event(event, context=context)
+  File "/home/var/opt/wfrog/wfcommon/generic/multi.py", line 62, in _call
+    result[name] = r.__getattribute__(attr).__call__(*args, **keywords)
+  File "/home/var/opt/wfrog/wflogger/collector/flush.py", line 77, in send_event
+    self.collector.send_event(event, context)
+  File "/home/var/opt/wfrog/wfcommon/generic/user.py", line 65, in _call
+    return self.target.__getattribute__(attr).__call__(*args, **keywords)
+  File "/home/var/opt/wfrog/wflogger/collector/base.py", line 52, in send_event
+    self._report_wind(event.mean.speed, event.mean.dir, event.gust.speed, event.gust.dir)
+AttributeError: 'Event' object has no attribute 'gust'
+2016-12-30 16:30:08,848 ERROR [wflogger] Could not send event to <wfcommon.generic.YamlMultiElement object at 0x7fa109c0ef50>
+Traceback (most recent call last):
+  File "/home/var/opt/wfrog/wflogger/wflogger.py", line 127, in output_loop
+    self.collector.send_event(event, context=context)
+  File "/home/var/opt/wfrog/wfcommon/generic/multi.py", line 62, in _call
+    result[name] = r.__getattribute__(attr).__call__(*args, **keywords)
+  File "/home/var/opt/wfrog/wflogger/collector/flush.py", line 77, in send_event
+    self.collector.send_event(event, context)
+  File "/home/var/opt/wfrog/wfcommon/generic/user.py", line 65, in _call
+    return self.target.__getattribute__(attr).__call__(*args, **keywords)
+  File "/home/var/opt/wfrog/wflogger/collector/base.py", line 52, in send_event
+    self._report_wind(event.mean.speed, event.mean.dir, event.gust.speed, event.gust.dir)
+AttributeError: 'Event' object has no attribute 'gust'
+2016-12-30 16:34:08,179 ERROR [wflogger] Could not send event to <wfcommon.generic.YamlMultiElement object at 0x7fa109c0ef50>
+Traceback (most recent call last):
+  File "/home/var/opt/wfrog/wflogger/wflogger.py", line 127, in output_loop
+    self.collector.send_event(event, context=context)
+  File "/home/var/opt/wfrog/wfcommon/generic/multi.py", line 62, in _call
+    result[name] = r.__getattribute__(attr).__call__(*args, **keywords)
+  File "/home/var/opt/wfrog/wflogger/collector/flush.py", line 77, in send_event
+    self.collector.send_event(event, context)
+  File "/home/var/opt/wfrog/wfcommon/generic/user.py", line 65, in _call
+    return self.target.__getattribute__(attr).__call__(*args, **keywords)
+  File "/home/var/opt/wfrog/wflogger/collector/base.py", line 52, in send_event
+    self._report_wind(event.mean.speed, event.mean.dir, event.gust.speed, event.gust.dir)
+AttributeError: 'Event' object has no attribute 'gust'
+2016-12-30 16:35:44,180 ERROR [wflogger] Could not send event to <wfcommon.generic.YamlMultiElement object at 0x7fa109c0ef50>
+Traceback (most recent call last):
+  File "/home/var/opt/wfrog/wflogger/wflogger.py", line 127, in output_loop
+    self.collector.send_event(event, context=context)
+  File "/home/var/opt/wfrog/wfcommon/generic/multi.py", line 62, in _call
+    result[name] = r.__getattribute__(attr).__call__(*args, **keywords)
+  File "/home/var/opt/wfrog/wflogger/collector/flush.py", line 77, in send_event
+    self.collector.send_event(event, context)
+  File "/home/var/opt/wfrog/wfcommon/generic/user.py", line 65, in _call
+    return self.target.__getattribute__(attr).__call__(*args, **keywords)
+  File "/home/var/opt/wfrog/wflogger/collector/base.py", line 52, in send_event
+    self._report_wind(event.mean.speed, event.mean.dir, event.gust.speed, event.gust.dir)
+AttributeError: 'Event' object has no attribute 'gust'
+2016-12-30 16:36:32,181 ERROR [wflogger] Could not send event to <wfcommon.generic.YamlMultiElement object at 0x7fa109c0ef50>
+Traceback (most recent call last):
+  File "/home/var/opt/wfrog/wflogger/wflogger.py", line 127, in output_loop
+    self.collector.send_event(event, context=context)
+  File "/home/var/opt/wfrog/wfcommon/generic/multi.py", line 62, in _call
+    result[name] = r.__getattribute__(attr).__call__(*args, **keywords)
+  File "/home/var/opt/wfrog/wflogger/collector/flush.py", line 77, in send_event
+    self.collector.send_event(event, context)
+  File "/home/var/opt/wfrog/wfcommon/generic/user.py", line 65, in _call
+    return self.target.__getattribute__(attr).__call__(*args, **keywords)
+  File "/home/var/opt/wfrog/wflogger/collector/base.py", line 52, in send_event
+    self._report_wind(event.mean.speed, event.mean.dir, event.gust.speed, event.gust.dir)
+AttributeError: 'Event' object has no attribute 'gust'
+2016-12-30 16:38:08,183 ERROR [wflogger] Could not send event to <wfcommon.generic.YamlMultiElement object at 0x7fa109c0ef50>
+Traceback (most recent call last):
+  File "/home/var/opt/wfrog/wflogger/wflogger.py", line 127, in output_loop
+    self.collector.send_event(event, context=context)
+  File "/home/var/opt/wfrog/wfcommon/generic/multi.py", line 62, in _call
+    result[name] = r.__getattribute__(attr).__call__(*args, **keywords)
+  File "/home/var/opt/wfrog/wflogger/collector/flush.py", line 77, in send_event
+    self.collector.send_event(event, context)
+  File "/home/var/opt/wfrog/wfcommon/generic/user.py", line 65, in _call
+    return self.target.__getattribute__(attr).__call__(*args, **keywords)
+  File "/home/var/opt/wfrog/wflogger/collector/base.py", line 52, in send_event
+    self._report_wind(event.mean.speed, event.mean.dir, event.gust.speed, event.gust.dir)
+AttributeError: 'Event' object has no attribute 'gust'

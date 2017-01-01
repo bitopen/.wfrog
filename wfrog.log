@@ -1,0 +1,568 @@
+2016-12-30 15:24:04,920 INFO [config] Starting wfrog 0.8.2-svn
+2016-12-30 15:24:04,920 INFO [config] Loaded settings file /home/td/.wfrog/settings.yaml
+2016-12-30 15:24:04,921 DEBUG [config] Loaded settings {'units': {'press': 'hPa', 'rain': 'mm', 'temp': 'C', 'wind': 'kt'}, 'altitude': 5, 'station': {'driver': 'wh1080'}}
+2016-12-30 15:24:04,921 DEBUG [config] Loaded config file /home/var/opt/wfrog/wflogger/config/wfrog.yaml
+2016-12-30 15:24:04,921 DEBUG [config] Initializing accu_7d
+2016-12-30 15:24:04,921 DEBUG [generic.service] Registering service <wfcommon.generic.YamlIncludeElement object at 0x7fc488b82b50> under 'accu_7d'
+2016-12-30 15:24:04,921 DEBUG [generic.service] Calling init on <wfcommon.generic.YamlIncludeElement object at 0x7fc488b82b50>
+2016-12-30 15:24:05,081 DEBUG [generic.include] Calling init on <wfrender.datasource.YamlAccumulatorDataSource object at 0x7fc488bec2d0>
+2016-12-30 15:24:05,082 DEBUG [config] Initializing accu_365d_w
+2016-12-30 15:24:05,082 DEBUG [generic.service] Registering service <wfcommon.generic.YamlIncludeElement object at 0x7fc488b82bd0> under 'accu_365d_w'
+2016-12-30 15:24:05,082 DEBUG [generic.service] Calling init on <wfcommon.generic.YamlIncludeElement object at 0x7fc488b82bd0>
+2016-12-30 15:24:05,246 DEBUG [generic.include] Calling init on <wfrender.datasource.YamlAccumulatorDataSource object at 0x7fc488beddd0>
+2016-12-30 15:24:05,246 DEBUG [config] Initializing accu_24h
+2016-12-30 15:24:05,246 DEBUG [generic.service] Registering service <wfcommon.generic.YamlIncludeElement object at 0x7fc488b82b10> under 'accu_24h'
+2016-12-30 15:24:05,246 DEBUG [generic.service] Calling init on <wfcommon.generic.YamlIncludeElement object at 0x7fc488b82b10>
+2016-12-30 15:24:05,402 DEBUG [generic.include] Calling init on <wfrender.datasource.YamlAccumulatorDataSource object at 0x7fc488b82290>
+2016-12-30 15:24:05,402 DEBUG [config] Initializing accu_3h
+2016-12-30 15:24:05,402 DEBUG [generic.service] Registering service <wfcommon.generic.YamlIncludeElement object at 0x7fc488b82ad0> under 'accu_3h'
+2016-12-30 15:24:05,403 DEBUG [generic.service] Calling init on <wfcommon.generic.YamlIncludeElement object at 0x7fc488b82ad0>
+2016-12-30 15:24:05,554 DEBUG [generic.include] Calling init on <wfrender.datasource.YamlAccumulatorDataSource object at 0x7fc488b92210>
+2016-12-30 15:24:05,554 DEBUG [config] Initializing storage
+2016-12-30 15:24:05,554 DEBUG [generic.service] Registering service <wfcommon.generic.YamlIncludeElement object at 0x7fc488b82a90> under 'storage'
+2016-12-30 15:24:05,555 DEBUG [generic.service] Calling init on <wfcommon.generic.YamlIncludeElement object at 0x7fc488b82a90>
+2016-12-30 15:24:05,589 DEBUG [generic.include] Calling init on <wfcommon.generic.YamlUserChoiceElement object at 0x7fc488bedc90>
+2016-12-30 15:24:05,589 DEBUG [generic.user] Current user:default
+2016-12-30 15:24:05,589 DEBUG [generic.user] Calling init on <wfcommon.storage.YamlCsvStorage object at 0x7fc488b97b10>
+2016-12-30 15:24:05,590 DEBUG [config] Initializing accu_365d_m
+2016-12-30 15:24:05,590 DEBUG [generic.service] Registering service <wfcommon.generic.YamlIncludeElement object at 0x7fc488b82c10> under 'accu_365d_m'
+2016-12-30 15:24:05,590 DEBUG [generic.service] Calling init on <wfcommon.generic.YamlIncludeElement object at 0x7fc488b82c10>
+2016-12-30 15:24:05,723 DEBUG [generic.include] Calling init on <wfrender.datasource.YamlAccumulatorDataSource object at 0x7fc488b92a50>
+2016-12-30 15:24:05,723 DEBUG [config] Initializing accu_30d
+2016-12-30 15:24:05,723 DEBUG [generic.service] Registering service <wfcommon.generic.YamlIncludeElement object at 0x7fc488b82b90> under 'accu_30d'
+2016-12-30 15:24:05,724 DEBUG [generic.service] Calling init on <wfcommon.generic.YamlIncludeElement object at 0x7fc488b82b90>
+2016-12-30 15:24:05,878 DEBUG [generic.include] Calling init on <wfrender.datasource.YamlAccumulatorDataSource object at 0x7fc488becf10>
+2016-12-30 15:24:05,879 DEBUG [generic.service] Registering service <wflogger.input.YamlFunctionInput object at 0x7fc488b82a10> under 'events'
+2016-12-30 15:24:05,879 DEBUG [wflogger] Starting embedded wfdriver
+2016-12-30 15:24:05,880 DEBUG [generic.service] Calling run on <wflogger.input.YamlFunctionInput object at 0x7fc488b82a10>
+2016-12-30 15:24:05,883 DEBUG [wflogger] Starting embedded wfrender
+2016-12-30 15:24:05,956 INFO [config] Starting wfrog 0.8.2-svn
+2016-12-30 15:24:05,976 INFO [config] Loaded settings file /home/td/.wfrog/settings.yaml
+2016-12-30 15:24:05,979 DEBUG [config] Loaded settings {'units': {'press': 'hPa', 'rain': 'mm', 'temp': 'C', 'wind': 'kt'}, 'altitude': 5, 'station': {'driver': 'wh1080'}}
+2016-12-30 15:24:06,023 DEBUG [config] Loaded config file /home/var/opt/wfrog/wfdriver/config/embedded.yaml
+2016-12-30 15:24:06,068 INFO [config] Starting wfrog 0.8.2-svn
+2016-12-30 15:24:06,069 INFO [config] Loaded settings file /home/td/.wfrog/settings.yaml
+2016-12-30 15:24:06,069 DEBUG [config] Loaded settings {'units': {'press': 'hPa', 'rain': 'mm', 'temp': 'C', 'wind': 'kt'}, 'altitude': 5, 'station': {'driver': 'wh1080'}}
+2016-12-30 15:24:06,070 DEBUG [config] Loaded config file /home/var/opt/wfrog/wfrender/config/embedded.yaml
+2016-12-30 15:24:06,070 DEBUG [wfrender] Starting root rendering.
+2016-12-30 15:24:06,071 DEBUG [generic.multi] Calling render on child http
+2016-12-30 15:24:06,072 INFO [renderer.http] Started server on port 7680
+2016-12-30 15:26:00,143 INFO [config] Starting wfrog 0.8.2-svn
+2016-12-30 15:26:00,143 INFO [config] Loaded settings file /home/td/.wfrog/settings.yaml
+2016-12-30 15:26:00,143 DEBUG [config] Loaded settings {'units': {'press': 'hPa', 'rain': 'mm', 'temp': 'C', 'wind': 'kt'}, 'altitude': 5, 'station': {'driver': 'wh1080'}}
+2016-12-30 15:26:00,143 DEBUG [config] Loaded config file /home/var/opt/wfrog/wflogger/config/wfrog.yaml
+2016-12-30 15:26:00,144 DEBUG [config] Initializing accu_7d
+2016-12-30 15:26:00,144 DEBUG [generic.service] Registering service <wfcommon.generic.YamlIncludeElement object at 0x7fbe702f34d0> under 'accu_7d'
+2016-12-30 15:26:00,144 DEBUG [generic.service] Calling init on <wfcommon.generic.YamlIncludeElement object at 0x7fbe702f34d0>
+2016-12-30 15:26:00,160 DEBUG [generic.include] Calling init on <wfrender.datasource.YamlAccumulatorDataSource object at 0x7fbe7036c7d0>
+2016-12-30 15:26:00,160 DEBUG [config] Initializing accu_365d_w
+2016-12-30 15:26:00,160 DEBUG [generic.service] Registering service <wfcommon.generic.YamlIncludeElement object at 0x7fbe702f3550> under 'accu_365d_w'
+2016-12-30 15:26:00,160 DEBUG [generic.service] Calling init on <wfcommon.generic.YamlIncludeElement object at 0x7fbe702f3550>
+2016-12-30 15:26:00,177 DEBUG [generic.include] Calling init on <wfrender.datasource.YamlAccumulatorDataSource object at 0x7fbe7035c290>
+2016-12-30 15:26:00,177 DEBUG [config] Initializing accu_24h
+2016-12-30 15:26:00,177 DEBUG [generic.service] Registering service <wfcommon.generic.YamlIncludeElement object at 0x7fbe702f3490> under 'accu_24h'
+2016-12-30 15:26:00,177 DEBUG [generic.service] Calling init on <wfcommon.generic.YamlIncludeElement object at 0x7fbe702f3490>
+2016-12-30 15:26:00,194 DEBUG [generic.include] Calling init on <wfrender.datasource.YamlAccumulatorDataSource object at 0x7fbe7036c250>
+2016-12-30 15:26:00,194 DEBUG [config] Initializing accu_3h
+2016-12-30 15:26:00,194 DEBUG [generic.service] Registering service <wfcommon.generic.YamlIncludeElement object at 0x7fbe702f3450> under 'accu_3h'
+2016-12-30 15:26:00,194 DEBUG [generic.service] Calling init on <wfcommon.generic.YamlIncludeElement object at 0x7fbe702f3450>
+2016-12-30 15:26:00,211 DEBUG [generic.include] Calling init on <wfrender.datasource.YamlAccumulatorDataSource object at 0x7fbe702fb950>
+2016-12-30 15:26:00,211 DEBUG [config] Initializing storage
+2016-12-30 15:26:00,211 DEBUG [generic.service] Registering service <wfcommon.generic.YamlIncludeElement object at 0x7fbe702f3410> under 'storage'
+2016-12-30 15:26:00,211 DEBUG [generic.service] Calling init on <wfcommon.generic.YamlIncludeElement object at 0x7fbe702f3410>
+2016-12-30 15:26:00,216 DEBUG [generic.include] Calling init on <wfcommon.generic.YamlUserChoiceElement object at 0x7fbe7035c0d0>
+2016-12-30 15:26:00,216 DEBUG [generic.user] Current user:default
+2016-12-30 15:26:00,216 DEBUG [generic.user] Calling init on <wfcommon.storage.YamlCsvStorage object at 0x7fbe7035c950>
+2016-12-30 15:26:00,217 DEBUG [config] Initializing accu_365d_m
+2016-12-30 15:26:00,217 DEBUG [generic.service] Registering service <wfcommon.generic.YamlIncludeElement object at 0x7fbe702f3590> under 'accu_365d_m'
+2016-12-30 15:26:00,217 DEBUG [generic.service] Calling init on <wfcommon.generic.YamlIncludeElement object at 0x7fbe702f3590>
+2016-12-30 15:26:00,232 DEBUG [generic.include] Calling init on <wfrender.datasource.YamlAccumulatorDataSource object at 0x7fbe7035be90>
+2016-12-30 15:26:00,232 DEBUG [config] Initializing accu_30d
+2016-12-30 15:26:00,232 DEBUG [generic.service] Registering service <wfcommon.generic.YamlIncludeElement object at 0x7fbe702f3510> under 'accu_30d'
+2016-12-30 15:26:00,233 DEBUG [generic.service] Calling init on <wfcommon.generic.YamlIncludeElement object at 0x7fbe702f3510>
+2016-12-30 15:26:00,251 DEBUG [generic.include] Calling init on <wfrender.datasource.YamlAccumulatorDataSource object at 0x7fbe70327c50>
+2016-12-30 15:26:00,251 DEBUG [generic.service] Registering service <wflogger.input.YamlFunctionInput object at 0x7fbe702f3390> under 'events'
+2016-12-30 15:26:00,251 DEBUG [wflogger] Starting embedded wfdriver
+2016-12-30 15:26:00,251 DEBUG [generic.service] Calling run on <wflogger.input.YamlFunctionInput object at 0x7fbe702f3390>
+2016-12-30 15:26:00,253 DEBUG [wflogger] Starting embedded wfrender
+2016-12-30 15:26:00,257 INFO [config] Starting wfrog 0.8.2-svn
+2016-12-30 15:26:00,259 INFO [config] Loaded settings file /home/td/.wfrog/settings.yaml
+2016-12-30 15:26:00,278 INFO [config] Starting wfrog 0.8.2-svn
+2016-12-30 15:26:00,278 INFO [config] Loaded settings file /home/td/.wfrog/settings.yaml
+2016-12-30 15:26:00,278 DEBUG [config] Loaded settings {'units': {'press': 'hPa', 'rain': 'mm', 'temp': 'C', 'wind': 'kt'}, 'altitude': 5, 'station': {'driver': 'wh1080'}}
+2016-12-30 15:26:00,278 DEBUG [config] Loaded settings {'units': {'press': 'hPa', 'rain': 'mm', 'temp': 'C', 'wind': 'kt'}, 'altitude': 5, 'station': {'driver': 'wh1080'}}
+2016-12-30 15:26:00,279 DEBUG [config] Loaded config file /home/var/opt/wfrog/wfdriver/config/embedded.yaml
+2016-12-30 15:26:00,279 DEBUG [config] Loaded config file /home/var/opt/wfrog/wfrender/config/embedded.yaml
+2016-12-30 15:26:00,279 DEBUG [wfrender] Starting root rendering.
+2016-12-30 15:26:00,279 DEBUG [generic.multi] Calling render on child http
+2016-12-30 15:26:00,280 ERROR [renderer.http] [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/var/opt/wfrog/wfrender/renderer/http.py", line 86, in render
+    self.server = StoppableHTTPServer(('', self.port), HttpRendererHandler)
+  File "/home/var/opt/wfrog/wfrender/renderer/http.py", line 212, in __init__
+    HTTPServer.__init__(self, *args, **kwargs)
+  File "/usr/lib/python2.7/SocketServer.py", line 419, in __init__
+    self.server_bind()
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 108, in server_bind
+    SocketServer.TCPServer.server_bind(self)
+  File "/usr/lib/python2.7/SocketServer.py", line 430, in server_bind
+    self.socket.bind(self.server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 98] Address already in use
+2016-12-30 15:31:17,994 INFO [config] Starting wfrog 0.8.2-svn
+2016-12-30 15:31:17,994 INFO [config] Loaded settings file /home/td/.wfrog/settings.yaml
+2016-12-30 15:31:17,995 DEBUG [config] Loaded settings {'units': {'press': 'hPa', 'rain': 'mm', 'temp': 'C', 'wind': 'kt'}, 'altitude': 5, 'station': {'driver': 'wh1080'}}
+2016-12-30 15:31:17,995 DEBUG [config] Loaded config file /home/var/opt/wfrog/wflogger/config/wfrog.yaml
+2016-12-30 15:31:17,995 DEBUG [config] Initializing accu_7d
+2016-12-30 15:31:17,995 DEBUG [generic.service] Registering service <wfcommon.generic.YamlIncludeElement object at 0x7f84be026590> under 'accu_7d'
+2016-12-30 15:31:17,995 DEBUG [generic.service] Calling init on <wfcommon.generic.YamlIncludeElement object at 0x7f84be026590>
+2016-12-30 15:31:18,011 DEBUG [generic.include] Calling init on <wfrender.datasource.YamlAccumulatorDataSource object at 0x7f84be08e690>
+2016-12-30 15:31:18,011 DEBUG [config] Initializing accu_365d_w
+2016-12-30 15:31:18,011 DEBUG [generic.service] Registering service <wfcommon.generic.YamlIncludeElement object at 0x7f84be026610> under 'accu_365d_w'
+2016-12-30 15:31:18,012 DEBUG [generic.service] Calling init on <wfcommon.generic.YamlIncludeElement object at 0x7f84be026610>
+2016-12-30 15:31:18,030 DEBUG [generic.include] Calling init on <wfrender.datasource.YamlAccumulatorDataSource object at 0x7f84be08f350>
+2016-12-30 15:31:18,030 DEBUG [config] Initializing accu_24h
+2016-12-30 15:31:18,030 DEBUG [generic.service] Registering service <wfcommon.generic.YamlIncludeElement object at 0x7f84be026550> under 'accu_24h'
+2016-12-30 15:31:18,030 DEBUG [generic.service] Calling init on <wfcommon.generic.YamlIncludeElement object at 0x7f84be026550>
+2016-12-30 15:31:18,048 DEBUG [generic.include] Calling init on <wfrender.datasource.YamlAccumulatorDataSource object at 0x7f84be09fd10>
+2016-12-30 15:31:18,048 DEBUG [config] Initializing accu_3h
+2016-12-30 15:31:18,048 DEBUG [generic.service] Registering service <wfcommon.generic.YamlIncludeElement object at 0x7f84be026510> under 'accu_3h'
+2016-12-30 15:31:18,048 DEBUG [generic.service] Calling init on <wfcommon.generic.YamlIncludeElement object at 0x7f84be026510>
+2016-12-30 15:31:18,066 DEBUG [generic.include] Calling init on <wfrender.datasource.YamlAccumulatorDataSource object at 0x7f84be039a50>
+2016-12-30 15:31:18,066 DEBUG [config] Initializing storage
+2016-12-30 15:31:18,066 DEBUG [generic.service] Registering service <wfcommon.generic.YamlIncludeElement object at 0x7f84be0264d0> under 'storage'
+2016-12-30 15:31:18,066 DEBUG [generic.service] Calling init on <wfcommon.generic.YamlIncludeElement object at 0x7f84be0264d0>
+2016-12-30 15:31:18,071 DEBUG [generic.include] Calling init on <wfcommon.generic.YamlUserChoiceElement object at 0x7f84be08f4d0>
+2016-12-30 15:31:18,071 DEBUG [generic.user] Current user:default
+2016-12-30 15:31:18,071 DEBUG [generic.user] Calling init on <wfcommon.storage.YamlCsvStorage object at 0x7f84be08f590>
+2016-12-30 15:31:18,071 DEBUG [config] Initializing accu_365d_m
+2016-12-30 15:31:18,071 DEBUG [generic.service] Registering service <wfcommon.generic.YamlIncludeElement object at 0x7f84be026650> under 'accu_365d_m'
+2016-12-30 15:31:18,071 DEBUG [generic.service] Calling init on <wfcommon.generic.YamlIncludeElement object at 0x7f84be026650>
+2016-12-30 15:31:18,089 DEBUG [generic.include] Calling init on <wfrender.datasource.YamlAccumulatorDataSource object at 0x7f84be039b50>
+2016-12-30 15:31:18,089 DEBUG [config] Initializing accu_30d
+2016-12-30 15:31:18,090 DEBUG [generic.service] Registering service <wfcommon.generic.YamlIncludeElement object at 0x7f84be0265d0> under 'accu_30d'
+2016-12-30 15:31:18,090 DEBUG [generic.service] Calling init on <wfcommon.generic.YamlIncludeElement object at 0x7f84be0265d0>
+2016-12-30 15:31:18,107 DEBUG [generic.include] Calling init on <wfrender.datasource.YamlAccumulatorDataSource object at 0x7f84be058e10>
+2016-12-30 15:31:18,108 DEBUG [generic.service] Registering service <wflogger.input.YamlFunctionInput object at 0x7f84be026450> under 'events'
+2016-12-30 15:31:18,108 DEBUG [wflogger] Starting embedded wfdriver
+2016-12-30 15:31:18,108 DEBUG [generic.service] Calling run on <wflogger.input.YamlFunctionInput object at 0x7f84be026450>
+2016-12-30 15:31:18,109 DEBUG [wflogger] Starting embedded wfrender
+2016-12-30 15:31:18,115 INFO [config] Starting wfrog 0.8.2-svn
+2016-12-30 15:31:18,116 INFO [config] Loaded settings file /home/td/.wfrog/settings.yaml
+2016-12-30 15:31:18,116 DEBUG [config] Loaded settings {'units': {'press': 'hPa', 'rain': 'mm', 'temp': 'C', 'wind': 'kt'}, 'altitude': 5, 'station': {'driver': 'wh1080'}}
+2016-12-30 15:31:18,133 DEBUG [config] Loaded config file /home/var/opt/wfrog/wfdriver/config/embedded.yaml
+2016-12-30 15:31:18,134 INFO [config] Starting wfrog 0.8.2-svn
+2016-12-30 15:31:18,135 INFO [config] Loaded settings file /home/td/.wfrog/settings.yaml
+2016-12-30 15:31:18,135 DEBUG [config] Loaded settings {'units': {'press': 'hPa', 'rain': 'mm', 'temp': 'C', 'wind': 'kt'}, 'altitude': 5, 'station': {'driver': 'wh1080'}}
+2016-12-30 15:31:18,135 DEBUG [config] Loaded config file /home/var/opt/wfrog/wfrender/config/embedded.yaml
+2016-12-30 15:31:18,135 DEBUG [wfrender] Starting root rendering.
+2016-12-30 15:31:18,135 DEBUG [generic.multi] Calling render on child http
+2016-12-30 15:31:18,135 ERROR [renderer.http] [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/var/opt/wfrog/wfrender/renderer/http.py", line 86, in render
+    self.server = StoppableHTTPServer(('', self.port), HttpRendererHandler)
+  File "/home/var/opt/wfrog/wfrender/renderer/http.py", line 212, in __init__
+    HTTPServer.__init__(self, *args, **kwargs)
+  File "/usr/lib/python2.7/SocketServer.py", line 419, in __init__
+    self.server_bind()
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 108, in server_bind
+    SocketServer.TCPServer.server_bind(self)
+  File "/usr/lib/python2.7/SocketServer.py", line 430, in server_bind
+    self.socket.bind(self.server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 98] Address already in use
+2016-12-30 15:38:56,867 DEBUG [generic.include] Calling render on <wfrender.renderer.YamlTemplateRenderer object at 0x7fc488b4cc90>
+2016-12-30 15:38:56,868 DEBUG [generic.service] Calling execute on <wfcommon.generic.YamlIncludeElement object at 0x7fc488b82bd0>
+2016-12-30 15:38:56,868 DEBUG [generic.include] Calling execute on <wfrender.datasource.YamlAccumulatorDataSource object at 0x7fc488beddd0>
+2016-12-30 15:38:56,868 DEBUG [datasource.accumulator] Last timestamp: 1969-12-31 19:30:00
+2016-12-30 15:38:56,868 DEBUG [generic.service] Calling keys on <wfcommon.generic.YamlIncludeElement object at 0x7fc488b82a90>
+2016-12-30 15:38:56,868 DEBUG [generic.include] Calling keys on <wfcommon.generic.YamlUserChoiceElement object at 0x7fc488bedc90>
+2016-12-30 15:38:56,868 DEBUG [generic.user] Calling keys on <wfcommon.storage.YamlCsvStorage object at 0x7fc488b97b10>
+2016-12-30 15:38:56,869 DEBUG [datasource.accumulator] Creating slice 2015-11-09 00:00:00 - 2015-11-16 00:00:00
+2016-12-30 15:38:56,869 DEBUG [datasource.accumulator] Creating slice 2015-11-16 00:00:00 - 2015-11-23 00:00:00
+2016-12-30 15:38:56,870 DEBUG [datasource.accumulator] Creating slice 2015-11-23 00:00:00 - 2015-11-30 00:00:00
+2016-12-30 15:38:56,871 DEBUG [datasource.accumulator] Creating slice 2015-11-30 00:00:00 - 2015-12-07 00:00:00
+2016-12-30 15:38:56,872 DEBUG [datasource.accumulator] Creating slice 2015-12-07 00:00:00 - 2015-12-14 00:00:00
+2016-12-30 15:38:56,873 DEBUG [datasource.accumulator] Creating slice 2015-12-14 00:00:00 - 2015-12-21 00:00:00
+2016-12-30 15:38:56,874 DEBUG [datasource.accumulator] Creating slice 2015-12-21 00:00:00 - 2015-12-28 00:00:00
+2016-12-30 15:38:56,874 DEBUG [datasource.accumulator] Creating slice 2015-12-28 00:00:00 - 2016-01-04 00:00:00
+2016-12-30 15:38:56,875 DEBUG [datasource.accumulator] Creating slice 2016-01-04 00:00:00 - 2016-01-11 00:00:00
+2016-12-30 15:38:56,876 DEBUG [datasource.accumulator] Creating slice 2016-01-11 00:00:00 - 2016-01-18 00:00:00
+2016-12-30 15:38:56,877 DEBUG [datasource.accumulator] Creating slice 2016-01-18 00:00:00 - 2016-01-25 00:00:00
+2016-12-30 15:38:56,878 DEBUG [datasource.accumulator] Creating slice 2016-01-25 00:00:00 - 2016-02-01 00:00:00
+2016-12-30 15:38:56,878 DEBUG [datasource.accumulator] Creating slice 2016-02-01 00:00:00 - 2016-02-08 00:00:00
+2016-12-30 15:38:56,879 DEBUG [datasource.accumulator] Creating slice 2016-02-08 00:00:00 - 2016-02-15 00:00:00
+2016-12-30 15:38:56,880 DEBUG [datasource.accumulator] Creating slice 2016-02-15 00:00:00 - 2016-02-22 00:00:00
+2016-12-30 15:38:56,881 DEBUG [datasource.accumulator] Creating slice 2016-02-22 00:00:00 - 2016-02-29 00:00:00
+2016-12-30 15:38:56,882 DEBUG [datasource.accumulator] Creating slice 2016-02-29 00:00:00 - 2016-03-07 00:00:00
+2016-12-30 15:38:56,883 DEBUG [datasource.accumulator] Creating slice 2016-03-07 00:00:00 - 2016-03-14 00:00:00
+2016-12-30 15:38:56,883 DEBUG [datasource.accumulator] Creating slice 2016-03-14 00:00:00 - 2016-03-21 00:00:00
+2016-12-30 15:38:56,884 DEBUG [datasource.accumulator] Creating slice 2016-03-21 00:00:00 - 2016-03-28 00:00:00
+2016-12-30 15:38:56,885 DEBUG [datasource.accumulator] Creating slice 2016-03-28 00:00:00 - 2016-04-04 00:00:00
+2016-12-30 15:38:56,886 DEBUG [datasource.accumulator] Creating slice 2016-04-04 00:00:00 - 2016-04-11 00:00:00
+2016-12-30 15:38:56,886 DEBUG [datasource.accumulator] Creating slice 2016-04-11 00:00:00 - 2016-04-18 00:00:00
+2016-12-30 15:38:56,887 DEBUG [datasource.accumulator] Creating slice 2016-04-18 00:00:00 - 2016-04-25 00:00:00
+2016-12-30 15:38:56,888 DEBUG [datasource.accumulator] Creating slice 2016-04-25 00:00:00 - 2016-05-02 00:00:00
+2016-12-30 15:38:56,889 DEBUG [datasource.accumulator] Creating slice 2016-05-02 00:00:00 - 2016-05-09 00:00:00
+2016-12-30 15:38:56,890 DEBUG [datasource.accumulator] Creating slice 2016-05-09 00:00:00 - 2016-05-16 00:00:00
+2016-12-30 15:38:56,890 DEBUG [datasource.accumulator] Creating slice 2016-05-16 00:00:00 - 2016-05-23 00:00:00
+2016-12-30 15:38:56,891 DEBUG [datasource.accumulator] Creating slice 2016-05-23 00:00:00 - 2016-05-30 00:00:00
+2016-12-30 15:38:56,892 DEBUG [datasource.accumulator] Creating slice 2016-05-30 00:00:00 - 2016-06-06 00:00:00
+2016-12-30 15:38:56,893 DEBUG [datasource.accumulator] Creating slice 2016-06-06 00:00:00 - 2016-06-13 00:00:00
+2016-12-30 15:38:56,894 DEBUG [datasource.accumulator] Creating slice 2016-06-13 00:00:00 - 2016-06-20 00:00:00
+2016-12-30 15:38:56,894 DEBUG [datasource.accumulator] Creating slice 2016-06-20 00:00:00 - 2016-06-27 00:00:00
+2016-12-30 15:38:56,895 DEBUG [datasource.accumulator] Creating slice 2016-06-27 00:00:00 - 2016-07-04 00:00:00
+2016-12-30 15:38:56,896 DEBUG [datasource.accumulator] Creating slice 2016-07-04 00:00:00 - 2016-07-11 00:00:00
+2016-12-30 15:38:56,897 DEBUG [datasource.accumulator] Creating slice 2016-07-11 00:00:00 - 2016-07-18 00:00:00
+2016-12-30 15:38:56,898 DEBUG [datasource.accumulator] Creating slice 2016-07-18 00:00:00 - 2016-07-25 00:00:00
+2016-12-30 15:38:56,899 DEBUG [datasource.accumulator] Creating slice 2016-07-25 00:00:00 - 2016-08-01 00:00:00
+2016-12-30 15:38:56,899 DEBUG [datasource.accumulator] Creating slice 2016-08-01 00:00:00 - 2016-08-08 00:00:00
+2016-12-30 15:38:56,900 DEBUG [datasource.accumulator] Creating slice 2016-08-08 00:00:00 - 2016-08-15 00:00:00
+2016-12-30 15:38:56,901 DEBUG [datasource.accumulator] Creating slice 2016-08-15 00:00:00 - 2016-08-22 00:00:00
+2016-12-30 15:38:56,902 DEBUG [datasource.accumulator] Creating slice 2016-08-22 00:00:00 - 2016-08-29 00:00:00
+2016-12-30 15:38:56,903 DEBUG [datasource.accumulator] Creating slice 2016-08-29 00:00:00 - 2016-09-05 00:00:00
+2016-12-30 15:38:56,904 DEBUG [datasource.accumulator] Creating slice 2016-09-05 00:00:00 - 2016-09-12 00:00:00
+2016-12-30 15:38:56,904 DEBUG [datasource.accumulator] Creating slice 2016-09-12 00:00:00 - 2016-09-19 00:00:00
+2016-12-30 15:38:56,905 DEBUG [datasource.accumulator] Creating slice 2016-09-19 00:00:00 - 2016-09-26 00:00:00
+2016-12-30 15:38:56,906 DEBUG [datasource.accumulator] Creating slice 2016-09-26 00:00:00 - 2016-10-03 00:00:00
+2016-12-30 15:38:56,907 DEBUG [datasource.accumulator] Creating slice 2016-10-03 00:00:00 - 2016-10-10 00:00:00
+2016-12-30 15:38:56,907 DEBUG [datasource.accumulator] Creating slice 2016-10-10 00:00:00 - 2016-10-17 00:00:00
+2016-12-30 15:38:56,908 DEBUG [datasource.accumulator] Creating slice 2016-10-17 00:00:00 - 2016-10-24 00:00:00
+2016-12-30 15:38:56,909 DEBUG [datasource.accumulator] Creating slice 2016-10-24 00:00:00 - 2016-10-31 00:00:00
+2016-12-30 15:38:56,910 DEBUG [datasource.accumulator] Creating slice 2016-10-31 00:00:00 - 2016-11-07 00:00:00
+2016-12-30 15:38:56,911 DEBUG [datasource.accumulator] Creating slice 2016-11-07 00:00:00 - 2016-11-14 00:00:00
+2016-12-30 15:38:56,912 DEBUG [datasource.accumulator] Creating slice 2016-11-14 00:00:00 - 2016-11-21 00:00:00
+2016-12-30 15:38:56,912 DEBUG [datasource.accumulator] Creating slice 2016-11-21 00:00:00 - 2016-11-28 00:00:00
+2016-12-30 15:38:56,913 DEBUG [datasource.accumulator] Creating slice 2016-11-28 00:00:00 - 2016-12-05 00:00:00
+2016-12-30 15:38:56,914 DEBUG [datasource.accumulator] Creating slice 2016-12-05 00:00:00 - 2016-12-12 00:00:00
+2016-12-30 15:38:56,915 DEBUG [datasource.accumulator] Creating slice 2016-12-12 00:00:00 - 2016-12-19 00:00:00
+2016-12-30 15:38:56,916 DEBUG [datasource.accumulator] Creating slice 2016-12-19 00:00:00 - 2016-12-26 00:00:00
+2016-12-30 15:38:56,917 DEBUG [datasource.accumulator] Creating slice 2016-12-26 00:00:00 - 2017-01-02 00:00:00
+2016-12-30 15:38:56,917 DEBUG [datasource.accumulator] Update from 2015-11-09 00:00:00 
+2016-12-30 15:38:56,917 DEBUG [generic.service] Calling samples on <wfcommon.generic.YamlIncludeElement object at 0x7fc488b82a90>
+2016-12-30 15:38:56,918 DEBUG [generic.include] Calling samples on <wfcommon.generic.YamlUserChoiceElement object at 0x7fc488bedc90>
+2016-12-30 15:38:56,918 DEBUG [generic.user] Calling samples on <wfcommon.storage.YamlCsvStorage object at 0x7fc488b97b10>
+2016-12-30 15:38:56,918 WARNING [storage.csv] File 'data/wfrog.csv' not found
+2016-12-30 15:38:56,918 DEBUG [datasource.accumulator] Deleted 0 slices
+2016-12-30 15:38:56,918 DEBUG [datasource.accumulator] Last timestamp: 1969-12-31 19:30:00
+2016-12-30 15:38:56,924 DEBUG [generic.multi] Calling render on child current
+2016-12-30 15:38:56,945 DEBUG [generic.include] Calling render on <wfrender.renderer.YamlDataRenderer object at 0x7fc488291a50>
+2016-12-30 15:38:56,946 DEBUG [generic.user] Current user:default
+2016-12-30 15:38:56,946 DEBUG [generic.user] Calling execute on <wfrender.datasource.YamlCurrentConditionsXmlDataSource object at 0x7fc48829c690>
+2016-12-30 15:38:56,946 ERROR [data.currentxml] Could not parse data/wfrog-current.xml
+Traceback (most recent call last):
+  File "/home/var/opt/wfrog/wfrender/datasource/xmlquery.py", line 68, in execute
+    dom = xml.dom.minidom.parse(self.path)
+  File "/usr/lib/python2.7/xml/dom/minidom.py", line 1918, in parse
+    return expatbuilder.parse(file)
+  File "/usr/lib/python2.7/xml/dom/expatbuilder.py", line 922, in parse
+    fp = open(file, 'rb')
+IOError: [Errno 2] No such file or directory: 'data/wfrog-current.xml'
+2016-12-30 15:38:56,947 DEBUG [generic.multi] Calling render on child timestamp
+2016-12-30 15:38:56,947 DEBUG [renderer.value] Getting value for 'info.timestamp'
+2016-12-30 15:38:56,947 DEBUG [generic.multi] Calling render on child hum0
+2016-12-30 15:38:56,948 DEBUG [renderer.value] Getting value for 'hum0.value'
+2016-12-30 15:38:56,948 DEBUG [generic.multi] Calling render on child hum1
+2016-12-30 15:38:56,948 DEBUG [renderer.value] Getting value for 'hum1.value'
+2016-12-30 15:38:56,948 DEBUG [generic.multi] Calling render on child rain
+2016-12-30 15:38:56,948 DEBUG [renderer.value] Getting value for 'rain.value'
+2016-12-30 15:38:56,948 DEBUG [generic.multi] Calling render on child temp1
+2016-12-30 15:38:56,948 DEBUG [renderer.value] Getting value for 'temp1.value'
+2016-12-30 15:38:56,948 DEBUG [generic.multi] Calling render on child temp0
+2016-12-30 15:38:56,948 DEBUG [renderer.value] Getting value for 'temp0.value'
+2016-12-30 15:38:56,949 DEBUG [generic.multi] Calling render on child press
+2016-12-30 15:38:56,949 DEBUG [renderer.value] Getting value for 'press.value'
+2016-12-30 15:38:56,949 DEBUG [generic.multi] Calling render on child wind
+2016-12-30 15:38:56,949 DEBUG [generic.multi] Calling render on child gust
+2016-12-30 15:38:56,949 DEBUG [renderer.value] Getting value for 'wind.max'
+2016-12-30 15:38:56,949 DEBUG [generic.multi] Calling render on child speed
+2016-12-30 15:38:56,949 DEBUG [renderer.value] Getting value for 'wind.value'
+2016-12-30 15:38:56,949 DEBUG [generic.multi] Calling render on child dir
+2016-12-30 15:38:56,951 DEBUG [generic.multi] Calling render on child chart
+2016-12-30 15:38:57,061 DEBUG [generic.include] Calling render on <wfcommon.generic.YamlMultiElement object at 0x7fc4881ef350>
+2016-12-30 15:38:57,061 DEBUG [generic.multi] Calling render on child wind
+2016-12-30 15:38:57,061 DEBUG [generic.multi] Calling render on child wind_dir
+2016-12-30 15:38:57,063 DEBUG [generic.multi] Calling render on child temp
+2016-12-30 15:38:57,063 DEBUG [generic.multi] Calling render on child press
+2016-12-30 15:38:57,064 DEBUG [generic.multi] Calling render on child hum
+2016-12-30 15:38:57,064 DEBUG [generic.multi] Calling render on child rain_rate
+2016-12-30 15:38:57,065 DEBUG [generic.multi] Calling render on child rain
+2016-12-30 15:38:57,065 DEBUG [generic.multi] Calling render on child summary
+2016-12-30 15:38:57,065 DEBUG [generic.service] Calling execute on <wfcommon.generic.YamlIncludeElement object at 0x7fc488b82c10>
+2016-12-30 15:38:57,066 DEBUG [generic.include] Calling execute on <wfrender.datasource.YamlAccumulatorDataSource object at 0x7fc488b92a50>
+2016-12-30 15:38:57,066 DEBUG [datasource.accumulator] Last timestamp: 1969-12-31 19:30:00
+2016-12-30 15:38:57,066 DEBUG [generic.service] Calling keys on <wfcommon.generic.YamlIncludeElement object at 0x7fc488b82a90>
+2016-12-30 15:38:57,066 DEBUG [generic.include] Calling keys on <wfcommon.generic.YamlUserChoiceElement object at 0x7fc488bedc90>
+2016-12-30 15:38:57,066 DEBUG [generic.user] Calling keys on <wfcommon.storage.YamlCsvStorage object at 0x7fc488b97b10>
+2016-12-30 15:38:57,066 DEBUG [datasource.accumulator] Creating slice 2016-02-01 00:00:00 - 2016-03-01 00:00:00
+2016-12-30 15:38:57,067 DEBUG [datasource.accumulator] Creating slice 2016-03-01 00:00:00 - 2016-04-01 00:00:00
+2016-12-30 15:38:57,068 DEBUG [datasource.accumulator] Creating slice 2016-04-01 00:00:00 - 2016-05-01 00:00:00
+2016-12-30 15:38:57,068 DEBUG [datasource.accumulator] Creating slice 2016-05-01 00:00:00 - 2016-06-01 00:00:00
+2016-12-30 15:38:57,069 DEBUG [datasource.accumulator] Creating slice 2016-06-01 00:00:00 - 2016-07-01 00:00:00
+2016-12-30 15:38:57,069 DEBUG [datasource.accumulator] Creating slice 2016-07-01 00:00:00 - 2016-08-01 00:00:00
+2016-12-30 15:38:57,070 DEBUG [datasource.accumulator] Creating slice 2016-08-01 00:00:00 - 2016-09-01 00:00:00
+2016-12-30 15:38:57,071 DEBUG [datasource.accumulator] Creating slice 2016-09-01 00:00:00 - 2016-10-01 00:00:00
+2016-12-30 15:38:57,071 DEBUG [datasource.accumulator] Creating slice 2016-10-01 00:00:00 - 2016-11-01 00:00:00
+2016-12-30 15:38:57,072 DEBUG [datasource.accumulator] Creating slice 2016-11-01 00:00:00 - 2016-12-01 00:00:00
+2016-12-30 15:38:57,073 DEBUG [datasource.accumulator] Creating slice 2016-12-01 00:00:00 - 2017-01-01 00:00:00
+2016-12-30 15:38:57,073 DEBUG [datasource.accumulator] Update from 2016-02-01 00:00:00 
+2016-12-30 15:38:57,074 DEBUG [generic.service] Calling samples on <wfcommon.generic.YamlIncludeElement object at 0x7fc488b82a90>
+2016-12-30 15:38:57,074 DEBUG [generic.include] Calling samples on <wfcommon.generic.YamlUserChoiceElement object at 0x7fc488bedc90>
+2016-12-30 15:38:57,074 DEBUG [generic.user] Calling samples on <wfcommon.storage.YamlCsvStorage object at 0x7fc488b97b10>
+2016-12-30 15:38:57,074 WARNING [storage.csv] File 'data/wfrog.csv' not found
+2016-12-30 15:38:57,074 DEBUG [datasource.accumulator] Deleted 0 slices
+2016-12-30 15:38:57,074 DEBUG [datasource.accumulator] Last timestamp: 1969-12-31 19:30:00
+2016-12-30 15:38:57,076 DEBUG [renderer.template] Rendering with template /home/var/opt/wfrog/wflogger/config/../../wfrender/config/default/../../templates/default/main.html
+2016-12-30 15:38:57,076 DEBUG [renderer.template] Compiling template /home/var/opt/wfrog/wflogger/config/../../wfrender/config/default/../../templates/default/main.html
+2016-12-30 15:38:57,402 INFO [renderer.http] 127.0.0.1 - "GET /365days.html HTTP/1.1" 200 -
+2016-12-30 15:39:00,577 DEBUG [generic.include] Calling render on <wfrender.renderer.YamlTemplateRenderer object at 0x7fc488b4cc90>
+2016-12-30 15:39:00,577 DEBUG [generic.service] Calling execute on <wfcommon.generic.YamlIncludeElement object at 0x7fc488b82bd0>
+2016-12-30 15:39:00,577 DEBUG [generic.include] Calling execute on <wfrender.datasource.YamlAccumulatorDataSource object at 0x7fc488beddd0>
+2016-12-30 15:39:00,578 DEBUG [datasource.accumulator] Last timestamp: 1969-12-31 19:30:00
+2016-12-30 15:39:00,578 DEBUG [generic.service] Calling keys on <wfcommon.generic.YamlIncludeElement object at 0x7fc488b82a90>
+2016-12-30 15:39:00,578 DEBUG [generic.include] Calling keys on <wfcommon.generic.YamlUserChoiceElement object at 0x7fc488bedc90>
+2016-12-30 15:39:00,578 DEBUG [generic.user] Calling keys on <wfcommon.storage.YamlCsvStorage object at 0x7fc488b97b10>
+2016-12-30 15:39:00,579 DEBUG [datasource.accumulator] Update from 2015-11-09 00:00:00 
+2016-12-30 15:39:00,579 DEBUG [generic.service] Calling samples on <wfcommon.generic.YamlIncludeElement object at 0x7fc488b82a90>
+2016-12-30 15:39:00,579 DEBUG [generic.include] Calling samples on <wfcommon.generic.YamlUserChoiceElement object at 0x7fc488bedc90>
+2016-12-30 15:39:00,579 DEBUG [generic.user] Calling samples on <wfcommon.storage.YamlCsvStorage object at 0x7fc488b97b10>
+2016-12-30 15:39:00,580 WARNING [storage.csv] File 'data/wfrog.csv' not found
+2016-12-30 15:39:00,580 DEBUG [datasource.accumulator] Deleted 0 slices
+2016-12-30 15:39:00,580 DEBUG [datasource.accumulator] Last timestamp: 1969-12-31 19:30:00
+2016-12-30 15:39:00,590 DEBUG [generic.multi] Calling render on child current
+2016-12-30 15:39:00,590 DEBUG [generic.include] Calling render on <wfrender.renderer.YamlDataRenderer object at 0x7fc488291a50>
+2016-12-30 15:39:00,590 DEBUG [generic.user] Calling execute on <wfrender.datasource.YamlCurrentConditionsXmlDataSource object at 0x7fc48829c690>
+2016-12-30 15:39:00,590 ERROR [data.currentxml] Could not parse data/wfrog-current.xml
+Traceback (most recent call last):
+  File "/home/var/opt/wfrog/wfrender/datasource/xmlquery.py", line 68, in execute
+    dom = xml.dom.minidom.parse(self.path)
+  File "/usr/lib/python2.7/xml/dom/minidom.py", line 1918, in parse
+    return expatbuilder.parse(file)
+  File "/usr/lib/python2.7/xml/dom/expatbuilder.py", line 922, in parse
+    fp = open(file, 'rb')
+IOError: [Errno 2] No such file or directory: 'data/wfrog-current.xml'
+2016-12-30 15:39:00,591 DEBUG [generic.multi] Calling render on child timestamp
+2016-12-30 15:39:00,591 DEBUG [renderer.value] Getting value for 'info.timestamp'
+2016-12-30 15:39:00,591 DEBUG [generic.multi] Calling render on child hum0
+2016-12-30 15:39:00,591 DEBUG [renderer.value] Getting value for 'hum0.value'
+2016-12-30 15:39:00,591 DEBUG [generic.multi] Calling render on child hum1
+2016-12-30 15:39:00,591 DEBUG [renderer.value] Getting value for 'hum1.value'
+2016-12-30 15:39:00,591 DEBUG [generic.multi] Calling render on child rain
+2016-12-30 15:39:00,591 DEBUG [renderer.value] Getting value for 'rain.value'
+2016-12-30 15:39:00,592 DEBUG [generic.multi] Calling render on child temp1
+2016-12-30 15:39:00,592 DEBUG [renderer.value] Getting value for 'temp1.value'
+2016-12-30 15:39:00,592 DEBUG [generic.multi] Calling render on child temp0
+2016-12-30 15:39:00,592 DEBUG [renderer.value] Getting value for 'temp0.value'
+2016-12-30 15:39:00,592 DEBUG [generic.multi] Calling render on child press
+2016-12-30 15:39:00,592 DEBUG [renderer.value] Getting value for 'press.value'
+2016-12-30 15:39:00,592 DEBUG [generic.multi] Calling render on child wind
+2016-12-30 15:39:00,592 DEBUG [generic.multi] Calling render on child gust
+2016-12-30 15:39:00,592 DEBUG [renderer.value] Getting value for 'wind.max'
+2016-12-30 15:39:00,592 DEBUG [generic.multi] Calling render on child speed
+2016-12-30 15:39:00,592 DEBUG [renderer.value] Getting value for 'wind.value'
+2016-12-30 15:39:00,593 DEBUG [generic.multi] Calling render on child dir
+2016-12-30 15:39:00,594 DEBUG [generic.multi] Calling render on child chart
+2016-12-30 15:39:00,594 DEBUG [generic.include] Calling render on <wfcommon.generic.YamlMultiElement object at 0x7fc4881ef350>
+2016-12-30 15:39:00,594 DEBUG [generic.multi] Calling render on child wind
+2016-12-30 15:39:00,595 DEBUG [generic.multi] Calling render on child wind_dir
+2016-12-30 15:39:00,596 DEBUG [generic.multi] Calling render on child temp
+2016-12-30 15:39:00,597 DEBUG [generic.multi] Calling render on child press
+2016-12-30 15:39:00,597 DEBUG [generic.multi] Calling render on child hum
+2016-12-30 15:39:00,597 DEBUG [generic.multi] Calling render on child rain_rate
+2016-12-30 15:39:00,598 DEBUG [generic.multi] Calling render on child rain
+2016-12-30 15:39:00,598 DEBUG [generic.multi] Calling render on child summary
+2016-12-30 15:39:00,599 DEBUG [generic.service] Calling execute on <wfcommon.generic.YamlIncludeElement object at 0x7fc488b82c10>
+2016-12-30 15:39:00,599 DEBUG [generic.include] Calling execute on <wfrender.datasource.YamlAccumulatorDataSource object at 0x7fc488b92a50>
+2016-12-30 15:39:00,599 DEBUG [datasource.accumulator] Last timestamp: 1969-12-31 19:30:00
+2016-12-30 15:39:00,599 DEBUG [generic.service] Calling keys on <wfcommon.generic.YamlIncludeElement object at 0x7fc488b82a90>
+2016-12-30 15:39:00,599 DEBUG [generic.include] Calling keys on <wfcommon.generic.YamlUserChoiceElement object at 0x7fc488bedc90>
+2016-12-30 15:39:00,599 DEBUG [generic.user] Calling keys on <wfcommon.storage.YamlCsvStorage object at 0x7fc488b97b10>
+2016-12-30 15:39:00,599 DEBUG [datasource.accumulator] Update from 2016-02-01 00:00:00 
+2016-12-30 15:39:00,599 DEBUG [generic.service] Calling samples on <wfcommon.generic.YamlIncludeElement object at 0x7fc488b82a90>
+2016-12-30 15:39:00,599 DEBUG [generic.include] Calling samples on <wfcommon.generic.YamlUserChoiceElement object at 0x7fc488bedc90>
+2016-12-30 15:39:00,600 DEBUG [generic.user] Calling samples on <wfcommon.storage.YamlCsvStorage object at 0x7fc488b97b10>
+2016-12-30 15:39:00,600 WARNING [storage.csv] File 'data/wfrog.csv' not found
+2016-12-30 15:39:00,600 DEBUG [datasource.accumulator] Deleted 0 slices
+2016-12-30 15:39:00,600 DEBUG [datasource.accumulator] Last timestamp: 1969-12-31 19:30:00
+2016-12-30 15:39:00,602 DEBUG [renderer.template] Rendering with template /home/var/opt/wfrog/wflogger/config/../../wfrender/config/default/../../templates/default/main.html
+2016-12-30 15:39:00,603 INFO [renderer.http] 127.0.0.1 - "GET /365days.html HTTP/1.1" 200 -
+2016-12-30 15:39:02,149 DEBUG [generic.include] Calling render on <wfrender.renderer.YamlTemplateRenderer object at 0x7fc488b4cc90>
+2016-12-30 15:39:02,149 DEBUG [generic.service] Calling execute on <wfcommon.generic.YamlIncludeElement object at 0x7fc488b82bd0>
+2016-12-30 15:39:02,149 DEBUG [generic.include] Calling execute on <wfrender.datasource.YamlAccumulatorDataSource object at 0x7fc488beddd0>
+2016-12-30 15:39:02,149 DEBUG [datasource.accumulator] Last timestamp: 1969-12-31 19:30:00
+2016-12-30 15:39:02,150 DEBUG [generic.service] Calling keys on <wfcommon.generic.YamlIncludeElement object at 0x7fc488b82a90>
+2016-12-30 15:39:02,150 DEBUG [generic.include] Calling keys on <wfcommon.generic.YamlUserChoiceElement object at 0x7fc488bedc90>
+2016-12-30 15:39:02,150 DEBUG [generic.user] Calling keys on <wfcommon.storage.YamlCsvStorage object at 0x7fc488b97b10>
+2016-12-30 15:39:02,150 DEBUG [datasource.accumulator] Update from 2015-11-09 00:00:00 
+2016-12-30 15:39:02,150 DEBUG [generic.service] Calling samples on <wfcommon.generic.YamlIncludeElement object at 0x7fc488b82a90>
+2016-12-30 15:39:02,150 DEBUG [generic.include] Calling samples on <wfcommon.generic.YamlUserChoiceElement object at 0x7fc488bedc90>
+2016-12-30 15:39:02,150 DEBUG [generic.user] Calling samples on <wfcommon.storage.YamlCsvStorage object at 0x7fc488b97b10>
+2016-12-30 15:39:02,150 WARNING [storage.csv] File 'data/wfrog.csv' not found
+2016-12-30 15:39:02,151 DEBUG [datasource.accumulator] Deleted 0 slices
+2016-12-30 15:39:02,151 DEBUG [datasource.accumulator] Last timestamp: 1969-12-31 19:30:00
+2016-12-30 15:39:02,160 DEBUG [generic.multi] Calling render on child current
+2016-12-30 15:39:02,160 DEBUG [generic.include] Calling render on <wfrender.renderer.YamlDataRenderer object at 0x7fc488291a50>
+2016-12-30 15:39:02,161 DEBUG [generic.user] Calling execute on <wfrender.datasource.YamlCurrentConditionsXmlDataSource object at 0x7fc48829c690>
+2016-12-30 15:39:02,161 ERROR [data.currentxml] Could not parse data/wfrog-current.xml
+Traceback (most recent call last):
+  File "/home/var/opt/wfrog/wfrender/datasource/xmlquery.py", line 68, in execute
+    dom = xml.dom.minidom.parse(self.path)
+  File "/usr/lib/python2.7/xml/dom/minidom.py", line 1918, in parse
+    return expatbuilder.parse(file)
+  File "/usr/lib/python2.7/xml/dom/expatbuilder.py", line 922, in parse
+    fp = open(file, 'rb')
+IOError: [Errno 2] No such file or directory: 'data/wfrog-current.xml'
+2016-12-30 15:39:02,161 DEBUG [generic.multi] Calling render on child timestamp
+2016-12-30 15:39:02,161 DEBUG [renderer.value] Getting value for 'info.timestamp'
+2016-12-30 15:39:02,161 DEBUG [generic.multi] Calling render on child hum0
+2016-12-30 15:39:02,161 DEBUG [renderer.value] Getting value for 'hum0.value'
+2016-12-30 15:39:02,161 DEBUG [generic.multi] Calling render on child hum1
+2016-12-30 15:39:02,162 DEBUG [renderer.value] Getting value for 'hum1.value'
+2016-12-30 15:39:02,162 DEBUG [generic.multi] Calling render on child rain
+2016-12-30 15:39:02,162 DEBUG [renderer.value] Getting value for 'rain.value'
+2016-12-30 15:39:02,162 DEBUG [generic.multi] Calling render on child temp1
+2016-12-30 15:39:02,162 DEBUG [renderer.value] Getting value for 'temp1.value'
+2016-12-30 15:39:02,162 DEBUG [generic.multi] Calling render on child temp0
+2016-12-30 15:39:02,162 DEBUG [renderer.value] Getting value for 'temp0.value'
+2016-12-30 15:39:02,162 DEBUG [generic.multi] Calling render on child press
+2016-12-30 15:39:02,162 DEBUG [renderer.value] Getting value for 'press.value'
+2016-12-30 15:39:02,163 DEBUG [generic.multi] Calling render on child wind
+2016-12-30 15:39:02,163 DEBUG [generic.multi] Calling render on child gust
+2016-12-30 15:39:02,163 DEBUG [renderer.value] Getting value for 'wind.max'
+2016-12-30 15:39:02,163 DEBUG [generic.multi] Calling render on child speed
+2016-12-30 15:39:02,163 DEBUG [renderer.value] Getting value for 'wind.value'
+2016-12-30 15:39:02,163 DEBUG [generic.multi] Calling render on child dir
+2016-12-30 15:39:02,165 DEBUG [generic.multi] Calling render on child chart
+2016-12-30 15:39:02,165 DEBUG [generic.include] Calling render on <wfcommon.generic.YamlMultiElement object at 0x7fc4881ef350>
+2016-12-30 15:39:02,165 DEBUG [generic.multi] Calling render on child wind
+2016-12-30 15:39:02,165 DEBUG [generic.multi] Calling render on child wind_dir
+2016-12-30 15:39:02,167 DEBUG [generic.multi] Calling render on child temp
+2016-12-30 15:39:02,167 DEBUG [generic.multi] Calling render on child press
+2016-12-30 15:39:02,168 DEBUG [generic.multi] Calling render on child hum
+2016-12-30 15:39:02,168 DEBUG [generic.multi] Calling render on child rain_rate
+2016-12-30 15:39:02,169 DEBUG [generic.multi] Calling render on child rain
+2016-12-30 15:39:02,169 DEBUG [generic.multi] Calling render on child summary
+2016-12-30 15:39:02,169 DEBUG [generic.service] Calling execute on <wfcommon.generic.YamlIncludeElement object at 0x7fc488b82c10>
+2016-12-30 15:39:02,170 DEBUG [generic.include] Calling execute on <wfrender.datasource.YamlAccumulatorDataSource object at 0x7fc488b92a50>
+2016-12-30 15:39:02,170 DEBUG [datasource.accumulator] Last timestamp: 1969-12-31 19:30:00
+2016-12-30 15:39:02,170 DEBUG [generic.service] Calling keys on <wfcommon.generic.YamlIncludeElement object at 0x7fc488b82a90>
+2016-12-30 15:39:02,170 DEBUG [generic.include] Calling keys on <wfcommon.generic.YamlUserChoiceElement object at 0x7fc488bedc90>
+2016-12-30 15:39:02,170 DEBUG [generic.user] Calling keys on <wfcommon.storage.YamlCsvStorage object at 0x7fc488b97b10>
+2016-12-30 15:39:02,170 DEBUG [datasource.accumulator] Update from 2016-02-01 00:00:00 
+2016-12-30 15:39:02,170 DEBUG [generic.service] Calling samples on <wfcommon.generic.YamlIncludeElement object at 0x7fc488b82a90>
+2016-12-30 15:39:02,171 DEBUG [generic.include] Calling samples on <wfcommon.generic.YamlUserChoiceElement object at 0x7fc488bedc90>
+2016-12-30 15:39:02,171 DEBUG [generic.user] Calling samples on <wfcommon.storage.YamlCsvStorage object at 0x7fc488b97b10>
+2016-12-30 15:39:02,171 WARNING [storage.csv] File 'data/wfrog.csv' not found
+2016-12-30 15:39:02,171 DEBUG [datasource.accumulator] Deleted 0 slices
+2016-12-30 15:39:02,171 DEBUG [datasource.accumulator] Last timestamp: 1969-12-31 19:30:00
+2016-12-30 15:39:02,173 DEBUG [renderer.template] Rendering with template /home/var/opt/wfrog/wflogger/config/../../wfrender/config/default/../../templates/default/main.html
+2016-12-30 15:39:02,175 INFO [renderer.http] 127.0.0.1 - "GET /365days.html HTTP/1.1" 200 -
+2016-12-30 15:39:03,759 DEBUG [generic.include] Calling render on <wfrender.renderer.YamlTemplateRenderer object at 0x7fc488b4cc90>
+2016-12-30 15:39:03,760 DEBUG [generic.service] Calling execute on <wfcommon.generic.YamlIncludeElement object at 0x7fc488b82bd0>
+2016-12-30 15:39:03,760 DEBUG [generic.include] Calling execute on <wfrender.datasource.YamlAccumulatorDataSource object at 0x7fc488beddd0>
+2016-12-30 15:39:03,760 DEBUG [datasource.accumulator] Last timestamp: 1969-12-31 19:30:00
+2016-12-30 15:39:03,760 DEBUG [generic.service] Calling keys on <wfcommon.generic.YamlIncludeElement object at 0x7fc488b82a90>
+2016-12-30 15:39:03,760 DEBUG [generic.include] Calling keys on <wfcommon.generic.YamlUserChoiceElement object at 0x7fc488bedc90>
+2016-12-30 15:39:03,760 DEBUG [generic.user] Calling keys on <wfcommon.storage.YamlCsvStorage object at 0x7fc488b97b10>
+2016-12-30 15:39:03,760 DEBUG [datasource.accumulator] Update from 2015-11-09 00:00:00 
+2016-12-30 15:39:03,761 DEBUG [generic.service] Calling samples on <wfcommon.generic.YamlIncludeElement object at 0x7fc488b82a90>
+2016-12-30 15:39:03,761 DEBUG [generic.include] Calling samples on <wfcommon.generic.YamlUserChoiceElement object at 0x7fc488bedc90>
+2016-12-30 15:39:03,761 DEBUG [generic.user] Calling samples on <wfcommon.storage.YamlCsvStorage object at 0x7fc488b97b10>
+2016-12-30 15:39:03,761 WARNING [storage.csv] File 'data/wfrog.csv' not found
+2016-12-30 15:39:03,761 DEBUG [datasource.accumulator] Deleted 0 slices
+2016-12-30 15:39:03,761 DEBUG [datasource.accumulator] Last timestamp: 1969-12-31 19:30:00
+2016-12-30 15:39:03,768 DEBUG [generic.multi] Calling render on child current
+2016-12-30 15:39:03,769 DEBUG [generic.include] Calling render on <wfrender.renderer.YamlDataRenderer object at 0x7fc488291a50>
+2016-12-30 15:39:03,769 DEBUG [generic.user] Calling execute on <wfrender.datasource.YamlCurrentConditionsXmlDataSource object at 0x7fc48829c690>
+2016-12-30 15:39:03,769 ERROR [data.currentxml] Could not parse data/wfrog-current.xml
+Traceback (most recent call last):
+  File "/home/var/opt/wfrog/wfrender/datasource/xmlquery.py", line 68, in execute
+    dom = xml.dom.minidom.parse(self.path)
+  File "/usr/lib/python2.7/xml/dom/minidom.py", line 1918, in parse
+    return expatbuilder.parse(file)
+  File "/usr/lib/python2.7/xml/dom/expatbuilder.py", line 922, in parse
+    fp = open(file, 'rb')
+IOError: [Errno 2] No such file or directory: 'data/wfrog-current.xml'
+2016-12-30 15:39:03,769 DEBUG [generic.multi] Calling render on child timestamp
+2016-12-30 15:39:03,769 DEBUG [renderer.value] Getting value for 'info.timestamp'
+2016-12-30 15:39:03,770 DEBUG [generic.multi] Calling render on child hum0
+2016-12-30 15:39:03,770 DEBUG [renderer.value] Getting value for 'hum0.value'
+2016-12-30 15:39:03,770 DEBUG [generic.multi] Calling render on child hum1
+2016-12-30 15:39:03,770 DEBUG [renderer.value] Getting value for 'hum1.value'
+2016-12-30 15:39:03,770 DEBUG [generic.multi] Calling render on child rain
+2016-12-30 15:39:03,770 DEBUG [renderer.value] Getting value for 'rain.value'
+2016-12-30 15:39:03,770 DEBUG [generic.multi] Calling render on child temp1
+2016-12-30 15:39:03,770 DEBUG [renderer.value] Getting value for 'temp1.value'
+2016-12-30 15:39:03,770 DEBUG [generic.multi] Calling render on child temp0
+2016-12-30 15:39:03,771 DEBUG [renderer.value] Getting value for 'temp0.value'
+2016-12-30 15:39:03,771 DEBUG [generic.multi] Calling render on child press
+2016-12-30 15:39:03,771 DEBUG [renderer.value] Getting value for 'press.value'
+2016-12-30 15:39:03,771 DEBUG [generic.multi] Calling render on child wind
+2016-12-30 15:39:03,771 DEBUG [generic.multi] Calling render on child gust
+2016-12-30 15:39:03,771 DEBUG [renderer.value] Getting value for 'wind.max'
+2016-12-30 15:39:03,771 DEBUG [generic.multi] Calling render on child speed
+2016-12-30 15:39:03,771 DEBUG [renderer.value] Getting value for 'wind.value'
+2016-12-30 15:39:03,771 DEBUG [generic.multi] Calling render on child dir
+2016-12-30 15:39:03,773 DEBUG [generic.multi] Calling render on child chart
+2016-12-30 15:39:03,773 DEBUG [generic.include] Calling render on <wfcommon.generic.YamlMultiElement object at 0x7fc4881ef350>
+2016-12-30 15:39:03,773 DEBUG [generic.multi] Calling render on child wind
+2016-12-30 15:39:03,773 DEBUG [generic.multi] Calling render on child wind_dir
+2016-12-30 15:39:03,775 DEBUG [generic.multi] Calling render on child temp
+2016-12-30 15:39:03,775 DEBUG [generic.multi] Calling render on child press
+2016-12-30 15:39:03,776 DEBUG [generic.multi] Calling render on child hum
+2016-12-30 15:39:03,776 DEBUG [generic.multi] Calling render on child rain_rate
+2016-12-30 15:39:03,777 DEBUG [generic.multi] Calling render on child rain
+2016-12-30 15:39:03,777 DEBUG [generic.multi] Calling render on child summary
+2016-12-30 15:39:03,777 DEBUG [generic.service] Calling execute on <wfcommon.generic.YamlIncludeElement object at 0x7fc488b82c10>
+2016-12-30 15:39:03,778 DEBUG [generic.include] Calling execute on <wfrender.datasource.YamlAccumulatorDataSource object at 0x7fc488b92a50>
+2016-12-30 15:39:03,778 DEBUG [datasource.accumulator] Last timestamp: 1969-12-31 19:30:00
+2016-12-30 15:39:03,778 DEBUG [generic.service] Calling keys on <wfcommon.generic.YamlIncludeElement object at 0x7fc488b82a90>
+2016-12-30 15:39:03,778 DEBUG [generic.include] Calling keys on <wfcommon.generic.YamlUserChoiceElement object at 0x7fc488bedc90>
+2016-12-30 15:39:03,778 DEBUG [generic.user] Calling keys on <wfcommon.storage.YamlCsvStorage object at 0x7fc488b97b10>
+2016-12-30 15:39:03,778 DEBUG [datasource.accumulator] Update from 2016-02-01 00:00:00 
+2016-12-30 15:39:03,778 DEBUG [generic.service] Calling samples on <wfcommon.generic.YamlIncludeElement object at 0x7fc488b82a90>
+2016-12-30 15:39:03,778 DEBUG [generic.include] Calling samples on <wfcommon.generic.YamlUserChoiceElement object at 0x7fc488bedc90>
+2016-12-30 15:39:03,779 DEBUG [generic.user] Calling samples on <wfcommon.storage.YamlCsvStorage object at 0x7fc488b97b10>
+2016-12-30 15:39:03,779 WARNING [storage.csv] File 'data/wfrog.csv' not found
+2016-12-30 15:39:03,779 DEBUG [datasource.accumulator] Deleted 0 slices
+2016-12-30 15:39:03,779 DEBUG [datasource.accumulator] Last timestamp: 1969-12-31 19:30:00
+2016-12-30 15:39:03,781 DEBUG [renderer.template] Rendering with template /home/var/opt/wfrog/wflogger/config/../../wfrender/config/default/../../templates/default/main.html
+2016-12-30 15:39:03,782 INFO [renderer.http] 127.0.0.1 - "GET /365days.html HTTP/1.1" 200 -
+2016-12-30 15:41:59,209 ERROR [data.currentxml] Could not parse data/wfrog-current.xml
+Traceback (most recent call last):
+  File "/home/var/opt/wfrog/wfrender/datasource/xmlquery.py", line 68, in execute
+    dom = xml.dom.minidom.parse(self.path)
+  File "/usr/lib/python2.7/xml/dom/minidom.py", line 1918, in parse
+    return expatbuilder.parse(file)
+  File "/usr/lib/python2.7/xml/dom/expatbuilder.py", line 922, in parse
+    fp = open(file, 'rb')
+IOError: [Errno 2] No such file or directory: 'data/wfrog-current.xml'
+2016-12-30 15:42:08,958 ERROR [data.currentxml] Could not parse data/wfrog-current.xml
+Traceback (most recent call last):
+  File "/home/var/opt/wfrog/wfrender/datasource/xmlquery.py", line 68, in execute
+    dom = xml.dom.minidom.parse(self.path)
+  File "/usr/lib/python2.7/xml/dom/minidom.py", line 1918, in parse
+    return expatbuilder.parse(file)
+  File "/usr/lib/python2.7/xml/dom/expatbuilder.py", line 922, in parse
+    fp = open(file, 'rb')
+IOError: [Errno 2] No such file or directory: 'data/wfrog-current.xml'
+2016-12-30 15:42:33,792 ERROR [data.currentxml] Could not parse data/wfrog-current.xml
+Traceback (most recent call last):
+  File "/home/var/opt/wfrog/wfrender/datasource/xmlquery.py", line 68, in execute
+    dom = xml.dom.minidom.parse(self.path)
+  File "/usr/lib/python2.7/xml/dom/minidom.py", line 1918, in parse
+    return expatbuilder.parse(file)
+  File "/usr/lib/python2.7/xml/dom/expatbuilder.py", line 922, in parse
+    fp = open(file, 'rb')
+IOError: [Errno 2] No such file or directory: 'data/wfrog-current.xml'
+2016-12-30 15:42:40,314 ERROR [data.currentxml] Could not parse data/wfrog-current.xml
+Traceback (most recent call last):
+  File "/home/var/opt/wfrog/wfrender/datasource/xmlquery.py", line 68, in execute
+    dom = xml.dom.minidom.parse(self.path)
+  File "/usr/lib/python2.7/xml/dom/minidom.py", line 1918, in parse
+    return expatbuilder.parse(file)
+  File "/usr/lib/python2.7/xml/dom/expatbuilder.py", line 922, in parse
+    fp = open(file, 'rb')
+IOError: [Errno 2] No such file or directory: 'data/wfrog-current.xml'
