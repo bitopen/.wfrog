@@ -14,7 +14,7 @@ input: !service
 collector: !multi
     children:
         aggregator : !buffer
-            period: 600
+            period: 60
             collector: !aggregator
                 storage : !service
                     name: storage
