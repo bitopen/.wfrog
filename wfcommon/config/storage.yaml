@@ -14,7 +14,8 @@ storage: !user
 ##     edit it to enable extra sensor that you may have
 #$ nano /tmp/db-sqlite3.sql
 ##     create the table
-#$ sqlite3 /var/lib/wfrog/wfrog.sql < /tmp/db-sqlite3.sql
+#$ sqlite3 /var/lib/wfrog/wfrog.sdb < /tmp/db-sqlite3.sql # as root
+#$ sqlite3 ~/.wfrog/data/wfrog.sdb < /tmp/db-sqlite3.sql # as user
 ## (4) in case, use the  csv2sqlite3  script to
 ##    transfer meteo data from the CVS file to the SQL file
 #$ /usr/lib/wfrog/database/csv2sqlite3 /var/lib/wfrog/wfrog.csv /var/lib/wfrog/wfrog.sql
@@ -22,9 +23,9 @@ storage: !user
 #storage: !user
 #    choices:
 #       root: !sqlite3
-#           database: /var/lib/wfrog/wfrog.sql
+#           database: /var/lib/wfrog/wfrog.sdb
 #       default: !sqlite3
-#           database: data/wfrog.sql
+#           database: data/wfrog.sdb
 
 ## Similarly you may use other databases as backends.
 
