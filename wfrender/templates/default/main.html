@@ -1,0 +1,888 @@
+#from wfcommon.units import unit_roll
+#def unitstr(m,u)
+#if $getVar('http', False)
+<a href="-set-?s=units&k=$m&v=$unit_roll($m,$u)">$u</a>
+#else
+$u
+#end if
+#end def
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard - wfrog $version</title>
+    #if $getVar('http', False)
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/prototype/1.7.0.0/prototype.js"></script>
+    <script type="text/javascript" src="http://calendarview.org/releases/1.2/javascripts/calendarview.js"></script>
+    
+    <link  rel="stylesheet" href="http://calendarview.org/releases/1.2/stylesheets/calendarview.css" />
+    
+    <script type="text/javascript">
+        window.onload = function() {
+            
+            loc = document.location.href;
+            nloc = loc.split('?time_end=');
+            
+            Calendar.setup(
+              {
+                dateField      : 'time_end',
+                triggerElement : 'cal_open',
+                closeHandler   : function() {
+                    if(document.getElementById('time_end').value != 'None')
+                        window.location=nloc[0]+'?time_end='+document.getElementById('time_end').value+'T'+'23:59:59';
+                    else
+                        window._popupCalendar.container.innerHTML='';
+                }
+              }
+            );
+
+            if(nloc[1] != undefined) { // history processing
+                if(nloc[1].indexOf("T") > -1) { // we have time
+                    nloc1=nloc[1].replace("T", " ");
+                    date_only='N';
+                }
+                else { // no time, let's add it
+                    nloc1=nloc[1]+' 00:00:00';
+                    date_only='Y';
+                }
+                document.getElementById('period_end').innerHTML=nloc1;
+
+                start_date=convert_to_date(nloc1); // now this is end time !
+                // calculate start time:
+                if(nloc[0].indexOf("30days.html") > -1) { // 30 days backward:
+                    start_date.setDate(start_date.getDate()-30);
+                    // show data from the beginning of the day
+                    if(date_only=='N') {
+                        start_date.setHours(0);
+                        start_date.setMinutes(0);
+                        start_date.setSeconds(0);
+                    }
+                }
+                else if(nloc[0].indexOf("365days.html") > -1) {
+                    // 360 days backward:
+                    start_date.setDate(start_date.getDate()-360);
+                    // show data from the beginning of next month
+                    if(date_only=='N') {
+                        start_date.setHours(0);
+                        start_date.setMinutes(0);
+                        start_date.setSeconds(0);
+                    }
+                    start_date.setDate(1);
+                    start_date.setMonth(start_date.getMonth()+1);
+                }
+                else if(nloc[0].indexOf("7days.html") > -1) {
+                    // 7 days backward:
+                    start_date.setDate(start_date.getDate()-7);
+                    // show data from the beginning of next week
+                    if(date_only=='N') {
+                        start_date.setHours(0);
+                        start_date.setMinutes(0);
+                        start_date.setSeconds(0);
+                    }
+                    start_date.setDate(1);
+                    start_date.setMonth(start_date.getHours()+1);
+                }
+                else if(nloc[0].indexOf("3hours.html") > -1) {
+                    start_date.setHours(start_date.getHours()-3);
+                    // show data from the beginning of next full minute
+                    if(date_only=='N') {
+                        start_date.setSeconds(0);
+                    }
+                    start_date.setMinutes(start_date.getMinutes()+1);
+                }
+                else { // nloc[0].indexOf("24hours.html") > -1                
+                    start_date.setDate(start_date.getDate()-1);
+                    // show data from the beginning of next full hour
+                    if(date_only=='N') {
+                        start_date.setMinutes(0);
+                        start_date.setSeconds(0);
+                    }
+                    start_date.setHours(start_date.getHours()+1);
+                }
+                start_time=format_time(start_date, ' ');
+                //document.getElementById('period_start').innerHTML=start_time;
+                document.getElementById('period').style.display='block';
+                document.getElementById('next').style.display='block';
+                document.getElementById('date_val').style.display='block';
+            }
+            else { // No history element
+                document.getElementById('period').style.display='none';
+                document.getElementById('next').style.display='none';
+                document.getElementById('date_val').style.display='none';
+            }
+			
+	        document.getElementById('time_end').value = 'None';
+        }
+
+        function move_back() {
+            move(-delta, step)
+        }
+
+        function move_forward() {
+            move(-delta, step)
+        }
+        
+        function move_end() {
+            move(null, 'refresh')
+        }
+
+        function move(amount, type)
+        {
+            loc = document.location.href;
+            nloc = loc.split('?time_end=');
+
+            if(type == 'address') { // direct link
+                if(nloc[1] != undefined) { // parameter exists
+                    window.location=amount+'?time_end='+nloc[1];
+                }
+                else {
+                    window.location=amount;
+                }
+            }
+            else if(type == 'refresh') { // end history view
+                window.location=nloc[0];
+            }
+            else { // time based move
+                if(nloc[1] != undefined) { // parameter exists
+                    if(nloc[1].indexOf("T") > -1) { // we have time
+                        nloc1=nloc[1].replace("T", " ");
+                    }
+                    else { // no time, let's add it
+                        nloc1=nloc[1]+' 00:00:00';
+                    }
+
+                    new_date=convert_to_date(nloc1);
+                }
+                else { // starting point is current date
+                    new_date=new Date();
+                }
+                // calculate new time:
+                if(type == 'h')
+                    new_date.setHours(new_date.getHours()+amount);
+                else if(type == 'd')
+                    new_date.setDate(new_date.getDate()+amount);
+                else if(type == 'm')
+                    new_date.setMonth(new_date.getMonth()+amount);
+                else if(type == 'y')
+                    new_date.setFullYear(new_date.getFullYear()+amount);
+                new_time=format_time(new_date, 'T');
+                window.location=nloc[0]+'?time_end='+new_time;
+            }
+        }
+
+
+
+// General purpose functions
+
+
+        function add_zero(i)
+        {
+            if(i<10)
+                i="0"+i;
+            return i;
+        }
+            
+        function format_time(s_date, time_sep)
+        {
+            yyyy=s_date.getFullYear();
+            mon=s_date.getMonth()+1;
+            mon=add_zero(mon);
+            dd=s_date.getDate();
+            dd=add_zero(dd);
+            hh=s_date.getHours();
+            hh=add_zero(hh);
+            mm=s_date.getMinutes();
+            mm=add_zero(mm);
+            ss=s_date.getSeconds();
+            ss=add_zero(ss);
+            ret_value=yyyy+'-'+mon+'-'+dd+time_sep+hh+':'+mm+':'+ss;
+            return ret_value;
+        }
+
+        function convert_to_date(time_str)
+        {
+            // time_str must be formatted yyyy-mm-dd hh24:mi:ss
+            time_str=time_str.split(' '); 
+            // now time_str[0] is the date and time_str[1] is the time
+            tmp_date=time_str[0].split('-'); 
+            tmp_time=time_str[1].split(':'); 
+            time_date=new Date(tmp_date[0], tmp_date[1]-1, tmp_date[2], tmp_time[0], tmp_time[1], tmp_time[2]);
+            return(time_date);
+        }
+
+    </script>
+    #end if
+    <style>
+        body {
+            font-family: Arial, Helvetica, Sans-serif;
+            font-size: 13px;
+            color: #8D7641;
+        }
+        a {
+            color: #8D7641;
+        }
+            A:link {text-decoration: none}
+            A:visited {text-decoration: none}
+            A:active {text-decoration: none}
+            A:hover {text-decoration: underline;}
+        .value {
+            color: #007000;
+        }
+        .bordered {
+            border: 1px solid tan;
+        }
+        .cell {
+            margin: 3px;
+            padding: 6px;
+            float: left;
+        }
+        .headerNoPad {
+            margin: 3px;
+            padding-left: 6px;
+            padding-right: 6px;            
+            margin-bottom: 0px; 
+            float: left;
+        }
+        .pad {
+            padding: 6px;
+            padding-top: 10px;
+            padding-bottom: 2px;
+        }
+        .smallpad {
+            padding: 4px;
+            padding-bottom: 2px;
+        }
+        .line {
+            padding-top: 3px;
+            padding-bottom: 3px;
+        }
+        .header {
+            margin: 3px;
+            padding-left: 6px;
+            padding-right: 6px;
+            padding-top: 10px;    
+            padding-bottom: 2px;                 
+            float: left;            
+        }
+        .headerContent {
+            height: 64px;    
+            float: left;        
+        }
+        .wide {
+            width: 95%;
+        }
+        .leftCell {
+            float: left;
+        }
+        .rightAlign {
+            text-align: right;
+        }
+        .rightCell {
+            position: relative;
+            right: 0px;
+            text-align: right;
+        }
+        .leftpad {
+            padding-left: 5;
+        }
+        .bigger {
+            font-size: 140%;
+        }
+        .tabPane {
+            width: 95%;
+            margin: 3px;
+            padding-top: 3px;
+            padding-bottom: 0px;
+            clear: both;
+            height: 21px;
+            border-bottom: 1px solid tan;
+        }
+        .history {
+            border: 1px solid tan;
+            background: #fff377;
+            height: 14px;
+            padding-right: 2px;
+            padding-left: 2px;
+            float: left;
+            margin-right: -1px;
+        }
+        .tab {
+            margin-bottom:3px;
+            margin-left: 3px;
+            margin-right: 3px;
+            padding-left: 6px;
+            padding-right: 6px;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            float: left;
+            height: 16px;
+            background: wheat;
+            border-bottom: 1px solid wheat;
+        }
+        .small_button {
+            float: left;
+            height: 14px;
+            width: 14px;
+            text-align: center;
+            margin-bottom: 2px;
+            margin-right: 2px;            
+            border: 1px solid tan;
+            overflow: hidden;
+        }
+        
+        .rightTab {
+            margin-bottom:3px;
+            margin-left: 3px;
+            margin-right: 3px;
+            padding-left: 6px;
+            padding-right: 6px;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            float: right;
+            height: 16px;
+            background: wheat;
+            border-bottom: 1px solid wheat;
+        }
+        .selected {
+            background: white;
+            border-right: 1px solid tan;
+            border-top: 1px solid tan;
+            border-left: 1px solid tan;
+            border-bottom: 1px solid white;
+        }
+        .symbol {
+            font-size:120%;
+        }
+        .graph {
+            line-height:18px;
+        }
+        .units {
+            position: relative;
+            right: 0px;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+
+<div class="wide bordered line cell">
+            <div class="leftCell">wfrog $version - Weather Dashboard </div><div class="rightCell"><span class="value">$current.timestamp</span></div>
+</div>
+<div style="width: 100%">
+    <div class="bordered header" style="clear: both">
+        <div class="headerContent">
+            <a href="http://www.wfrog.org"><img border="0" src="http://www.wfrog.org/logo.png?s=$station.driver&o=$os" alt="wfrog"/></a>
+        </div>
+    </div>
+    <div class="bordered header">
+        <div class="headerContent">
+            <div class="leftCell">
+                <span class="symbol"></span> <span class="bigger" ><span class="value">$rnd($current.temp1, 1)</span>&deg;</span>$unitstr('temp',$units.temp)<br>
+                Humidity <span class="value">$rnd($current.hum1)</span> % <br>
+                Pressure <span class="value">$rnd($current.press, 1)</span> $unitstr('press',$units.press)
+            </div>
+            <div class="leftCell leftpad rightAlign">
+                <span class="bigger">&#8962; &nbsp;</span><br>
+                <span class="value">$rnd($current.temp0,1)</span>&deg;$unitstr('temp',$units.temp) <br>
+                <span class="value">$rnd($current.hum0)</span> %
+            </div>
+        </div>
+    </div>
+    <div class="bordered headerNoPad">
+        <div class="leftCell">
+            <img src="$current.wind.dir"/>
+        </div>
+        <div class="leftCell smallpad">
+            <br style="font-size:50%">Wind <span class="value">$rnd($current.wind.speed, 1)</span> $unitstr('wind',$units.wind)<br>
+            Gust <span class="value">$rnd($current.wind.gust, 1)</span> $unitstr('wind',$units.wind)<br>
+            Rain <span class="value">$rnd($current.rain, 1)</span> $unitstr('rain',$units.rain)/h<br>
+            <!-- UV Index <span class="value">0</span> -->
+        </div>
+    </div>   
+    <div class="tabPane">
+        <div class="leftCell" style="width:10px;">&nbsp;</div>
+#if $getVar('http', False)
+        <div id="3hours" class="tab" style="cursor: pointer" onclick="move('3hours.html', 'address')">3 Hours</div>
+        <div id="24hours" class="tab" style="cursor: pointer" onclick="move('24hours.html', 'address')">24 Hours</div>
+        <div id="7days" class="tab" style="cursor: pointer" onclick="move('7days.html', 'address')">7 Days</div>
+        <div id="30days" class="tab" style="cursor: pointer" onclick="move('30days.html', 'address')">30 Days</div>
+        <div id="365days" class="tab" style="cursor: pointer" onclick="move('365days.html', 'address')">365 Days</div>
+        <div style="float:left; width:20px;">&nbsp;</div>
+        <div style="float:left"> 
+            <input id="time_end" name="time_end" style="display:none"/>
+            <div class="small_button" style="cursor: pointer;" onclick="move_back()" title="Show previous values"><div style="margin-top: -1px">&lsaquo;</div></div>
+            &nbsp;<div class="history" id="period" style="display:none" title="Date and time of displayed values">
+                <span id="period_end">END</span></div>
+            <div class="small_button" style="cursor: pointer;font-size:80%" id="cal_open" title="Choose date of displayed values"><div style="margin-top: 1px">&nabla;</div></div>&nbsp;
+            <div class="small_button" id="next" style="cursor: pointer;display:none" onclick="move_forward()" title="Show next values"><div style="margin-top: -1px">&rsaquo;</div></div>
+            &nbsp;
+            <div class="small_button" id="date_val" style="cursor: pointer;display:none" onclick="move_end()" title="Show latest values"><div style="margin-top: -1px">&raquo;</div></div>            
+            &nbsp;
+        </div>
+        <div style="float:right; width:10px;">&nbsp;</div>
+#else
+        <div id="3hours" class="tab" style="cursor: pointer"><a href="3hours.html">3 Hours</a></div>
+        <div id="24hours" class="tab" style="cursor: pointer"><a href="24hours.html">24 Hours</a></div>
+        <div id="7days" class="tab" style="cursor: pointer"><a href="7days.html">7 Days</a></div>
+        <div id="30days" class="tab" style="cursor: pointer"><a href="30days.html">30 Days</a></div>
+        <div id="365days" class="tab" style="cursor: pointer"><a href="365days.html">365 Days</a></div>
+#end if                
+        <div id="button-details" class="rightTab" style="cursor: pointer" onclick="document.getElementById('charts').style.display = 'none'; document.getElementById('button-charts').className = 'rightTab'; document.getElementById('details').style.display = 'block'; document.getElementById('button-details').className = 'rightTab selected'; ">numbers</div>
+        <div id="button-charts" class="rightTab selected" style="cursor: pointer" onclick="document.getElementById('charts').style.display = 'block'; document.getElementById('button-charts').className = 'rightTab selected'; document.getElementById('details').style.display = 'none'; document.getElementById('button-details').className = 'rightTab';">charts</div>        
+    </div>
+
+    <div id="charts">
+    <div>
+        #if $chart.has_key("tempint")
+        <div class="bordered cell graph" style="clear: both">
+            <div class="leftCell">Inside Temperature</div><div class="units">&deg;$unitstr('temp',$units.temp)</div>
+            <div><img src="$chart.tempint"/></div>
+        </div>
+        #end if
+        #if $chart.has_key("humint")
+        <div class="bordered cell graph">
+            <div class="leftCell">Inside Humidity</div><div class="units">%</div>
+            <div><img src="$chart.humint"/></div>
+        </div>
+        #end if
+    </div>
+    <div>
+        <div class="bordered cell graph" style="clear: both">
+            <div class="leftCell">Temperature and Dew Point</div><div class="units">&deg;$unitstr('temp',$units.temp)</div>
+            <div><img src="$chart.temp"/></div>
+        </div>
+        <div class="bordered cell graph">
+            <div class="leftCell">Humidity</div><div class="units">%</div>
+            <div><img src="$chart.hum"/></div>
+        </div>
+        <div class="bordered cell graph">
+           <div class="leftCell">Pressure</div><div class="units">$unitstr('press',$units.press)</div>
+            <div><img src="$chart.press"/></div>
+        </div>
+    </div>
+    <div>
+        #if $chart.has_key("temp2")
+        <div class="bordered cell graph" style="clear: both">
+            <div class="leftCell">Temperature (sensor 2)</div><div class="units">&deg;$unitstr('temp',$units.temp)</div>
+            <div><img src="$chart.temp2"/></div>
+        </div>
+        #end if
+        #if $chart.has_key("hum2")
+        <div class="bordered cell graph">
+            <div class="leftCell">Humidity (sensor 2)</div><div class="units">%</div>
+            <div><img src="$chart.hum2"/></div>
+        </div>
+        #end if
+    </div>
+    <div>
+        #if $chart.has_key("temp3")
+        <div class="bordered cell graph" style="clear: both">
+            <div class="leftCell">Temperature (sensor 3)</div><div class="units">&deg;$unitstr('temp',$units.temp)</div>
+            <div><img src="$chart.temp3"/></div>
+        </div>
+        #end if
+        #if $chart.has_key("hum3")
+        <div class="bordered cell graph">
+            <div class="leftCell">Humidity (sensor 3)</div><div class="units">%</div>
+            <div><img src="$chart.hum3"/></div>
+        </div>
+        #end if
+    </div>
+    <div>
+        #if $chart.has_key("temp4")
+        <div class="bordered cell graph" style="clear: both">
+            <div class="leftCell">Temperature (sensor 4)</div><div class="units">&deg;$unitstr('temp',$units.temp)</div>
+            <div><img src="$chart.temp4"/></div>
+        </div>
+        #end if
+        #if $chart.has_key("hum4")
+        <div class="bordered cell graph">
+            <div class="leftCell">Humidity (sensor 4)</div><div class="units">%</div>
+            <div><img src="$chart.hum4"/></div>
+        </div>
+        #end if
+    </div>
+    <div>
+        #if $chart.has_key("temp5")
+        <div class="bordered cell graph" style="clear: both">
+            <div class="leftCell">Temperature (sensor 5)</div><div class="units">&deg;$unitstr('temp',$units.temp)</div>
+            <div><img src="$chart.temp5"/></div>
+        </div>
+        #end if
+        #if $chart.has_key("hum5")
+        <div class="bordered cell graph">
+            <div class="leftCell">Humidity (sensor 5)</div><div class="units">%</div>
+            <div><img src="$chart.hum5"/></div>
+        </div>
+        #end if
+    </div>
+    <div>
+        #if $chart.has_key("temp6")
+        <div class="bordered cell graph" style="clear: both">
+            <div class="leftCell">Temperature (sensor 6)</div><div class="units">&deg;$unitstr('temp',$units.temp)</div>
+            <div><img src="$chart.temp6"/></div>
+        </div>
+        #end if
+        #if $chart.has_key("hum6")
+        <div class="bordered cell graph">
+            <div class="leftCell">Humidity (sensor 6)</div><div class="units">%</div>
+            <div><img src="$chart.hum6"/></div>
+        </div>
+        #end if
+    </div>
+    <div>
+        #if $chart.has_key("temp7")
+        <div class="bordered cell graph" style="clear: both">
+            <div class="leftCell">Temperature (sensor 7)</div><div class="units">&deg;$unitstr('temp',$units.temp)</div>
+            <div><img src="$chart.temp7"/></div>
+        </div>
+        #end if
+        #if $chart.has_key("hum7")
+        <div class="bordered cell graph">
+            <div class="leftCell">Humidity (sensor 7)</div><div class="units">%</div>
+            <div><img src="$chart.hum7"/></div>
+        </div>
+        #end if
+    </div>
+    <div>
+        #if $chart.has_key("temp8")
+        <div class="bordered cell graph" style="clear: both">
+            <div class="leftCell">Temperature (sensor 8)</div><div class="units">&deg;$unitstr('temp',$units.temp)</div>
+            <div><img src="$chart.temp8"/></div>
+        </div>
+        #end if
+        #if $chart.has_key("hum8")
+        <div class="bordered cell graph">
+            <div class="leftCell">Humidity (sensor 8)</div><div class="units">%</div>
+            <div><img src="$chart.hum8"/></div>
+        </div>
+        #end if
+    </div>
+    <div>
+        #if $chart.has_key("temp9")
+        <div class="bordered cell graph" style="clear: both">
+            <div class="leftCell">Temperature (sensor 9)</div><div class="units">&deg;$unitstr('temp',$units.temp)</div>
+            <div><img src="$chart.temp9"/></div>
+        </div>
+        #end if
+        #if $chart.has_key("hum9")
+        <div class="bordered cell graph">
+            <div class="leftCell">Humidity (sensor 9)</div><div class="units">%</div>
+            <div><img src="$chart.hum9"/></div>
+        </div>
+        #end if
+    </div>
+    <div>
+        <div class="bordered cell graph" style="clear: both">
+            <div class="leftCell">Wind and Gusts</div><div class="units">$unitstr('wind',$units.wind)</div>
+            <div><img src="$chart.wind"/></div>
+        </div>
+        <div class="bordered cell graph">
+            <div class="leftCell">Wind Direction</div><br/>
+            <div><img src="$chart.wind_dir"/></div>
+        </div>
+    </div>
+    <div>
+        <div class="bordered cell graph"  style="clear: both">
+            <div class="leftCell">Rain</div><div class="units">$unitstr('rain',$units.rain)</div>
+            <div><img src="$chart.rain"/></div>
+        </div>
+        <div class="bordered cell graph">
+            <div class="leftCell">Rain rate</div><div class="units">$unitstr('rain',$units.rain)/h</div>
+            <div><img src="$chart.rain_rate"/></div>
+        </div>
+        #if $chart.has_key("uv")        
+        <div class="bordered cell graph">
+            <div class="leftCell">UV Index</div><br/>
+            <div><img src="$chart.uv"/></div>
+        </div>
+        #end if
+        #if $chart.has_key("solar_rad")        
+        <div class="bordered cell graph">
+            <div class="leftCell">Solar radiation</div><br/>
+            <div><img src="$chart.solar_rad"/></div>
+        </div>
+        #end if
+    </div>
+    </div>
+    <div class="bordered cell graph" style="clear: both; display: none;" id="details">
+       <div style="clear: both"><pre style="font-size:94%">
+#set $indexes = $summary.keys()
+#silent $indexes.sort()
+#silent $indexes.reverse()
+#set $value = $summary[$indexes[0]]
+${" " * len($indexes[0])}#slurp
+#if $value.has_key("tempint_max")
+${"   Temp. Inside %s " % $unitstr('temp',$units.temp).rstrip()}#slurp
+#end if
+#if $value.has_key("humint_max")
+${"    Hum. Ins.% "}#slurp
+#end if
+${"      Temp. %s     " % $unitstr('temp',$units.temp).rstrip()}#slurp
+${"    Humidity % "}#slurp
+#if $value.has_key("temp2_max")
+${"     Temp. 2 %s    " % $unitstr('temp',$units.temp).rstrip()}#slurp
+#end if
+#if $value.has_key("hum2_max")
+${"   Humidity 2 %"}#slurp
+#end if
+#if $value.has_key("temp3_max")
+${"     Temp. 3 %s    " % $unitstr('temp',$units.temp).rstrip()}#slurp
+#end if
+#if $value.has_key("hum3_max")
+${"   Humidity 3 %"}#slurp
+#end if
+#if $value.has_key("temp4_max")
+${"     Temp. 4 %s    " % $unitstr('temp',$units.temp).rstrip()}#slurp
+#end if
+#if $value.has_key("hum4_max")
+${"   Humidity 4 %"}#slurp
+#end if
+#if $value.has_key("temp5_max")
+${"     Temp. 5 %s    " % $unitstr('temp',$units.temp).rstrip()}#slurp
+#end if
+#if $value.has_key("hum5_max")
+${"   Humidity 5 %"}#slurp
+#end if
+#if $value.has_key("temp6_max")
+${"     Temp. 6 %s    " % $unitstr('temp',$units.temp).rstrip()}#slurp
+#end if
+#if $value.has_key("hum6_max")
+${"   Humidity 6 %"}#slurp
+#end if
+#if $value.has_key("temp7_max")
+${"     Temp. 7 %s    " % $unitstr('temp',$units.temp).rstrip()}#slurp
+#end if
+#if $value.has_key("hum7_max")
+${"   Humidity 7 %"}#slurp
+#end if
+#if $value.has_key("temp8_max")
+${"     Temp. 8 %s    " % $unitstr('temp',$units.temp).rstrip()}#slurp
+#end if
+#if $value.has_key("hum8_max")
+${"   Humidity 8 %"}#slurp
+#end if
+#if $value.has_key("temp9_max")
+${"     Temp. 9 %s    " % $unitstr('temp',$units.temp).rstrip()}#slurp
+#end if
+#if $value.has_key("hum9_max")
+${"   Humidity 9 %"}#slurp
+#end if
+${"    Pressure %s       Rain %s         Wind %s" % (
+  $unitstr('press',$units.press).rstrip(), 
+  $unitstr('rain',$units.rain).rstrip(),  
+  $unitstr('wind',$units.wind).rstrip() ) }#slurp
+#if $value.has_key("uv_index")
+${"       UV%"}#slurp
+#end if
+#if $value.has_key("solar_rad_max")
+${"      Solar W/m2"}#slurp
+#end if
+
+${" " * len($indexes[0])}#slurp
+#if $value.has_key("tempint_max")
+${"   max   min   avg"}#slurp
+#end if
+#if $value.has_key("humint_max")
+${"  max  min  avg"}#slurp
+#end if
+${"   max   min   avg"}#slurp
+${"  max  min  avg"}#slurp
+#if $value.has_key("temp2_max")
+${"   max   min   avg"}#slurp
+#end if
+#if $value.has_key("hum2_max")
+${"  max  min  avg"}#slurp
+#end if
+#if $value.has_key("temp3_max")
+${"   max   min   avg"}#slurp
+#end if
+#if $value.has_key("hum3_max")
+${"  max  min  avg"}#slurp
+#end if
+#if $value.has_key("temp4_max")
+${"   max   min   avg"}#slurp
+#end if
+#if $value.has_key("hum4_max")
+${"  max  min  avg"}#slurp
+#end if
+#if $value.has_key("temp5_max")
+${"   max   min   avg"}#slurp
+#end if
+#if $value.has_key("hum5_max")
+${"  max  min  avg"}#slurp
+#end if
+#if $value.has_key("temp6_max")
+${"   max   min   avg"}#slurp
+#end if
+#if $value.has_key("hum6_max")
+${"  max  min  avg"}#slurp
+#end if
+#if $value.has_key("temp7_max")
+${"   max   min   avg"}#slurp
+#end if
+#if $value.has_key("hum7_max")
+${"  max  min  avg"}#slurp
+#end if
+#if $value.has_key("temp8_max")
+${"   max   min   avg"}#slurp
+#end if
+#if $value.has_key("hum8_max")
+${"  max  min  avg"}#slurp
+#end if
+#if $value.has_key("temp9_max")
+${"   max   min   avg"}#slurp
+#end if
+#if $value.has_key("hum9_max")
+${"  max  min  avg"}#slurp
+#end if
+${"   max   min   avg   fall   rate    avg    max  dir"}
+#for $index in $indexes
+#set $value = $summary[$index]
+#if $value.temp_max != None or $value.hum_max != None or $value.press_max != None or $value.rain_fall != None or $value.wind_avg != None
+${"%s" % $index}#slurp
+#if $value.has_key("tempint_max")
+${"%6.1f" % $value.tempint_max if $value.tempint_max != None else "     -"}#slurp
+${"%6.1f" % $value.tempint_min if $value.tempint_min != None else "     -"}#slurp
+${"%6.1f" % $value.tempint_avg if $value.tempint_avg != None else "     -"}#slurp
+#end if
+#if $value.has_key("humint_max")
+${"%4.0f%%" % $value.humint_max if $value.humint_max != None else "   - "}#slurp
+${"%4.0f%%" % $value.humint_min if $value.humint_min != None else "   - "}#slurp
+${"%4.0f%%" % $value.humint_avg if $value.humint_avg != None else "   - "}#slurp
+#end if
+${"%6.1f" % $value.temp_max if $value.temp_max != None else "     -"}#slurp
+${"%6.1f" % $value.temp_min if $value.temp_min != None else "     -"}#slurp
+${"%6.1f" % $value.temp_avg if $value.temp_avg != None else "     -"}#slurp
+${"%4.0f%%" % $value.hum_max if $value.hum_max != None else "   - "}#slurp
+${"%4.0f%%" % $value.hum_min if $value.hum_min != None else "   - "}#slurp
+${"%4.0f%%" % $value.hum_avg if $value.hum_avg != None else "   - "}#slurp
+#if $value.has_key("temp2_max")
+${"%6.1f" % $value.temp2_max if $value.temp2_max != None else "     -"}#slurp
+${"%6.1f" % $value.temp2_min if $value.temp2_min != None else "     -"}#slurp
+${"%6.1f" % $value.temp2_avg if $value.temp2_avg != None else "     -"}#slurp
+#end if
+#if $value.has_key("hum2_max")
+${"%4.0f%%" % $value.hum2_max if $value.hum2_max != None else "   - "}#slurp
+${"%4.0f%%" % $value.hum2_min if $value.hum2_min != None else "   - "}#slurp
+${"%4.0f%%" % $value.hum2_avg if $value.hum2_avg != None else "   - "}#slurp
+#end if
+#if $value.has_key("temp3_max")
+${"%6.1f" % $value.temp3_max if $value.temp3_max != None else "     -"}#slurp
+${"%6.1f" % $value.temp3_min if $value.temp3_min != None else "     -"}#slurp
+${"%6.1f" % $value.temp3_avg if $value.temp3_avg != None else "     -"}#slurp
+#end if
+#if $value.has_key("hum3_max")
+${"%4.0f%%" % $value.hum3_max if $value.hum3_max != None else "   - "}#slurp
+${"%4.0f%%" % $value.hum3_min if $value.hum3_min != None else "   - "}#slurp
+${"%4.0f%%" % $value.hum3_avg if $value.hum3_avg != None else "   - "}#slurp
+#end if
+#if $value.has_key("temp4_max")
+${"%6.1f" % $value.temp4_max if $value.temp4_max != None else "     -"}#slurp
+${"%6.1f" % $value.temp4_min if $value.temp4_min != None else "     -"}#slurp
+${"%6.1f" % $value.temp4_avg if $value.temp4_avg != None else "     -"}#slurp
+#end if
+#if $value.has_key("hum4_max")
+${"%4.0f%%" % $value.hum4_max if $value.hum4_max != None else "   - "}#slurp
+${"%4.0f%%" % $value.hum4_min if $value.hum4_min != None else "   - "}#slurp
+${"%4.0f%%" % $value.hum4_avg if $value.hum4_avg != None else "   - "}#slurp
+#end if
+#if $value.has_key("temp5_max")
+${"%6.1f" % $value.temp5_max if $value.temp5_max != None else "     -"}#slurp
+${"%6.1f" % $value.temp5_min if $value.temp5_min != None else "     -"}#slurp
+${"%6.1f" % $value.temp5_avg if $value.temp5_avg != None else "     -"}#slurp
+#end if
+#if $value.has_key("hum5_max")
+${"%4.0f%%" % $value.hum5_max if $value.hum5_max != None else "   - "}#slurp
+${"%4.0f%%" % $value.hum5_min if $value.hum5_min != None else "   - "}#slurp
+${"%4.0f%%" % $value.hum5_avg if $value.hum5_avg != None else "   - "}#slurp
+#end if
+#if $value.has_key("temp6_max")
+${"%6.1f" % $value.temp6_max if $value.temp6_max != None else "     -"}#slurp
+${"%6.1f" % $value.temp6_min if $value.temp6_min != None else "     -"}#slurp
+${"%6.1f" % $value.temp6_avg if $value.temp6_avg != None else "     -"}#slurp
+#end if
+#if $value.has_key("hum6_max")
+${"%4.0f%%" % $value.hum6_max if $value.hum6_max != None else "   - "}#slurp
+${"%4.0f%%" % $value.hum6_min if $value.hum6_min != None else "   - "}#slurp
+${"%4.0f%%" % $value.hum6_avg if $value.hum6_avg != None else "   - "}#slurp
+#end if
+#if $value.has_key("temp7_max")
+${"%6.1f" % $value.temp7_max if $value.temp7_max != None else "     -"}#slurp
+${"%6.1f" % $value.temp7_min if $value.temp7_min != None else "     -"}#slurp
+${"%6.1f" % $value.temp7_avg if $value.temp7_avg != None else "     -"}#slurp
+#end if
+#if $value.has_key("hum7_max")
+${"%4.0f%%" % $value.hum7_max if $value.hum7_max != None else "   - "}#slurp
+${"%4.0f%%" % $value.hum7_min if $value.hum7_min != None else "   - "}#slurp
+${"%4.0f%%" % $value.hum7_avg if $value.hum7_avg != None else "   - "}#slurp
+#end if
+#if $value.has_key("temp8_max")
+${"%6.1f" % $value.temp8_max if $value.temp8_max != None else "     -"}#slurp
+${"%6.1f" % $value.temp8_min if $value.temp8_min != None else "     -"}#slurp
+${"%6.1f" % $value.temp8_avg if $value.temp8_avg != None else "     -"}#slurp
+#end if
+#if $value.has_key("hum8_max")
+${"%4.0f%%" % $value.hum8_max if $value.hum8_max != None else "   - "}#slurp
+${"%4.0f%%" % $value.hum8_min if $value.hum8_min != None else "   - "}#slurp
+${"%4.0f%%" % $value.hum8_avg if $value.hum8_avg != None else "   - "}#slurp
+#end if
+#if $value.has_key("temp9_max")
+${"%6.1f" % $value.temp9_max if $value.temp9_max != None else "     -"}#slurp
+${"%6.1f" % $value.temp9_min if $value.temp9_min != None else "     -"}#slurp
+${"%6.1f" % $value.temp9_avg if $value.temp9_avg != None else "     -"}#slurp
+#end if
+#if $value.has_key("hum9_max")
+${"%4.0f%%" % $value.hum9_max if $value.hum9_max != None else "   - "}#slurp
+${"%4.0f%%" % $value.hum9_min if $value.hum9_min != None else "   - "}#slurp
+${"%4.0f%%" % $value.hum9_avg if $value.hum9_avg != None else "   - "}#slurp
+#end if
+${"%6.0f" % $value.press_max if $value.press_max != None else "     -"}#slurp
+${"%6.0f" % $value.press_min if $value.press_min != None else "     -"}#slurp 
+${"%6.0f" % $value.press_avg if $value.press_avg != None else "     -"}#slurp 
+${"%7.1f" % $value.rain_fall if $value.rain_fall != None else "      -"}#slurp
+${"%7.1f" % $value.rain_rate if $value.rain_rate != None else "      -"}#slurp
+${"%7.1f" % $value.wind_avg if $value.wind_avg != None else "      -"}#slurp
+${"%7.1f" % $value.wind_max if $value.wind_max != None else "      -"}#slurp
+${"%5s" % $value.wind_dir  if $value.wind_dir != None else "    -"}#slurp
+#if $value.has_key("uv_index")
+${"%5d" % $value.uv_index  if $value.uv_index != None else "    -"}#slurp
+#end if
+#if $value.has_key("solar_rad_max")
+${"%7d" % $value.solar_rad_max  if $value.solar_rad_max != None else "      -"}#slurp
+#end if
+
+#end if
+#end for
+    </pre></div>
+    </div>
+</div>
+<div style="width:100%;clear:both;"><br></div>
+
+<script type="text/javascript">
+// Highlight the correct tab according to the url
+if(window.location.href.indexOf("30days.html") > -1) {
+    document.getElementById("30days").className += ' selected';
+    move_back = function() { move(-15, 'd') }
+    move_forward = function() { move(15, 'd') }
+} else if(window.location.href.indexOf("365days.html") > -1) {
+    document.getElementById("365days").className += ' selected';
+    move_back = function() { move(-183, 'd') }
+    move_forward = function() { move(183, 'd') }
+} else if(window.location.href.indexOf("7days.html") > -1) {
+    document.getElementById("7days").className += ' selected';
+    move_back = function() { move(-168, 'h') }
+    move_forward = function() { move(168, 'h') }
+} else if(window.location.href.indexOf("3hours.html") > -1) {
+    document.getElementById("3hours").className += ' selected';
+    move_back = function() { move(-1, 'h') }
+    move_forward = function() { move(1, 'h') }    
+} else {
+    document.getElementById("24hours").className += ' selected';
+    move_back = function() { move(-12, 'h') }
+    move_forward = function() { move(12, 'h') }    
+}
+</script>
+</body>
+</html>
