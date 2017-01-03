@@ -367,12 +367,18 @@ $u
 <body>
 
 <div class="wide bordered line cell">
-            <div class="leftCell">wfrog $version - Weather Dashboard </div><div class="rightCell"><span class="value">$current.timestamp</span></div>
+            <div class="leftCell">El Pueblito - Playa Dorada - Dominican Republic</div><div class="rightCell">wfrog</div>
 </div>
 <div style="width: 100%">
     <div class="bordered header" style="clear: both">
-        <div class="headerContent">
-            <a href="http://www.wfrog.org"><img border="0" src="http://www.wfrog.org/logo.png?s=$station.driver&o=$os" alt="wfrog"/></a>
+        <div class="leftCell">
+            <img src="$current.wind.dir"/>
+        </div>
+        <div class="leftCell smallpad">
+            <br style="font-size:50%">Wind <span class="value">$rnd($current.wind.speed, 1)</span> $unitstr('wind',$units.wind)<br>
+            Gust <span class="value">$rnd($current.wind.gust, 1)</span> $unitstr('wind',$units.wind)<br>
+            Rain <span class="value">$rnd($current.rain, 1)</span> $unitstr('rain',$units.rain)/h<br>
+            <!-- UV Index <span class="value">0</span> -->
         </div>
     </div>
     <div class="bordered header">
@@ -390,16 +396,10 @@ $u
         </div>
     </div>
     <div class="bordered headerNoPad">
-        <div class="leftCell">
-            <img src="$current.wind.dir"/>
+        <div class="headerContent">
+            <a href="http://www.wfrog.org"><img border="0" src="http://www.wfrog.org/logo.png?s=$station.driver&o=$os" alt="wfrog"/></a>
         </div>
-        <div class="leftCell smallpad">
-            <br style="font-size:50%">Wind <span class="value">$rnd($current.wind.speed, 1)</span> $unitstr('wind',$units.wind)<br>
-            Gust <span class="value">$rnd($current.wind.gust, 1)</span> $unitstr('wind',$units.wind)<br>
-            Rain <span class="value">$rnd($current.rain, 1)</span> $unitstr('rain',$units.rain)/h<br>
-            <!-- UV Index <span class="value">0</span> -->
-        </div>
-    </div>   
+    </div>
     <div class="tabPane">
         <div class="leftCell" style="width:10px;">&nbsp;</div>
 #if $getVar('http', False)
@@ -433,6 +433,16 @@ $u
     </div>
 
     <div id="charts">
+    <div>
+        <div class="bordered cell graph" style="clear: both">
+            <div class="leftCell">Wind and Gusts</div><div class="units">$unitstr('wind',$units.wind)</div>
+            <div><img src="$chart.wind"/></div>
+        </div>
+        <div class="bordered cell graph">
+            <div class="leftCell">Wind Direction</div><br/>
+            <div><img src="$chart.wind_dir"/></div>
+        </div>
+    </div>
     <div>
         #if $chart.has_key("tempint")
         <div class="bordered cell graph" style="clear: both">
@@ -572,16 +582,6 @@ $u
             <div><img src="$chart.hum9"/></div>
         </div>
         #end if
-    </div>
-    <div>
-        <div class="bordered cell graph" style="clear: both">
-            <div class="leftCell">Wind and Gusts</div><div class="units">$unitstr('wind',$units.wind)</div>
-            <div><img src="$chart.wind"/></div>
-        </div>
-        <div class="bordered cell graph">
-            <div class="leftCell">Wind Direction</div><br/>
-            <div><img src="$chart.wind_dir"/></div>
-        </div>
     </div>
     <div>
         <div class="bordered cell graph"  style="clear: both">
@@ -859,6 +859,15 @@ ${"%7d" % $value.solar_rad_max  if $value.solar_rad_max != None else "      -"}#
     </div>
 </div>
 <div style="width:100%;clear:both;"><br></div>
+<div class="wide bordered line cell">
+            <div class="leftCell">wfrog $version - Weather Dashboard </div><div class="rightCell"><span class="value">$current.timestamp</span></div>
+</div>
+<div class="wide bordered line cell">
+            <div class="leftCell">Latitude: 19.46.46 N, Longitude: 70.39.07 W, Altitude: 0 meters</div><div class="rightCell"></div>
+</div>
+<div class="wide bordered line cell">
+            <div class="leftCell">wfrog sales and support: mailto:thomas.debrunner@bitopen.ch</div><div class="rightCell">www.bitopen.ch</div>
+</div>
 
 <script type="text/javascript">
 // Highlight the correct tab according to the url
