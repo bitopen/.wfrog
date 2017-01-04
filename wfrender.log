@@ -1,0 +1,54 @@
+2017-01-04 10:51:27,070 ERROR [renderer.http] 
+
+Some #directives are missing their corresponding #end ___ tag: if
+Line 967, column 8
+
+Line|Cheetah Code
+----|-------------------------------------------------------------
+964 |}
+965 |</script>
+966 |</body>
+967 |</html>
+            ^
+Traceback (most recent call last):
+  File "/home/var/opt/wfrog/wfrender/renderer/http.py", line 191, in do_GET
+    [ mime, content ] = renderers[name].render(data=data, context=context)
+  File "/home/var/opt/wfrog/wfcommon/generic/include.py", line 79, in _call
+    return self.target.__getattribute__(attr).__call__(*args, **keywords)
+  File "/home/var/opt/wfrog/wfrender/renderer/template.py", line 84, in render
+    self.compiled_template = Template.compile(file=file(abs_path, "r"))
+  File "/usr/lib/python2.7/dist-packages/Cheetah/Template.py", line 743, in compile
+    compiler.compile()
+  File "/usr/lib/python2.7/dist-packages/Cheetah/Compiler.py", line 1664, in compile
+    self._parser.parse()
+  File "/usr/lib/python2.7/dist-packages/Cheetah/Parser.py", line 1497, in parse
+    self.assertEmptyOpenDirectivesStack()
+  File "/usr/lib/python2.7/dist-packages/Cheetah/Parser.py", line 2657, in assertEmptyOpenDirectivesStack
+    raise ParseError(self, msg=errorMsg)
+ParseError: 
+
+Some #directives are missing their corresponding #end ___ tag: if
+Line 967, column 8
+
+Line|Cheetah Code
+----|-------------------------------------------------------------
+964 |}
+965 |</script>
+966 |</body>
+967 |</html>
+            ^
+
+2017-01-04 10:52:27,094 ERROR [renderer.http] invalid syntax (cheetah_DynamicallyCompiledCheetahTemplate_1483541547_09_31584.py, line 1312)
+Traceback (most recent call last):
+  File "/home/var/opt/wfrog/wfrender/renderer/http.py", line 191, in do_GET
+    [ mime, content ] = renderers[name].render(data=data, context=context)
+  File "/home/var/opt/wfrog/wfcommon/generic/include.py", line 79, in _call
+    return self.target.__getattribute__(attr).__call__(*args, **keywords)
+  File "/home/var/opt/wfrog/wfrender/renderer/template.py", line 84, in render
+    self.compiled_template = Template.compile(file=file(abs_path, "r"))
+  File "/usr/lib/python2.7/dist-packages/Cheetah/Template.py", line 796, in compile
+    raise e
+  File "cheetah_DynamicallyCompiledCheetahTemplate_1483541547_09_31584.py", line 1312
+    if: # generated from line 936, col 1
+      ^
+SyntaxError: invalid syntax
