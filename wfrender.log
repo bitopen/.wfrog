@@ -52,3 +52,40 @@ Traceback (most recent call last):
     if: # generated from line 936, col 1
       ^
 SyntaxError: invalid syntax
+2017-01-07 10:38:00,953 INFO [config] Starting wfrog 0.8.2.99-git
+2017-01-07 10:38:00,953 INFO [config] Loaded settings file /home/td/.wfrog/settings.yaml
+2017-01-07 10:38:00,954 DEBUG [config] Loaded settings {'units': {'press': 'hPa', 'rain': 'mm', 'temp': 'C', 'wind': 'kt'}, 'altitude': 0, 'station': {'driver': 'wh1080'}}
+2017-01-07 10:38:00,954 DEBUG [config] Loaded config file /home/td/.wfrog/wfrender/config/wfrender.yaml
+2017-01-07 10:38:00,954 DEBUG [config] Initializing accu_7d
+2017-01-07 10:38:00,954 DEBUG [generic.service] Registering service <wfcommon.generic.YamlIncludeElement object at 0x7f7d991e4a90> under 'accu_7d'
+2017-01-07 10:38:00,954 DEBUG [generic.service] Calling init on <wfcommon.generic.YamlIncludeElement object at 0x7f7d991e4a90>
+2017-01-07 10:38:00,972 DEBUG [generic.include] Calling init on <wfrender.datasource.YamlAccumulatorDataSource object at 0x7f7d991e4790>
+2017-01-07 10:38:00,972 DEBUG [config] Initializing accu_365d_w
+2017-01-07 10:38:00,972 DEBUG [generic.service] Registering service <wfcommon.generic.YamlIncludeElement object at 0x7f7d991e4b10> under 'accu_365d_w'
+2017-01-07 10:38:00,972 DEBUG [generic.service] Calling init on <wfcommon.generic.YamlIncludeElement object at 0x7f7d991e4b10>
+2017-01-07 10:38:00,990 DEBUG [generic.include] Calling init on <wfrender.datasource.YamlAccumulatorDataSource object at 0x7f7d991e4190>
+2017-01-07 10:38:00,990 DEBUG [config] Initializing accu_24h
+2017-01-07 10:38:00,990 DEBUG [generic.service] Registering service <wfcommon.generic.YamlIncludeElement object at 0x7f7d991e4a50> under 'accu_24h'
+2017-01-07 10:38:00,990 DEBUG [generic.service] Calling init on <wfcommon.generic.YamlIncludeElement object at 0x7f7d991e4a50>
+2017-01-07 10:38:01,006 DEBUG [generic.include] Calling init on <wfrender.datasource.YamlAccumulatorDataSource object at 0x7f7d99177050>
+2017-01-07 10:38:01,007 DEBUG [config] Initializing accu_3h
+2017-01-07 10:38:01,007 DEBUG [generic.service] Registering service <wfcommon.generic.YamlIncludeElement object at 0x7f7d991e4a10> under 'accu_3h'
+2017-01-07 10:38:01,007 DEBUG [generic.service] Calling init on <wfcommon.generic.YamlIncludeElement object at 0x7f7d991e4a10>
+2017-01-07 10:38:01,023 DEBUG [generic.include] Calling init on <wfrender.datasource.YamlAccumulatorDataSource object at 0x7f7d991922d0>
+2017-01-07 10:38:01,023 DEBUG [config] Initializing storage
+2017-01-07 10:38:01,023 DEBUG [generic.service] Registering service <wfcommon.generic.YamlIncludeElement object at 0x7f7d991e49d0> under 'storage'
+2017-01-07 10:38:01,023 DEBUG [generic.service] Calling init on <wfcommon.generic.YamlIncludeElement object at 0x7f7d991e49d0>
+2017-01-07 10:38:01,028 DEBUG [generic.include] Calling init on <wfcommon.generic.YamlUserChoiceElement object at 0x7f7d99185c50>
+2017-01-07 10:38:01,028 DEBUG [generic.user] Current user:default
+2017-01-07 10:38:01,028 DEBUG [generic.user] Calling init on <wfcommon.storage.YamlCsvStorage object at 0x7f7d991858d0>
+2017-01-07 10:38:01,028 DEBUG [config] Initializing accu_365d_m
+2017-01-07 10:38:01,028 DEBUG [generic.service] Registering service <wfcommon.generic.YamlIncludeElement object at 0x7f7d991e4b50> under 'accu_365d_m'
+2017-01-07 10:38:01,028 DEBUG [generic.service] Calling init on <wfcommon.generic.YamlIncludeElement object at 0x7f7d991e4b50>
+2017-01-07 10:38:01,043 DEBUG [generic.include] Calling init on <wfrender.datasource.YamlAccumulatorDataSource object at 0x7f7d99185d50>
+2017-01-07 10:38:01,043 DEBUG [config] Initializing accu_30d
+2017-01-07 10:38:01,044 DEBUG [generic.service] Registering service <wfcommon.generic.YamlIncludeElement object at 0x7f7d991e4ad0> under 'accu_30d'
+2017-01-07 10:38:01,044 DEBUG [generic.service] Calling init on <wfcommon.generic.YamlIncludeElement object at 0x7f7d991e4ad0>
+2017-01-07 10:38:01,065 DEBUG [generic.include] Calling init on <wfrender.datasource.YamlAccumulatorDataSource object at 0x7f7d9918b750>
+2017-01-07 10:38:01,065 DEBUG [wfrender] Starting root rendering.
+2017-01-07 10:38:01,065 DEBUG [generic.multi] Calling render on child http
+2017-01-07 10:38:01,066 INFO [renderer.http] Started server on port 7680
