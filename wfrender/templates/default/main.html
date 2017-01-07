@@ -241,7 +241,9 @@ $u
             margin: 3px;
             padding-left: 6px;
             padding-right: 6px;            
-            margin-bottom: 0px; 
+            padding-top: 6px;
+            padding-bottom: 6px;
+            margin-bottom: 0px;
             float: left;
         }
         .pad {
@@ -266,7 +268,7 @@ $u
             float: left;            
         }
         .headerContent {
-            height: 64px;    
+            height: auto;
             float: left;        
         }
         .wide {
@@ -366,8 +368,18 @@ $u
 </head>
 <body>
 
+#if None # old
 <div class="wide bordered line cell">
-            <div class="leftCell">El Pueblito - Playa Dorada - Dominican Republic</div><div class="rightCell">wfrog</div>
+    <div class="leftCell">El Pueblito - Playa Dorada - Dominican Republic</div>
+    <div class="rightCell"><a href="http://www.wfrog.org" target="_blank">wfrog</a></div>
+</div>
+#end if
+<div class="wide bordered line cell">
+    <div class="leftCell">El Pueblito - Playa Dorada - Dominican Republic
+        - Weather Dashboard - at $current.timestamp AST</div>
+#if None # old
+    <div class="rightCell"><span class="value">$current.timestamp AST</span></div>
+#end if
 </div>
 <div style="width: 100%">
     <div class="bordered header" style="clear: both">
@@ -375,8 +387,9 @@ $u
             <img src="$current.wind.dir"/>
         </div>
         <div class="leftCell smallpad">
-            <br style="font-size:50%">Wind <span class="value">$rnd($current.wind.speed, 1)</span> $unitstr('wind',$units.wind)<br>
+            Wind <span class="value">$rnd($current.wind.speed, 1)</span> $unitstr('wind',$units.wind)<br>
             Gust <span class="value">$rnd($current.wind.gust, 1)</span> $unitstr('wind',$units.wind)<br>
+            <br>
             Rain <span class="value">$rnd($current.rain, 1)</span> $unitstr('rain',$units.rain)/h<br>
             <!-- UV Index <span class="value">0</span> -->
         </div>
@@ -386,10 +399,10 @@ $u
             <div class="leftCell">
                 <span class="symbol"></span> <span class="bigger" ><span class="value">$rnd($current.temp1, 1)</span>&deg;</span>$unitstr('temp',$units.temp)<br>
                 Humidity <span class="value">$rnd($current.hum1)</span> % <br>
-                Pressure <span class="value">$rnd($current.press, 1)</span> $unitstr('press',$units.press)
+                Pressure <span class="value">$rnd($current.press, 1)</span> $unitstr('press',$units.press) <br>
             </div>
             <div class="leftCell leftpad rightAlign">
-                <span class="bigger">&#8962; &nbsp;</span><br>
+                <span class="bigger">&#8962;</span>
                 <span class="value">$rnd($current.temp0,1)</span>&deg;$unitstr('temp',$units.temp) <br>
                 <span class="value">$rnd($current.hum0)</span> %
             </div>
@@ -397,7 +410,7 @@ $u
     </div>
     <div class="bordered headerNoPad">
         <div class="headerContent">
-            <a href="http://www.wfrog.org"><img border="0" src="http://www.wfrog.org/logo.png?s=$station.driver&o=$os" alt="wfrog"/></a>
+            <a href="http://www.wfrog.org" target="_blank"><img border="0" src="http://www.wfrog.org/logo.png?s=$station.driver&o=$os" alt="wfrog"/></a>
         </div>
     </div>
     <div class="tabPane">
@@ -859,14 +872,79 @@ ${"%7d" % $value.solar_rad_max  if $value.solar_rad_max != None else "      -"}#
     </div>
 </div>
 <div style="width:100%;clear:both;"><br></div>
+#if None # old original on top
 <div class="wide bordered line cell">
-            <div class="leftCell">wfrog $version - Weather Dashboard </div><div class="rightCell"><span class="value">$current.timestamp</span></div>
+    <div class="leftCell">wfrog $version - Weather Dashboard</div>
+    <div class="rightCell"><span class="value">$current.timestamp AST</span></div>
 </div>
-<div class="wide bordered line cell">
-            <div class="leftCell">Latitude: 19.46.46 N, Longitude: 70.39.07 W, Altitude: 0 meters</div><div class="rightCell"></div>
+#end if
+<div>
+    <div class="bordered cell graph" style="clear: both">
+        <div class="leftCell">Location</div>
+        <div><a href="http://www.bitopen.ch/wfrog/images/location.jpg" target="_blank"><img src="http://www.bitopen.ch/wfrog/images/thumbnails/location.jpg" alt="location"/></a></div>
+    </div>
+    <div class="bordered cell graph">
+        <div class="leftCell">Map</div><br/>
+        <div>
+        <iframe
+            width="250"
+            height="150"
+            frameborder="0" style="border:0"
+            src="https://www.google.com/maps/embed/v1/view?key=AIzaSyBsPs1vtM3jzRl76GEJPaCrCSWYI0v7JS8&center=19.774660,-70.652320&zoom=16&maptype=satellite" allowfullscreen>
+        </iframe>
+        </div>
+    </div>
+    #if None # todo: webcam
+    <div class="bordered cell graph">
+        <div class="leftCell">Webcam</div>
+        <div><a href="http://www.bitopen.ch/wfrog/images/location.jpg" target="_blank"><img src="http://www.bitopen.ch/wfrog/images/thumbnails/location.jpg" alt="webcam"/></a></div>
+    </div>
+    #end if
 </div>
+<div style="width:100%;clear:both;"></div>
+<div>
+    <div class="bordered cell graph">
+        <div class="leftCell">Prediction</div><br/>
+        <div>
+            <script src="http://widget.windguru.cz/js/wg_widget.php" type="text/javascript"></script>
+            <script language="JavaScript" type="text/javascript">
+            //<![CDATA[
+            WgWidget({
+            s: 574715, odh:9, doh:19, wj:'knots', tj:'c', waj:'m', fhours:72, lng:'en',
+            params: ['WINDSPD','GUST','SMER','TMPE','TCDC','APCPs'],
+            first_row:true,
+            spotname:false,
+            first_row_minfo:true,
+            last_row:true,
+            lat_lon:false,
+            tz:true,
+            sun:true,
+            link_archive:false,
+            link_new_window:true
+            },
+            'wg_target_div_574715_2211953'
+            );
+            //]]>
+            </script>
+            <div id="wg_target_div_574715_2211953"></div>
+        </div>
+    </div>
+</div>
+#if None # old idea
 <div class="wide bordered line cell">
-            <div class="leftCell">wfrog sales and support: mailto:thomas.debrunner@bitopen.ch</div><div class="rightCell">www.bitopen.ch</div>
+    <div class="leftCell">Latitude: 19.46.46 N, Longitude: 70.39.07 W, Altitude: 0 meters</div>
+    <div class="rightCell"></div>
+</div>
+#end if
+<div class="wide bordered line cell">
+    <div class="leftCell"><a href="http://www.wfrog.org" target="_blank">wfrog</a> $version</div>
+#if None # failure: links are not clicable
+    <div class="leftCell">wfrog sales and support: <a href="mailto:thomas.debrunner@bitopen.ch?Subject=wfrog%20sales%20and%20support">thomas.debrunner@bitopen.ch</a> <a href="http://www.bitopen.ch" target="_blank">www.bitopen.ch</a></div>
+#end if
+    <div class="rightCell">sales and support:
+        <a href="mailto:thomas.debrunner@bitopen.ch?Subject=wfrog%20sales%20and%20support">thomas.debrunner@bitopen.ch</a>
+        <a href="http://www.bitopen.ch" target="_blank">www.bitopen.ch</a>
+    </div>
 </div>
 
 <script type="text/javascript">
