@@ -53,12 +53,12 @@ input: !service
 collector: !multi
     children:
         aggregator : !buffer
-            period: 2
+            period: 300
             collector: !aggregator
                 storage : !service
                     name: storage
         current : !flush
-            period: 1
+            period: 10
             collector: !user
                 choices:
                     root: !xmlfile
