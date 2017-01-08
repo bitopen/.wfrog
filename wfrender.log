@@ -89,3 +89,639 @@ SyntaxError: invalid syntax
 2017-01-07 10:38:01,065 DEBUG [wfrender] Starting root rendering.
 2017-01-07 10:38:01,065 DEBUG [generic.multi] Calling render on child http
 2017-01-07 10:38:01,066 INFO [renderer.http] Started server on port 7680
+2017-01-07 12:01:49,461 DEBUG [generic.include] Calling render on <wfrender.renderer.YamlTemplateRenderer object at 0x7f7d99177790>
+2017-01-07 12:01:49,461 DEBUG [generic.service] Calling execute on <wfcommon.generic.YamlIncludeElement object at 0x7f7d991e4a50>
+2017-01-07 12:01:49,461 DEBUG [generic.include] Calling execute on <wfrender.datasource.YamlAccumulatorDataSource object at 0x7f7d99177050>
+2017-01-07 12:01:49,461 DEBUG [datasource.accumulator] Last timestamp: 1969-12-31 19:30:00
+2017-01-07 12:01:49,461 DEBUG [generic.service] Calling keys on <wfcommon.generic.YamlIncludeElement object at 0x7f7d991e49d0>
+2017-01-07 12:01:49,461 DEBUG [generic.include] Calling keys on <wfcommon.generic.YamlUserChoiceElement object at 0x7f7d99185c50>
+2017-01-07 12:01:49,461 DEBUG [generic.user] Calling keys on <wfcommon.storage.YamlCsvStorage object at 0x7f7d991858d0>
+2017-01-07 12:01:49,461 DEBUG [datasource.accumulator] Creating slice 2017-01-06 13:00:00 - 2017-01-06 14:00:00
+2017-01-07 12:01:49,462 DEBUG [datasource.accumulator] Creating slice 2017-01-06 14:00:00 - 2017-01-06 15:00:00
+2017-01-07 12:01:49,462 DEBUG [datasource.accumulator] Creating slice 2017-01-06 15:00:00 - 2017-01-06 16:00:00
+2017-01-07 12:01:49,463 DEBUG [datasource.accumulator] Creating slice 2017-01-06 16:00:00 - 2017-01-06 17:00:00
+2017-01-07 12:01:49,463 DEBUG [datasource.accumulator] Creating slice 2017-01-06 17:00:00 - 2017-01-06 18:00:00
+2017-01-07 12:01:49,463 DEBUG [datasource.accumulator] Creating slice 2017-01-06 18:00:00 - 2017-01-06 19:00:00
+2017-01-07 12:01:49,464 DEBUG [datasource.accumulator] Creating slice 2017-01-06 19:00:00 - 2017-01-06 20:00:00
+2017-01-07 12:01:49,464 DEBUG [datasource.accumulator] Creating slice 2017-01-06 20:00:00 - 2017-01-06 21:00:00
+2017-01-07 12:01:49,464 DEBUG [datasource.accumulator] Creating slice 2017-01-06 21:00:00 - 2017-01-06 22:00:00
+2017-01-07 12:01:49,465 DEBUG [datasource.accumulator] Creating slice 2017-01-06 22:00:00 - 2017-01-06 23:00:00
+2017-01-07 12:01:49,465 DEBUG [datasource.accumulator] Creating slice 2017-01-06 23:00:00 - 2017-01-07 00:00:00
+2017-01-07 12:01:49,466 DEBUG [datasource.accumulator] Creating slice 2017-01-07 00:00:00 - 2017-01-07 01:00:00
+2017-01-07 12:01:49,466 DEBUG [datasource.accumulator] Creating slice 2017-01-07 01:00:00 - 2017-01-07 02:00:00
+2017-01-07 12:01:49,466 DEBUG [datasource.accumulator] Creating slice 2017-01-07 02:00:00 - 2017-01-07 03:00:00
+2017-01-07 12:01:49,467 DEBUG [datasource.accumulator] Creating slice 2017-01-07 03:00:00 - 2017-01-07 04:00:00
+2017-01-07 12:01:49,467 DEBUG [datasource.accumulator] Creating slice 2017-01-07 04:00:00 - 2017-01-07 05:00:00
+2017-01-07 12:01:49,467 DEBUG [datasource.accumulator] Creating slice 2017-01-07 05:00:00 - 2017-01-07 06:00:00
+2017-01-07 12:01:49,468 DEBUG [datasource.accumulator] Creating slice 2017-01-07 06:00:00 - 2017-01-07 07:00:00
+2017-01-07 12:01:49,468 DEBUG [datasource.accumulator] Creating slice 2017-01-07 07:00:00 - 2017-01-07 08:00:00
+2017-01-07 12:01:49,468 DEBUG [datasource.accumulator] Creating slice 2017-01-07 08:00:00 - 2017-01-07 09:00:00
+2017-01-07 12:01:49,469 DEBUG [datasource.accumulator] Creating slice 2017-01-07 09:00:00 - 2017-01-07 10:00:00
+2017-01-07 12:01:49,469 DEBUG [datasource.accumulator] Creating slice 2017-01-07 10:00:00 - 2017-01-07 11:00:00
+2017-01-07 12:01:49,469 DEBUG [datasource.accumulator] Creating slice 2017-01-07 11:00:00 - 2017-01-07 12:00:00
+2017-01-07 12:01:49,470 DEBUG [datasource.accumulator] Creating slice 2017-01-07 12:00:00 - 2017-01-07 13:00:00
+2017-01-07 12:01:49,470 DEBUG [datasource.accumulator] Update from 2017-01-06 13:00:00 
+2017-01-07 12:01:49,470 DEBUG [generic.service] Calling samples on <wfcommon.generic.YamlIncludeElement object at 0x7f7d991e49d0>
+2017-01-07 12:01:49,470 DEBUG [generic.include] Calling samples on <wfcommon.generic.YamlUserChoiceElement object at 0x7f7d99185c50>
+2017-01-07 12:01:49,470 DEBUG [generic.user] Calling samples on <wfcommon.storage.YamlCsvStorage object at 0x7f7d991858d0>
+2017-01-07 12:01:49,486 DEBUG [datasource.accumulator] Deleted 0 slices
+2017-01-07 12:01:49,486 DEBUG [datasource.accumulator] Last timestamp: 1969-12-31 19:30:00
+2017-01-07 12:01:49,488 DEBUG [generic.multi] Calling render on child current
+2017-01-07 12:01:49,496 DEBUG [generic.include] Calling render on <wfrender.renderer.YamlDataRenderer object at 0x7f7d988ef510>
+2017-01-07 12:01:49,496 DEBUG [generic.user] Current user:default
+2017-01-07 12:01:49,496 DEBUG [generic.user] Calling execute on <wfrender.datasource.YamlCurrentConditionsXmlDataSource object at 0x7f7d9915b910>
+2017-01-07 12:01:49,499 DEBUG [generic.multi] Calling render on child timestamp
+2017-01-07 12:01:49,499 DEBUG [renderer.value] Getting value for 'info.timestamp'
+2017-01-07 12:01:49,499 DEBUG [generic.multi] Calling render on child hum0
+2017-01-07 12:01:49,499 DEBUG [renderer.value] Getting value for 'hum0.value'
+2017-01-07 12:01:49,499 DEBUG [generic.multi] Calling render on child hum1
+2017-01-07 12:01:49,499 DEBUG [renderer.value] Getting value for 'hum1.value'
+2017-01-07 12:01:49,499 DEBUG [generic.multi] Calling render on child rain
+2017-01-07 12:01:49,499 DEBUG [renderer.value] Getting value for 'rain.value'
+2017-01-07 12:01:49,499 DEBUG [generic.multi] Calling render on child temp1
+2017-01-07 12:01:49,499 DEBUG [renderer.value] Getting value for 'temp1.value'
+2017-01-07 12:01:49,499 DEBUG [generic.multi] Calling render on child temp0
+2017-01-07 12:01:49,499 DEBUG [renderer.value] Getting value for 'temp0.value'
+2017-01-07 12:01:49,500 DEBUG [generic.multi] Calling render on child press
+2017-01-07 12:01:49,500 DEBUG [renderer.value] Getting value for 'press.value'
+2017-01-07 12:01:49,500 DEBUG [generic.multi] Calling render on child wind
+2017-01-07 12:01:49,500 DEBUG [generic.multi] Calling render on child gust
+2017-01-07 12:01:49,500 DEBUG [renderer.value] Getting value for 'wind.max'
+2017-01-07 12:01:49,500 DEBUG [generic.multi] Calling render on child speed
+2017-01-07 12:01:49,500 DEBUG [renderer.value] Getting value for 'wind.value'
+2017-01-07 12:01:49,500 DEBUG [generic.multi] Calling render on child dir
+2017-01-07 12:01:49,501 DEBUG [generic.multi] Calling render on child chart
+2017-01-07 12:01:49,536 DEBUG [generic.include] Calling render on <wfcommon.generic.YamlMultiElement object at 0x7f7d98901d10>
+2017-01-07 12:01:49,536 DEBUG [generic.multi] Calling render on child wind
+2017-01-07 12:01:49,536 DEBUG [renderer.chart] Y range: 0.0 24.0
+2017-01-07 12:01:49,537 DEBUG [generic.multi] Calling render on child wind_dir
+2017-01-07 12:01:49,537 DEBUG [generic.multi] Calling render on child temp
+2017-01-07 12:01:49,538 DEBUG [renderer.chart] Y range: 19.0 31.0
+2017-01-07 12:01:49,538 DEBUG [generic.multi] Calling render on child press
+2017-01-07 12:01:49,538 DEBUG [renderer.chart] Y range: 1014.0 1022.0
+2017-01-07 12:01:49,538 DEBUG [generic.multi] Calling render on child hum
+2017-01-07 12:01:49,539 DEBUG [renderer.chart] Y range: 56.0 96.0
+2017-01-07 12:01:49,539 DEBUG [generic.multi] Calling render on child rain_rate
+2017-01-07 12:01:49,539 DEBUG [renderer.chart] Y range: 0.0 10.0
+2017-01-07 12:01:49,539 DEBUG [generic.multi] Calling render on child rain
+2017-01-07 12:01:49,539 DEBUG [renderer.chart] Y range: 0.0 10.0
+2017-01-07 12:01:49,540 DEBUG [generic.multi] Calling render on child summary
+2017-01-07 12:01:49,540 DEBUG [renderer.template] Rendering with template /home/td/.wfrog//wfrender/config/default/../../templates/default/main.html
+2017-01-07 12:01:49,540 DEBUG [renderer.template] Compiling template /home/td/.wfrog//wfrender/config/default/../../templates/default/main.html
+2017-01-07 12:01:49,687 INFO [renderer.http] 192.168.3.60 - "GET / HTTP/1.1" 200 -
+2017-01-07 12:01:56,464 DEBUG [generic.include] Calling render on <wfrender.renderer.YamlTemplateRenderer object at 0x7f7d98901310>
+2017-01-07 12:01:56,464 DEBUG [generic.service] Calling execute on <wfcommon.generic.YamlIncludeElement object at 0x7f7d991e4a10>
+2017-01-07 12:01:56,464 DEBUG [generic.include] Calling execute on <wfrender.datasource.YamlAccumulatorDataSource object at 0x7f7d991922d0>
+2017-01-07 12:01:56,464 DEBUG [datasource.accumulator] Last timestamp: 1969-12-31 19:30:00
+2017-01-07 12:01:56,464 DEBUG [generic.service] Calling keys on <wfcommon.generic.YamlIncludeElement object at 0x7f7d991e49d0>
+2017-01-07 12:01:56,465 DEBUG [generic.include] Calling keys on <wfcommon.generic.YamlUserChoiceElement object at 0x7f7d99185c50>
+2017-01-07 12:01:56,465 DEBUG [generic.user] Calling keys on <wfcommon.storage.YamlCsvStorage object at 0x7f7d991858d0>
+2017-01-07 12:01:56,465 DEBUG [datasource.accumulator] Creating slice 2017-01-07 09:02:00 - 2017-01-07 09:03:00
+2017-01-07 12:01:56,465 DEBUG [datasource.accumulator] Creating slice 2017-01-07 09:03:00 - 2017-01-07 09:04:00
+2017-01-07 12:01:56,466 DEBUG [datasource.accumulator] Creating slice 2017-01-07 09:04:00 - 2017-01-07 09:05:00
+2017-01-07 12:01:56,466 DEBUG [datasource.accumulator] Creating slice 2017-01-07 09:05:00 - 2017-01-07 09:06:00
+2017-01-07 12:01:56,466 DEBUG [datasource.accumulator] Creating slice 2017-01-07 09:06:00 - 2017-01-07 09:07:00
+2017-01-07 12:01:56,467 DEBUG [datasource.accumulator] Creating slice 2017-01-07 09:07:00 - 2017-01-07 09:08:00
+2017-01-07 12:01:56,467 DEBUG [datasource.accumulator] Creating slice 2017-01-07 09:08:00 - 2017-01-07 09:09:00
+2017-01-07 12:01:56,467 DEBUG [datasource.accumulator] Creating slice 2017-01-07 09:09:00 - 2017-01-07 09:10:00
+2017-01-07 12:01:56,468 DEBUG [datasource.accumulator] Creating slice 2017-01-07 09:10:00 - 2017-01-07 09:11:00
+2017-01-07 12:01:56,468 DEBUG [datasource.accumulator] Creating slice 2017-01-07 09:11:00 - 2017-01-07 09:12:00
+2017-01-07 12:01:56,468 DEBUG [datasource.accumulator] Creating slice 2017-01-07 09:12:00 - 2017-01-07 09:13:00
+2017-01-07 12:01:56,469 DEBUG [datasource.accumulator] Creating slice 2017-01-07 09:13:00 - 2017-01-07 09:14:00
+2017-01-07 12:01:56,469 DEBUG [datasource.accumulator] Creating slice 2017-01-07 09:14:00 - 2017-01-07 09:15:00
+2017-01-07 12:01:56,469 DEBUG [datasource.accumulator] Creating slice 2017-01-07 09:15:00 - 2017-01-07 09:16:00
+2017-01-07 12:01:56,470 DEBUG [datasource.accumulator] Creating slice 2017-01-07 09:16:00 - 2017-01-07 09:17:00
+2017-01-07 12:01:56,471 DEBUG [datasource.accumulator] Creating slice 2017-01-07 09:17:00 - 2017-01-07 09:18:00
+2017-01-07 12:01:56,471 DEBUG [datasource.accumulator] Creating slice 2017-01-07 09:18:00 - 2017-01-07 09:19:00
+2017-01-07 12:01:56,471 DEBUG [datasource.accumulator] Creating slice 2017-01-07 09:19:00 - 2017-01-07 09:20:00
+2017-01-07 12:01:56,472 DEBUG [datasource.accumulator] Creating slice 2017-01-07 09:20:00 - 2017-01-07 09:21:00
+2017-01-07 12:01:56,472 DEBUG [datasource.accumulator] Creating slice 2017-01-07 09:21:00 - 2017-01-07 09:22:00
+2017-01-07 12:01:56,473 DEBUG [datasource.accumulator] Creating slice 2017-01-07 09:22:00 - 2017-01-07 09:23:00
+2017-01-07 12:01:56,473 DEBUG [datasource.accumulator] Creating slice 2017-01-07 09:23:00 - 2017-01-07 09:24:00
+2017-01-07 12:01:56,473 DEBUG [datasource.accumulator] Creating slice 2017-01-07 09:24:00 - 2017-01-07 09:25:00
+2017-01-07 12:01:56,474 DEBUG [datasource.accumulator] Creating slice 2017-01-07 09:25:00 - 2017-01-07 09:26:00
+2017-01-07 12:01:56,474 DEBUG [datasource.accumulator] Creating slice 2017-01-07 09:26:00 - 2017-01-07 09:27:00
+2017-01-07 12:01:56,474 DEBUG [datasource.accumulator] Creating slice 2017-01-07 09:27:00 - 2017-01-07 09:28:00
+2017-01-07 12:01:56,475 DEBUG [datasource.accumulator] Creating slice 2017-01-07 09:28:00 - 2017-01-07 09:29:00
+2017-01-07 12:01:56,475 DEBUG [datasource.accumulator] Creating slice 2017-01-07 09:29:00 - 2017-01-07 09:30:00
+2017-01-07 12:01:56,475 DEBUG [datasource.accumulator] Creating slice 2017-01-07 09:30:00 - 2017-01-07 09:31:00
+2017-01-07 12:01:56,476 DEBUG [datasource.accumulator] Creating slice 2017-01-07 09:31:00 - 2017-01-07 09:32:00
+2017-01-07 12:01:56,476 DEBUG [datasource.accumulator] Creating slice 2017-01-07 09:32:00 - 2017-01-07 09:33:00
+2017-01-07 12:01:56,476 DEBUG [datasource.accumulator] Creating slice 2017-01-07 09:33:00 - 2017-01-07 09:34:00
+2017-01-07 12:01:56,477 DEBUG [datasource.accumulator] Creating slice 2017-01-07 09:34:00 - 2017-01-07 09:35:00
+2017-01-07 12:01:56,477 DEBUG [datasource.accumulator] Creating slice 2017-01-07 09:35:00 - 2017-01-07 09:36:00
+2017-01-07 12:01:56,477 DEBUG [datasource.accumulator] Creating slice 2017-01-07 09:36:00 - 2017-01-07 09:37:00
+2017-01-07 12:01:56,478 DEBUG [datasource.accumulator] Creating slice 2017-01-07 09:37:00 - 2017-01-07 09:38:00
+2017-01-07 12:01:56,478 DEBUG [datasource.accumulator] Creating slice 2017-01-07 09:38:00 - 2017-01-07 09:39:00
+2017-01-07 12:01:56,478 DEBUG [datasource.accumulator] Creating slice 2017-01-07 09:39:00 - 2017-01-07 09:40:00
+2017-01-07 12:01:56,479 DEBUG [datasource.accumulator] Creating slice 2017-01-07 09:40:00 - 2017-01-07 09:41:00
+2017-01-07 12:01:56,479 DEBUG [datasource.accumulator] Creating slice 2017-01-07 09:41:00 - 2017-01-07 09:42:00
+2017-01-07 12:01:56,479 DEBUG [datasource.accumulator] Creating slice 2017-01-07 09:42:00 - 2017-01-07 09:43:00
+2017-01-07 12:01:56,480 DEBUG [datasource.accumulator] Creating slice 2017-01-07 09:43:00 - 2017-01-07 09:44:00
+2017-01-07 12:01:56,480 DEBUG [datasource.accumulator] Creating slice 2017-01-07 09:44:00 - 2017-01-07 09:45:00
+2017-01-07 12:01:56,480 DEBUG [datasource.accumulator] Creating slice 2017-01-07 09:45:00 - 2017-01-07 09:46:00
+2017-01-07 12:01:56,481 DEBUG [datasource.accumulator] Creating slice 2017-01-07 09:46:00 - 2017-01-07 09:47:00
+2017-01-07 12:01:56,481 DEBUG [datasource.accumulator] Creating slice 2017-01-07 09:47:00 - 2017-01-07 09:48:00
+2017-01-07 12:01:56,481 DEBUG [datasource.accumulator] Creating slice 2017-01-07 09:48:00 - 2017-01-07 09:49:00
+2017-01-07 12:01:56,482 DEBUG [datasource.accumulator] Creating slice 2017-01-07 09:49:00 - 2017-01-07 09:50:00
+2017-01-07 12:01:56,482 DEBUG [datasource.accumulator] Creating slice 2017-01-07 09:50:00 - 2017-01-07 09:51:00
+2017-01-07 12:01:56,483 DEBUG [datasource.accumulator] Creating slice 2017-01-07 09:51:00 - 2017-01-07 09:52:00
+2017-01-07 12:01:56,483 DEBUG [datasource.accumulator] Creating slice 2017-01-07 09:52:00 - 2017-01-07 09:53:00
+2017-01-07 12:01:56,483 DEBUG [datasource.accumulator] Creating slice 2017-01-07 09:53:00 - 2017-01-07 09:54:00
+2017-01-07 12:01:56,484 DEBUG [datasource.accumulator] Creating slice 2017-01-07 09:54:00 - 2017-01-07 09:55:00
+2017-01-07 12:01:56,484 DEBUG [datasource.accumulator] Creating slice 2017-01-07 09:55:00 - 2017-01-07 09:56:00
+2017-01-07 12:01:56,484 DEBUG [datasource.accumulator] Creating slice 2017-01-07 09:56:00 - 2017-01-07 09:57:00
+2017-01-07 12:01:56,485 DEBUG [datasource.accumulator] Creating slice 2017-01-07 09:57:00 - 2017-01-07 09:58:00
+2017-01-07 12:01:56,485 DEBUG [datasource.accumulator] Creating slice 2017-01-07 09:58:00 - 2017-01-07 09:59:00
+2017-01-07 12:01:56,485 DEBUG [datasource.accumulator] Creating slice 2017-01-07 09:59:00 - 2017-01-07 10:00:00
+2017-01-07 12:01:56,486 DEBUG [datasource.accumulator] Creating slice 2017-01-07 10:00:00 - 2017-01-07 10:01:00
+2017-01-07 12:01:56,486 DEBUG [datasource.accumulator] Creating slice 2017-01-07 10:01:00 - 2017-01-07 10:02:00
+2017-01-07 12:01:56,486 DEBUG [datasource.accumulator] Creating slice 2017-01-07 10:02:00 - 2017-01-07 10:03:00
+2017-01-07 12:01:56,487 DEBUG [datasource.accumulator] Creating slice 2017-01-07 10:03:00 - 2017-01-07 10:04:00
+2017-01-07 12:01:56,487 DEBUG [datasource.accumulator] Creating slice 2017-01-07 10:04:00 - 2017-01-07 10:05:00
+2017-01-07 12:01:56,487 DEBUG [datasource.accumulator] Creating slice 2017-01-07 10:05:00 - 2017-01-07 10:06:00
+2017-01-07 12:01:56,488 DEBUG [datasource.accumulator] Creating slice 2017-01-07 10:06:00 - 2017-01-07 10:07:00
+2017-01-07 12:01:56,488 DEBUG [datasource.accumulator] Creating slice 2017-01-07 10:07:00 - 2017-01-07 10:08:00
+2017-01-07 12:01:56,488 DEBUG [datasource.accumulator] Creating slice 2017-01-07 10:08:00 - 2017-01-07 10:09:00
+2017-01-07 12:01:56,489 DEBUG [datasource.accumulator] Creating slice 2017-01-07 10:09:00 - 2017-01-07 10:10:00
+2017-01-07 12:01:56,489 DEBUG [datasource.accumulator] Creating slice 2017-01-07 10:10:00 - 2017-01-07 10:11:00
+2017-01-07 12:01:56,489 DEBUG [datasource.accumulator] Creating slice 2017-01-07 10:11:00 - 2017-01-07 10:12:00
+2017-01-07 12:01:56,490 DEBUG [datasource.accumulator] Creating slice 2017-01-07 10:12:00 - 2017-01-07 10:13:00
+2017-01-07 12:01:56,490 DEBUG [datasource.accumulator] Creating slice 2017-01-07 10:13:00 - 2017-01-07 10:14:00
+2017-01-07 12:01:56,491 DEBUG [datasource.accumulator] Creating slice 2017-01-07 10:14:00 - 2017-01-07 10:15:00
+2017-01-07 12:01:56,491 DEBUG [datasource.accumulator] Creating slice 2017-01-07 10:15:00 - 2017-01-07 10:16:00
+2017-01-07 12:01:56,491 DEBUG [datasource.accumulator] Creating slice 2017-01-07 10:16:00 - 2017-01-07 10:17:00
+2017-01-07 12:01:56,492 DEBUG [datasource.accumulator] Creating slice 2017-01-07 10:17:00 - 2017-01-07 10:18:00
+2017-01-07 12:01:56,492 DEBUG [datasource.accumulator] Creating slice 2017-01-07 10:18:00 - 2017-01-07 10:19:00
+2017-01-07 12:01:56,492 DEBUG [datasource.accumulator] Creating slice 2017-01-07 10:19:00 - 2017-01-07 10:20:00
+2017-01-07 12:01:56,493 DEBUG [datasource.accumulator] Creating slice 2017-01-07 10:20:00 - 2017-01-07 10:21:00
+2017-01-07 12:01:56,493 DEBUG [datasource.accumulator] Creating slice 2017-01-07 10:21:00 - 2017-01-07 10:22:00
+2017-01-07 12:01:56,493 DEBUG [datasource.accumulator] Creating slice 2017-01-07 10:22:00 - 2017-01-07 10:23:00
+2017-01-07 12:01:56,494 DEBUG [datasource.accumulator] Creating slice 2017-01-07 10:23:00 - 2017-01-07 10:24:00
+2017-01-07 12:01:56,494 DEBUG [datasource.accumulator] Creating slice 2017-01-07 10:24:00 - 2017-01-07 10:25:00
+2017-01-07 12:01:56,494 DEBUG [datasource.accumulator] Creating slice 2017-01-07 10:25:00 - 2017-01-07 10:26:00
+2017-01-07 12:01:56,495 DEBUG [datasource.accumulator] Creating slice 2017-01-07 10:26:00 - 2017-01-07 10:27:00
+2017-01-07 12:01:56,495 DEBUG [datasource.accumulator] Creating slice 2017-01-07 10:27:00 - 2017-01-07 10:28:00
+2017-01-07 12:01:56,495 DEBUG [datasource.accumulator] Creating slice 2017-01-07 10:28:00 - 2017-01-07 10:29:00
+2017-01-07 12:01:56,496 DEBUG [datasource.accumulator] Creating slice 2017-01-07 10:29:00 - 2017-01-07 10:30:00
+2017-01-07 12:01:56,496 DEBUG [datasource.accumulator] Creating slice 2017-01-07 10:30:00 - 2017-01-07 10:31:00
+2017-01-07 12:01:56,496 DEBUG [datasource.accumulator] Creating slice 2017-01-07 10:31:00 - 2017-01-07 10:32:00
+2017-01-07 12:01:56,497 DEBUG [datasource.accumulator] Creating slice 2017-01-07 10:32:00 - 2017-01-07 10:33:00
+2017-01-07 12:01:56,497 DEBUG [datasource.accumulator] Creating slice 2017-01-07 10:33:00 - 2017-01-07 10:34:00
+2017-01-07 12:01:56,497 DEBUG [datasource.accumulator] Creating slice 2017-01-07 10:34:00 - 2017-01-07 10:35:00
+2017-01-07 12:01:56,498 DEBUG [datasource.accumulator] Creating slice 2017-01-07 10:35:00 - 2017-01-07 10:36:00
+2017-01-07 12:01:56,498 DEBUG [datasource.accumulator] Creating slice 2017-01-07 10:36:00 - 2017-01-07 10:37:00
+2017-01-07 12:01:56,499 DEBUG [datasource.accumulator] Creating slice 2017-01-07 10:37:00 - 2017-01-07 10:38:00
+2017-01-07 12:01:56,499 DEBUG [datasource.accumulator] Creating slice 2017-01-07 10:38:00 - 2017-01-07 10:39:00
+2017-01-07 12:01:56,499 DEBUG [datasource.accumulator] Creating slice 2017-01-07 10:39:00 - 2017-01-07 10:40:00
+2017-01-07 12:01:56,500 DEBUG [datasource.accumulator] Creating slice 2017-01-07 10:40:00 - 2017-01-07 10:41:00
+2017-01-07 12:01:56,500 DEBUG [datasource.accumulator] Creating slice 2017-01-07 10:41:00 - 2017-01-07 10:42:00
+2017-01-07 12:01:56,500 DEBUG [datasource.accumulator] Creating slice 2017-01-07 10:42:00 - 2017-01-07 10:43:00
+2017-01-07 12:01:56,501 DEBUG [datasource.accumulator] Creating slice 2017-01-07 10:43:00 - 2017-01-07 10:44:00
+2017-01-07 12:01:56,501 DEBUG [datasource.accumulator] Creating slice 2017-01-07 10:44:00 - 2017-01-07 10:45:00
+2017-01-07 12:01:56,501 DEBUG [datasource.accumulator] Creating slice 2017-01-07 10:45:00 - 2017-01-07 10:46:00
+2017-01-07 12:01:56,502 DEBUG [datasource.accumulator] Creating slice 2017-01-07 10:46:00 - 2017-01-07 10:47:00
+2017-01-07 12:01:56,502 DEBUG [datasource.accumulator] Creating slice 2017-01-07 10:47:00 - 2017-01-07 10:48:00
+2017-01-07 12:01:56,502 DEBUG [datasource.accumulator] Creating slice 2017-01-07 10:48:00 - 2017-01-07 10:49:00
+2017-01-07 12:01:56,503 DEBUG [datasource.accumulator] Creating slice 2017-01-07 10:49:00 - 2017-01-07 10:50:00
+2017-01-07 12:01:56,503 DEBUG [datasource.accumulator] Creating slice 2017-01-07 10:50:00 - 2017-01-07 10:51:00
+2017-01-07 12:01:56,503 DEBUG [datasource.accumulator] Creating slice 2017-01-07 10:51:00 - 2017-01-07 10:52:00
+2017-01-07 12:01:56,504 DEBUG [datasource.accumulator] Creating slice 2017-01-07 10:52:00 - 2017-01-07 10:53:00
+2017-01-07 12:01:56,504 DEBUG [datasource.accumulator] Creating slice 2017-01-07 10:53:00 - 2017-01-07 10:54:00
+2017-01-07 12:01:56,504 DEBUG [datasource.accumulator] Creating slice 2017-01-07 10:54:00 - 2017-01-07 10:55:00
+2017-01-07 12:01:56,505 DEBUG [datasource.accumulator] Creating slice 2017-01-07 10:55:00 - 2017-01-07 10:56:00
+2017-01-07 12:01:56,505 DEBUG [datasource.accumulator] Creating slice 2017-01-07 10:56:00 - 2017-01-07 10:57:00
+2017-01-07 12:01:56,505 DEBUG [datasource.accumulator] Creating slice 2017-01-07 10:57:00 - 2017-01-07 10:58:00
+2017-01-07 12:01:56,506 DEBUG [datasource.accumulator] Creating slice 2017-01-07 10:58:00 - 2017-01-07 10:59:00
+2017-01-07 12:01:56,506 DEBUG [datasource.accumulator] Creating slice 2017-01-07 10:59:00 - 2017-01-07 11:00:00
+2017-01-07 12:01:56,507 DEBUG [datasource.accumulator] Creating slice 2017-01-07 11:00:00 - 2017-01-07 11:01:00
+2017-01-07 12:01:56,507 DEBUG [datasource.accumulator] Creating slice 2017-01-07 11:01:00 - 2017-01-07 11:02:00
+2017-01-07 12:01:56,507 DEBUG [datasource.accumulator] Creating slice 2017-01-07 11:02:00 - 2017-01-07 11:03:00
+2017-01-07 12:01:56,508 DEBUG [datasource.accumulator] Creating slice 2017-01-07 11:03:00 - 2017-01-07 11:04:00
+2017-01-07 12:01:56,508 DEBUG [datasource.accumulator] Creating slice 2017-01-07 11:04:00 - 2017-01-07 11:05:00
+2017-01-07 12:01:56,508 DEBUG [datasource.accumulator] Creating slice 2017-01-07 11:05:00 - 2017-01-07 11:06:00
+2017-01-07 12:01:56,509 DEBUG [datasource.accumulator] Creating slice 2017-01-07 11:06:00 - 2017-01-07 11:07:00
+2017-01-07 12:01:56,509 DEBUG [datasource.accumulator] Creating slice 2017-01-07 11:07:00 - 2017-01-07 11:08:00
+2017-01-07 12:01:56,509 DEBUG [datasource.accumulator] Creating slice 2017-01-07 11:08:00 - 2017-01-07 11:09:00
+2017-01-07 12:01:56,510 DEBUG [datasource.accumulator] Creating slice 2017-01-07 11:09:00 - 2017-01-07 11:10:00
+2017-01-07 12:01:56,510 DEBUG [datasource.accumulator] Creating slice 2017-01-07 11:10:00 - 2017-01-07 11:11:00
+2017-01-07 12:01:56,511 DEBUG [datasource.accumulator] Creating slice 2017-01-07 11:11:00 - 2017-01-07 11:12:00
+2017-01-07 12:01:56,511 DEBUG [datasource.accumulator] Creating slice 2017-01-07 11:12:00 - 2017-01-07 11:13:00
+2017-01-07 12:01:56,511 DEBUG [datasource.accumulator] Creating slice 2017-01-07 11:13:00 - 2017-01-07 11:14:00
+2017-01-07 12:01:56,512 DEBUG [datasource.accumulator] Creating slice 2017-01-07 11:14:00 - 2017-01-07 11:15:00
+2017-01-07 12:01:56,512 DEBUG [datasource.accumulator] Creating slice 2017-01-07 11:15:00 - 2017-01-07 11:16:00
+2017-01-07 12:01:56,512 DEBUG [datasource.accumulator] Creating slice 2017-01-07 11:16:00 - 2017-01-07 11:17:00
+2017-01-07 12:01:56,513 DEBUG [datasource.accumulator] Creating slice 2017-01-07 11:17:00 - 2017-01-07 11:18:00
+2017-01-07 12:01:56,513 DEBUG [datasource.accumulator] Creating slice 2017-01-07 11:18:00 - 2017-01-07 11:19:00
+2017-01-07 12:01:56,513 DEBUG [datasource.accumulator] Creating slice 2017-01-07 11:19:00 - 2017-01-07 11:20:00
+2017-01-07 12:01:56,514 DEBUG [datasource.accumulator] Creating slice 2017-01-07 11:20:00 - 2017-01-07 11:21:00
+2017-01-07 12:01:56,514 DEBUG [datasource.accumulator] Creating slice 2017-01-07 11:21:00 - 2017-01-07 11:22:00
+2017-01-07 12:01:56,514 DEBUG [datasource.accumulator] Creating slice 2017-01-07 11:22:00 - 2017-01-07 11:23:00
+2017-01-07 12:01:56,515 DEBUG [datasource.accumulator] Creating slice 2017-01-07 11:23:00 - 2017-01-07 11:24:00
+2017-01-07 12:01:56,515 DEBUG [datasource.accumulator] Creating slice 2017-01-07 11:24:00 - 2017-01-07 11:25:00
+2017-01-07 12:01:56,515 DEBUG [datasource.accumulator] Creating slice 2017-01-07 11:25:00 - 2017-01-07 11:26:00
+2017-01-07 12:01:56,516 DEBUG [datasource.accumulator] Creating slice 2017-01-07 11:26:00 - 2017-01-07 11:27:00
+2017-01-07 12:01:56,516 DEBUG [datasource.accumulator] Creating slice 2017-01-07 11:27:00 - 2017-01-07 11:28:00
+2017-01-07 12:01:56,516 DEBUG [datasource.accumulator] Creating slice 2017-01-07 11:28:00 - 2017-01-07 11:29:00
+2017-01-07 12:01:56,517 DEBUG [datasource.accumulator] Creating slice 2017-01-07 11:29:00 - 2017-01-07 11:30:00
+2017-01-07 12:01:56,517 DEBUG [datasource.accumulator] Creating slice 2017-01-07 11:30:00 - 2017-01-07 11:31:00
+2017-01-07 12:01:56,517 DEBUG [datasource.accumulator] Creating slice 2017-01-07 11:31:00 - 2017-01-07 11:32:00
+2017-01-07 12:01:56,518 DEBUG [datasource.accumulator] Creating slice 2017-01-07 11:32:00 - 2017-01-07 11:33:00
+2017-01-07 12:01:56,518 DEBUG [datasource.accumulator] Creating slice 2017-01-07 11:33:00 - 2017-01-07 11:34:00
+2017-01-07 12:01:56,519 DEBUG [datasource.accumulator] Creating slice 2017-01-07 11:34:00 - 2017-01-07 11:35:00
+2017-01-07 12:01:56,519 DEBUG [datasource.accumulator] Creating slice 2017-01-07 11:35:00 - 2017-01-07 11:36:00
+2017-01-07 12:01:56,519 DEBUG [datasource.accumulator] Creating slice 2017-01-07 11:36:00 - 2017-01-07 11:37:00
+2017-01-07 12:01:56,520 DEBUG [datasource.accumulator] Creating slice 2017-01-07 11:37:00 - 2017-01-07 11:38:00
+2017-01-07 12:01:56,520 DEBUG [datasource.accumulator] Creating slice 2017-01-07 11:38:00 - 2017-01-07 11:39:00
+2017-01-07 12:01:56,520 DEBUG [datasource.accumulator] Creating slice 2017-01-07 11:39:00 - 2017-01-07 11:40:00
+2017-01-07 12:01:56,521 DEBUG [datasource.accumulator] Creating slice 2017-01-07 11:40:00 - 2017-01-07 11:41:00
+2017-01-07 12:01:56,521 DEBUG [datasource.accumulator] Creating slice 2017-01-07 11:41:00 - 2017-01-07 11:42:00
+2017-01-07 12:01:56,521 DEBUG [datasource.accumulator] Creating slice 2017-01-07 11:42:00 - 2017-01-07 11:43:00
+2017-01-07 12:01:56,522 DEBUG [datasource.accumulator] Creating slice 2017-01-07 11:43:00 - 2017-01-07 11:44:00
+2017-01-07 12:01:56,522 DEBUG [datasource.accumulator] Creating slice 2017-01-07 11:44:00 - 2017-01-07 11:45:00
+2017-01-07 12:01:56,523 DEBUG [datasource.accumulator] Creating slice 2017-01-07 11:45:00 - 2017-01-07 11:46:00
+2017-01-07 12:01:56,523 DEBUG [datasource.accumulator] Creating slice 2017-01-07 11:46:00 - 2017-01-07 11:47:00
+2017-01-07 12:01:56,523 DEBUG [datasource.accumulator] Creating slice 2017-01-07 11:47:00 - 2017-01-07 11:48:00
+2017-01-07 12:01:56,524 DEBUG [datasource.accumulator] Creating slice 2017-01-07 11:48:00 - 2017-01-07 11:49:00
+2017-01-07 12:01:56,524 DEBUG [datasource.accumulator] Creating slice 2017-01-07 11:49:00 - 2017-01-07 11:50:00
+2017-01-07 12:01:56,524 DEBUG [datasource.accumulator] Creating slice 2017-01-07 11:50:00 - 2017-01-07 11:51:00
+2017-01-07 12:01:56,525 DEBUG [datasource.accumulator] Creating slice 2017-01-07 11:51:00 - 2017-01-07 11:52:00
+2017-01-07 12:01:56,525 DEBUG [datasource.accumulator] Creating slice 2017-01-07 11:52:00 - 2017-01-07 11:53:00
+2017-01-07 12:01:56,525 DEBUG [datasource.accumulator] Creating slice 2017-01-07 11:53:00 - 2017-01-07 11:54:00
+2017-01-07 12:01:56,526 DEBUG [datasource.accumulator] Creating slice 2017-01-07 11:54:00 - 2017-01-07 11:55:00
+2017-01-07 12:01:56,526 DEBUG [datasource.accumulator] Creating slice 2017-01-07 11:55:00 - 2017-01-07 11:56:00
+2017-01-07 12:01:56,526 DEBUG [datasource.accumulator] Creating slice 2017-01-07 11:56:00 - 2017-01-07 11:57:00
+2017-01-07 12:01:56,527 DEBUG [datasource.accumulator] Creating slice 2017-01-07 11:57:00 - 2017-01-07 11:58:00
+2017-01-07 12:01:56,527 DEBUG [datasource.accumulator] Creating slice 2017-01-07 11:58:00 - 2017-01-07 11:59:00
+2017-01-07 12:01:56,527 DEBUG [datasource.accumulator] Creating slice 2017-01-07 11:59:00 - 2017-01-07 12:00:00
+2017-01-07 12:01:56,528 DEBUG [datasource.accumulator] Creating slice 2017-01-07 12:00:00 - 2017-01-07 12:01:00
+2017-01-07 12:01:56,528 DEBUG [datasource.accumulator] Creating slice 2017-01-07 12:01:00 - 2017-01-07 12:02:00
+2017-01-07 12:01:56,528 DEBUG [datasource.accumulator] Update from 2017-01-07 09:02:00 
+2017-01-07 12:01:56,529 DEBUG [generic.service] Calling samples on <wfcommon.generic.YamlIncludeElement object at 0x7f7d991e49d0>
+2017-01-07 12:01:56,529 DEBUG [generic.include] Calling samples on <wfcommon.generic.YamlUserChoiceElement object at 0x7f7d99185c50>
+2017-01-07 12:01:56,529 DEBUG [generic.user] Calling samples on <wfcommon.storage.YamlCsvStorage object at 0x7f7d991858d0>
+2017-01-07 12:01:56,533 DEBUG [datasource.accumulator] Deleted 0 slices
+2017-01-07 12:01:56,533 DEBUG [datasource.accumulator] Last timestamp: 1969-12-31 19:30:00
+2017-01-07 12:01:56,547 DEBUG [generic.multi] Calling render on child current
+2017-01-07 12:01:56,555 DEBUG [generic.include] Calling render on <wfrender.renderer.YamlDataRenderer object at 0x7f7d988256d0>
+2017-01-07 12:01:56,555 DEBUG [generic.user] Current user:default
+2017-01-07 12:01:56,555 DEBUG [generic.user] Calling execute on <wfrender.datasource.YamlCurrentConditionsXmlDataSource object at 0x7f7d987e0b50>
+2017-01-07 12:01:56,555 DEBUG [generic.multi] Calling render on child timestamp
+2017-01-07 12:01:56,556 DEBUG [renderer.value] Getting value for 'info.timestamp'
+2017-01-07 12:01:56,556 DEBUG [generic.multi] Calling render on child hum0
+2017-01-07 12:01:56,556 DEBUG [renderer.value] Getting value for 'hum0.value'
+2017-01-07 12:01:56,556 DEBUG [generic.multi] Calling render on child hum1
+2017-01-07 12:01:56,556 DEBUG [renderer.value] Getting value for 'hum1.value'
+2017-01-07 12:01:56,556 DEBUG [generic.multi] Calling render on child rain
+2017-01-07 12:01:56,556 DEBUG [renderer.value] Getting value for 'rain.value'
+2017-01-07 12:01:56,556 DEBUG [generic.multi] Calling render on child temp1
+2017-01-07 12:01:56,556 DEBUG [renderer.value] Getting value for 'temp1.value'
+2017-01-07 12:01:56,556 DEBUG [generic.multi] Calling render on child temp0
+2017-01-07 12:01:56,556 DEBUG [renderer.value] Getting value for 'temp0.value'
+2017-01-07 12:01:56,556 DEBUG [generic.multi] Calling render on child press
+2017-01-07 12:01:56,556 DEBUG [renderer.value] Getting value for 'press.value'
+2017-01-07 12:01:56,556 DEBUG [generic.multi] Calling render on child wind
+2017-01-07 12:01:56,556 DEBUG [generic.multi] Calling render on child gust
+2017-01-07 12:01:56,556 DEBUG [renderer.value] Getting value for 'wind.max'
+2017-01-07 12:01:56,557 DEBUG [generic.multi] Calling render on child speed
+2017-01-07 12:01:56,557 DEBUG [renderer.value] Getting value for 'wind.value'
+2017-01-07 12:01:56,557 DEBUG [generic.multi] Calling render on child dir
+2017-01-07 12:01:56,558 DEBUG [generic.multi] Calling render on child chart
+2017-01-07 12:01:56,593 DEBUG [generic.include] Calling render on <wfcommon.generic.YamlMultiElement object at 0x7f7d98726950>
+2017-01-07 12:01:56,593 DEBUG [generic.multi] Calling render on child wind
+2017-01-07 12:01:56,593 DEBUG [renderer.chart] Y range: 0.0 15.0
+2017-01-07 12:01:56,594 DEBUG [generic.multi] Calling render on child wind_dir
+2017-01-07 12:01:56,595 DEBUG [generic.multi] Calling render on child temp
+2017-01-07 12:01:56,596 DEBUG [renderer.chart] Y range: 19.0 31.0
+2017-01-07 12:01:56,597 DEBUG [generic.multi] Calling render on child press
+2017-01-07 12:01:56,597 DEBUG [renderer.chart] Y range: 1017.0 1022.0
+2017-01-07 12:01:56,598 DEBUG [generic.multi] Calling render on child hum
+2017-01-07 12:01:56,598 DEBUG [renderer.chart] Y range: 50.0 81.0
+2017-01-07 12:01:56,598 DEBUG [generic.multi] Calling render on child rain_rate
+2017-01-07 12:01:56,598 DEBUG [renderer.chart] Y range: 0.0 10.0
+2017-01-07 12:01:56,599 DEBUG [generic.multi] Calling render on child rain
+2017-01-07 12:01:56,599 DEBUG [renderer.chart] Y range: 0.0 10.0
+2017-01-07 12:01:56,600 DEBUG [generic.multi] Calling render on child summary
+2017-01-07 12:01:56,604 DEBUG [renderer.template] Rendering with template /home/td/.wfrog//wfrender/config/default/../../templates/default/main.html
+2017-01-07 12:01:56,604 DEBUG [renderer.template] Compiling template /home/td/.wfrog//wfrender/config/default/../../templates/default/main.html
+2017-01-07 12:01:56,758 INFO [renderer.http] 192.168.3.60 - "GET /3hours.html HTTP/1.1" 200 -
+2017-01-07 12:01:56,759 INFO [renderer.http] 192.168.3.60 - code 404, message File Not Found: '/images/gricon.png'
+2017-01-07 12:01:56,759 INFO [renderer.http] 192.168.3.60 - "GET /images/gricon.png HTTP/1.1" 404 -
+2017-01-07 12:01:56,759 INFO [renderer.http] 192.168.3.60 - code 404, message File Not Found: '/images/sdown-666666.png'
+2017-01-07 12:01:56,760 INFO [renderer.http] 192.168.3.60 - "GET /images/sdown-666666.png HTTP/1.1" 404 -
+2017-01-07 12:01:57,814 INFO [renderer.http] 192.168.3.60 - code 404, message File Not Found: '/images/sdown-666666.png'
+2017-01-07 12:01:57,814 INFO [renderer.http] 192.168.3.60 - "GET /images/sdown-666666.png HTTP/1.1" 404 -
+2017-01-07 12:01:57,815 INFO [renderer.http] 192.168.3.60 - code 404, message File Not Found: '/images/gricon.png'
+2017-01-07 12:01:57,815 INFO [renderer.http] 192.168.3.60 - "GET /images/gricon.png HTTP/1.1" 404 -
+2017-01-07 12:02:23,167 DEBUG [generic.include] Calling render on <wfrender.renderer.YamlTemplateRenderer object at 0x7f7d98726a50>
+2017-01-07 12:02:23,167 DEBUG [generic.service] Calling execute on <wfcommon.generic.YamlIncludeElement object at 0x7f7d991e4a50>
+2017-01-07 12:02:23,167 DEBUG [generic.include] Calling execute on <wfrender.datasource.YamlAccumulatorDataSource object at 0x7f7d99177050>
+2017-01-07 12:02:23,167 DEBUG [datasource.accumulator] Last timestamp: 2017-01-07 11:59:35
+2017-01-07 12:02:23,167 DEBUG [generic.service] Calling keys on <wfcommon.generic.YamlIncludeElement object at 0x7f7d991e49d0>
+2017-01-07 12:02:23,167 DEBUG [generic.include] Calling keys on <wfcommon.generic.YamlUserChoiceElement object at 0x7f7d99185c50>
+2017-01-07 12:02:23,168 DEBUG [generic.user] Calling keys on <wfcommon.storage.YamlCsvStorage object at 0x7f7d991858d0>
+2017-01-07 12:02:23,168 DEBUG [datasource.accumulator] Update from 2017-01-07 11:59:36 
+2017-01-07 12:02:23,168 DEBUG [generic.service] Calling samples on <wfcommon.generic.YamlIncludeElement object at 0x7f7d991e49d0>
+2017-01-07 12:02:23,168 DEBUG [generic.include] Calling samples on <wfcommon.generic.YamlUserChoiceElement object at 0x7f7d99185c50>
+2017-01-07 12:02:23,168 DEBUG [generic.user] Calling samples on <wfcommon.storage.YamlCsvStorage object at 0x7f7d991858d0>
+2017-01-07 12:02:23,168 DEBUG [datasource.accumulator] Deleted 0 slices
+2017-01-07 12:02:23,169 DEBUG [datasource.accumulator] Last timestamp: 2017-01-07 11:59:35
+2017-01-07 12:02:23,173 DEBUG [generic.multi] Calling render on child current
+2017-01-07 12:02:23,187 DEBUG [generic.include] Calling render on <wfrender.renderer.YamlDataRenderer object at 0x7f7d9874e590>
+2017-01-07 12:02:23,187 DEBUG [generic.user] Current user:default
+2017-01-07 12:02:23,187 DEBUG [generic.user] Calling execute on <wfrender.datasource.YamlCurrentConditionsXmlDataSource object at 0x7f7d983152d0>
+2017-01-07 12:02:23,188 DEBUG [generic.multi] Calling render on child timestamp
+2017-01-07 12:02:23,188 DEBUG [renderer.value] Getting value for 'info.timestamp'
+2017-01-07 12:02:23,188 DEBUG [generic.multi] Calling render on child hum0
+2017-01-07 12:02:23,188 DEBUG [renderer.value] Getting value for 'hum0.value'
+2017-01-07 12:02:23,189 DEBUG [generic.multi] Calling render on child hum1
+2017-01-07 12:02:23,189 DEBUG [renderer.value] Getting value for 'hum1.value'
+2017-01-07 12:02:23,189 DEBUG [generic.multi] Calling render on child rain
+2017-01-07 12:02:23,189 DEBUG [renderer.value] Getting value for 'rain.value'
+2017-01-07 12:02:23,189 DEBUG [generic.multi] Calling render on child temp1
+2017-01-07 12:02:23,189 DEBUG [renderer.value] Getting value for 'temp1.value'
+2017-01-07 12:02:23,189 DEBUG [generic.multi] Calling render on child temp0
+2017-01-07 12:02:23,189 DEBUG [renderer.value] Getting value for 'temp0.value'
+2017-01-07 12:02:23,189 DEBUG [generic.multi] Calling render on child press
+2017-01-07 12:02:23,190 DEBUG [renderer.value] Getting value for 'press.value'
+2017-01-07 12:02:23,190 DEBUG [generic.multi] Calling render on child wind
+2017-01-07 12:02:23,190 DEBUG [generic.multi] Calling render on child gust
+2017-01-07 12:02:23,190 DEBUG [renderer.value] Getting value for 'wind.max'
+2017-01-07 12:02:23,190 DEBUG [generic.multi] Calling render on child speed
+2017-01-07 12:02:23,190 DEBUG [renderer.value] Getting value for 'wind.value'
+2017-01-07 12:02:23,190 DEBUG [generic.multi] Calling render on child dir
+2017-01-07 12:02:23,191 DEBUG [generic.multi] Calling render on child chart
+2017-01-07 12:02:23,233 DEBUG [generic.include] Calling render on <wfcommon.generic.YamlMultiElement object at 0x7f7d98317650>
+2017-01-07 12:02:23,233 DEBUG [generic.multi] Calling render on child wind
+2017-01-07 12:02:23,233 DEBUG [renderer.chart] Y range: 0.0 24.0
+2017-01-07 12:02:23,234 DEBUG [generic.multi] Calling render on child wind_dir
+2017-01-07 12:02:23,234 DEBUG [generic.multi] Calling render on child temp
+2017-01-07 12:02:23,234 DEBUG [renderer.chart] Y range: 19.0 31.0
+2017-01-07 12:02:23,235 DEBUG [generic.multi] Calling render on child press
+2017-01-07 12:02:23,235 DEBUG [renderer.chart] Y range: 1014.0 1022.0
+2017-01-07 12:02:23,235 DEBUG [generic.multi] Calling render on child hum
+2017-01-07 12:02:23,235 DEBUG [renderer.chart] Y range: 50.0 96.0
+2017-01-07 12:02:23,236 DEBUG [generic.multi] Calling render on child rain_rate
+2017-01-07 12:02:23,236 DEBUG [renderer.chart] Y range: 0.0 10.0
+2017-01-07 12:02:23,236 DEBUG [generic.multi] Calling render on child rain
+2017-01-07 12:02:23,236 DEBUG [renderer.chart] Y range: 0.0 10.0
+2017-01-07 12:02:23,236 DEBUG [generic.multi] Calling render on child summary
+2017-01-07 12:02:23,237 DEBUG [renderer.template] Rendering with template /home/td/.wfrog//wfrender/config/default/../../templates/default/main.html
+2017-01-07 12:02:23,237 DEBUG [renderer.template] Compiling template /home/td/.wfrog//wfrender/config/default/../../templates/default/main.html
+2017-01-07 12:02:23,384 INFO [renderer.http] 192.168.3.60 - "GET /24hours.html HTTP/1.1" 200 -
+2017-01-07 12:02:25,036 INFO [renderer.http] 192.168.3.60 - code 404, message File Not Found: '/images/sdown-666666.png'
+2017-01-07 12:02:25,036 INFO [renderer.http] 192.168.3.60 - "GET /images/sdown-666666.png HTTP/1.1" 404 -
+2017-01-07 12:02:25,037 INFO [renderer.http] 192.168.3.60 - code 404, message File Not Found: '/images/gricon.png'
+2017-01-07 12:02:25,037 INFO [renderer.http] 192.168.3.60 - "GET /images/gricon.png HTTP/1.1" 404 -
+2017-01-07 12:02:31,550 DEBUG [generic.include] Calling render on <wfrender.renderer.YamlTemplateRenderer object at 0x7f7d98901310>
+2017-01-07 12:02:31,550 DEBUG [generic.service] Calling execute on <wfcommon.generic.YamlIncludeElement object at 0x7f7d991e4a10>
+2017-01-07 12:02:31,551 DEBUG [generic.include] Calling execute on <wfrender.datasource.YamlAccumulatorDataSource object at 0x7f7d991922d0>
+2017-01-07 12:02:31,551 DEBUG [datasource.accumulator] Last timestamp: 2017-01-07 11:59:35
+2017-01-07 12:02:31,551 DEBUG [generic.service] Calling keys on <wfcommon.generic.YamlIncludeElement object at 0x7f7d991e49d0>
+2017-01-07 12:02:31,551 DEBUG [generic.include] Calling keys on <wfcommon.generic.YamlUserChoiceElement object at 0x7f7d99185c50>
+2017-01-07 12:02:31,551 DEBUG [generic.user] Calling keys on <wfcommon.storage.YamlCsvStorage object at 0x7f7d991858d0>
+2017-01-07 12:02:31,551 DEBUG [datasource.accumulator] Creating slice 2017-01-07 12:02:00 - 2017-01-07 12:03:00
+2017-01-07 12:02:31,551 DEBUG [datasource.accumulator] Update from 2017-01-07 11:59:36 
+2017-01-07 12:02:31,551 DEBUG [generic.service] Calling samples on <wfcommon.generic.YamlIncludeElement object at 0x7f7d991e49d0>
+2017-01-07 12:02:31,552 DEBUG [generic.include] Calling samples on <wfcommon.generic.YamlUserChoiceElement object at 0x7f7d99185c50>
+2017-01-07 12:02:31,552 DEBUG [generic.user] Calling samples on <wfcommon.storage.YamlCsvStorage object at 0x7f7d991858d0>
+2017-01-07 12:02:31,552 DEBUG [datasource.accumulator] Deleted 0 slices
+2017-01-07 12:02:31,552 DEBUG [datasource.accumulator] Last timestamp: 2017-01-07 11:59:35
+2017-01-07 12:02:31,566 DEBUG [generic.multi] Calling render on child current
+2017-01-07 12:02:31,566 DEBUG [generic.include] Calling render on <wfrender.renderer.YamlDataRenderer object at 0x7f7d988256d0>
+2017-01-07 12:02:31,566 DEBUG [generic.user] Calling execute on <wfrender.datasource.YamlCurrentConditionsXmlDataSource object at 0x7f7d987e0b50>
+2017-01-07 12:02:31,567 DEBUG [generic.multi] Calling render on child timestamp
+2017-01-07 12:02:31,567 DEBUG [renderer.value] Getting value for 'info.timestamp'
+2017-01-07 12:02:31,567 DEBUG [generic.multi] Calling render on child hum0
+2017-01-07 12:02:31,567 DEBUG [renderer.value] Getting value for 'hum0.value'
+2017-01-07 12:02:31,567 DEBUG [generic.multi] Calling render on child hum1
+2017-01-07 12:02:31,567 DEBUG [renderer.value] Getting value for 'hum1.value'
+2017-01-07 12:02:31,567 DEBUG [generic.multi] Calling render on child rain
+2017-01-07 12:02:31,567 DEBUG [renderer.value] Getting value for 'rain.value'
+2017-01-07 12:02:31,567 DEBUG [generic.multi] Calling render on child temp1
+2017-01-07 12:02:31,567 DEBUG [renderer.value] Getting value for 'temp1.value'
+2017-01-07 12:02:31,568 DEBUG [generic.multi] Calling render on child temp0
+2017-01-07 12:02:31,568 DEBUG [renderer.value] Getting value for 'temp0.value'
+2017-01-07 12:02:31,568 DEBUG [generic.multi] Calling render on child press
+2017-01-07 12:02:31,568 DEBUG [renderer.value] Getting value for 'press.value'
+2017-01-07 12:02:31,568 DEBUG [generic.multi] Calling render on child wind
+2017-01-07 12:02:31,568 DEBUG [generic.multi] Calling render on child gust
+2017-01-07 12:02:31,568 DEBUG [renderer.value] Getting value for 'wind.max'
+2017-01-07 12:02:31,568 DEBUG [generic.multi] Calling render on child speed
+2017-01-07 12:02:31,568 DEBUG [renderer.value] Getting value for 'wind.value'
+2017-01-07 12:02:31,568 DEBUG [generic.multi] Calling render on child dir
+2017-01-07 12:02:31,569 DEBUG [generic.multi] Calling render on child chart
+2017-01-07 12:02:31,569 DEBUG [generic.include] Calling render on <wfcommon.generic.YamlMultiElement object at 0x7f7d98726950>
+2017-01-07 12:02:31,569 DEBUG [generic.multi] Calling render on child wind
+2017-01-07 12:02:31,570 DEBUG [renderer.chart] Y range: 0.0 15.0
+2017-01-07 12:02:31,570 DEBUG [generic.multi] Calling render on child wind_dir
+2017-01-07 12:02:31,572 DEBUG [generic.multi] Calling render on child temp
+2017-01-07 12:02:31,572 DEBUG [renderer.chart] Y range: 19.0 31.0
+2017-01-07 12:02:31,573 DEBUG [generic.multi] Calling render on child press
+2017-01-07 12:02:31,573 DEBUG [renderer.chart] Y range: 1017.0 1022.0
+2017-01-07 12:02:31,574 DEBUG [generic.multi] Calling render on child hum
+2017-01-07 12:02:31,574 DEBUG [renderer.chart] Y range: 50.0 81.0
+2017-01-07 12:02:31,574 DEBUG [generic.multi] Calling render on child rain_rate
+2017-01-07 12:02:31,575 DEBUG [renderer.chart] Y range: 0.0 10.0
+2017-01-07 12:02:31,575 DEBUG [generic.multi] Calling render on child rain
+2017-01-07 12:02:31,575 DEBUG [renderer.chart] Y range: 0.0 10.0
+2017-01-07 12:02:31,576 DEBUG [generic.multi] Calling render on child summary
+2017-01-07 12:02:31,581 DEBUG [renderer.template] Rendering with template /home/td/.wfrog//wfrender/config/default/../../templates/default/main.html
+2017-01-07 12:02:31,589 INFO [renderer.http] 192.168.3.60 - "GET /3hours.html HTTP/1.1" 200 -
+2017-01-07 12:02:32,379 INFO [renderer.http] 192.168.3.60 - code 404, message File Not Found: '/images/sdown-666666.png'
+2017-01-07 12:02:32,379 INFO [renderer.http] 192.168.3.60 - "GET /images/sdown-666666.png HTTP/1.1" 404 -
+2017-01-07 12:02:32,380 INFO [renderer.http] 192.168.3.60 - code 404, message File Not Found: '/images/gricon.png'
+2017-01-07 12:02:32,380 INFO [renderer.http] 192.168.3.60 - "GET /images/gricon.png HTTP/1.1" 404 -
+2017-01-07 12:02:33,365 DEBUG [generic.include] Calling render on <wfrender.renderer.YamlTemplateRenderer object at 0x7f7d98726a50>
+2017-01-07 12:02:33,365 DEBUG [generic.service] Calling execute on <wfcommon.generic.YamlIncludeElement object at 0x7f7d991e4a50>
+2017-01-07 12:02:33,365 DEBUG [generic.include] Calling execute on <wfrender.datasource.YamlAccumulatorDataSource object at 0x7f7d99177050>
+2017-01-07 12:02:33,365 DEBUG [datasource.accumulator] Last timestamp: 2017-01-07 12:00:23
+2017-01-07 12:02:33,365 DEBUG [generic.service] Calling keys on <wfcommon.generic.YamlIncludeElement object at 0x7f7d991e49d0>
+2017-01-07 12:02:33,365 DEBUG [generic.include] Calling keys on <wfcommon.generic.YamlUserChoiceElement object at 0x7f7d99185c50>
+2017-01-07 12:02:33,365 DEBUG [generic.user] Calling keys on <wfcommon.storage.YamlCsvStorage object at 0x7f7d991858d0>
+2017-01-07 12:02:33,365 DEBUG [datasource.accumulator] Update from 2017-01-07 12:00:24 
+2017-01-07 12:02:33,365 DEBUG [generic.service] Calling samples on <wfcommon.generic.YamlIncludeElement object at 0x7f7d991e49d0>
+2017-01-07 12:02:33,365 DEBUG [generic.include] Calling samples on <wfcommon.generic.YamlUserChoiceElement object at 0x7f7d99185c50>
+2017-01-07 12:02:33,366 DEBUG [generic.user] Calling samples on <wfcommon.storage.YamlCsvStorage object at 0x7f7d991858d0>
+2017-01-07 12:02:33,366 DEBUG [datasource.accumulator] Deleted 0 slices
+2017-01-07 12:02:33,366 DEBUG [datasource.accumulator] Last timestamp: 2017-01-07 12:00:23
+2017-01-07 12:02:33,368 DEBUG [generic.multi] Calling render on child current
+2017-01-07 12:02:33,368 DEBUG [generic.include] Calling render on <wfrender.renderer.YamlDataRenderer object at 0x7f7d9874e590>
+2017-01-07 12:02:33,368 DEBUG [generic.user] Calling execute on <wfrender.datasource.YamlCurrentConditionsXmlDataSource object at 0x7f7d983152d0>
+2017-01-07 12:02:33,369 DEBUG [generic.multi] Calling render on child timestamp
+2017-01-07 12:02:33,369 DEBUG [renderer.value] Getting value for 'info.timestamp'
+2017-01-07 12:02:33,369 DEBUG [generic.multi] Calling render on child hum0
+2017-01-07 12:02:33,369 DEBUG [renderer.value] Getting value for 'hum0.value'
+2017-01-07 12:02:33,369 DEBUG [generic.multi] Calling render on child hum1
+2017-01-07 12:02:33,369 DEBUG [renderer.value] Getting value for 'hum1.value'
+2017-01-07 12:02:33,369 DEBUG [generic.multi] Calling render on child rain
+2017-01-07 12:02:33,369 DEBUG [renderer.value] Getting value for 'rain.value'
+2017-01-07 12:02:33,369 DEBUG [generic.multi] Calling render on child temp1
+2017-01-07 12:02:33,369 DEBUG [renderer.value] Getting value for 'temp1.value'
+2017-01-07 12:02:33,369 DEBUG [generic.multi] Calling render on child temp0
+2017-01-07 12:02:33,369 DEBUG [renderer.value] Getting value for 'temp0.value'
+2017-01-07 12:02:33,369 DEBUG [generic.multi] Calling render on child press
+2017-01-07 12:02:33,369 DEBUG [renderer.value] Getting value for 'press.value'
+2017-01-07 12:02:33,369 DEBUG [generic.multi] Calling render on child wind
+2017-01-07 12:02:33,370 DEBUG [generic.multi] Calling render on child gust
+2017-01-07 12:02:33,370 DEBUG [renderer.value] Getting value for 'wind.max'
+2017-01-07 12:02:33,370 DEBUG [generic.multi] Calling render on child speed
+2017-01-07 12:02:33,370 DEBUG [renderer.value] Getting value for 'wind.value'
+2017-01-07 12:02:33,370 DEBUG [generic.multi] Calling render on child dir
+2017-01-07 12:02:33,370 DEBUG [generic.multi] Calling render on child chart
+2017-01-07 12:02:33,371 DEBUG [generic.include] Calling render on <wfcommon.generic.YamlMultiElement object at 0x7f7d98317650>
+2017-01-07 12:02:33,371 DEBUG [generic.multi] Calling render on child wind
+2017-01-07 12:02:33,371 DEBUG [renderer.chart] Y range: 0.0 24.0
+2017-01-07 12:02:33,371 DEBUG [generic.multi] Calling render on child wind_dir
+2017-01-07 12:02:33,372 DEBUG [generic.multi] Calling render on child temp
+2017-01-07 12:02:33,372 DEBUG [renderer.chart] Y range: 19.0 31.0
+2017-01-07 12:02:33,372 DEBUG [generic.multi] Calling render on child press
+2017-01-07 12:02:33,372 DEBUG [renderer.chart] Y range: 1014.0 1022.0
+2017-01-07 12:02:33,373 DEBUG [generic.multi] Calling render on child hum
+2017-01-07 12:02:33,373 DEBUG [renderer.chart] Y range: 50.0 96.0
+2017-01-07 12:02:33,373 DEBUG [generic.multi] Calling render on child rain_rate
+2017-01-07 12:02:33,373 DEBUG [renderer.chart] Y range: 0.0 10.0
+2017-01-07 12:02:33,373 DEBUG [generic.multi] Calling render on child rain
+2017-01-07 12:02:33,373 DEBUG [renderer.chart] Y range: 0.0 10.0
+2017-01-07 12:02:33,374 DEBUG [generic.multi] Calling render on child summary
+2017-01-07 12:02:33,375 DEBUG [renderer.template] Rendering with template /home/td/.wfrog//wfrender/config/default/../../templates/default/main.html
+2017-01-07 12:02:33,377 INFO [renderer.http] 192.168.3.60 - "GET /24hours.html HTTP/1.1" 200 -
+2017-01-07 12:02:35,018 INFO [renderer.http] 192.168.3.60 - code 404, message File Not Found: '/images/sdown-666666.png'
+2017-01-07 12:02:35,018 INFO [renderer.http] 192.168.3.60 - "GET /images/sdown-666666.png HTTP/1.1" 404 -
+2017-01-07 12:02:35,018 INFO [renderer.http] 192.168.3.60 - code 404, message File Not Found: '/images/gricon.png'
+2017-01-07 12:02:35,018 INFO [renderer.http] 192.168.3.60 - "GET /images/gricon.png HTTP/1.1" 404 -
+2017-01-07 12:02:36,131 DEBUG [generic.include] Calling render on <wfrender.renderer.YamlTemplateRenderer object at 0x7f7d98901310>
+2017-01-07 12:02:36,131 DEBUG [generic.service] Calling execute on <wfcommon.generic.YamlIncludeElement object at 0x7f7d991e4a10>
+2017-01-07 12:02:36,131 DEBUG [generic.include] Calling execute on <wfrender.datasource.YamlAccumulatorDataSource object at 0x7f7d991922d0>
+2017-01-07 12:02:36,131 DEBUG [datasource.accumulator] Last timestamp: 2017-01-07 12:00:23
+2017-01-07 12:02:36,131 DEBUG [generic.service] Calling keys on <wfcommon.generic.YamlIncludeElement object at 0x7f7d991e49d0>
+2017-01-07 12:02:36,131 DEBUG [generic.include] Calling keys on <wfcommon.generic.YamlUserChoiceElement object at 0x7f7d99185c50>
+2017-01-07 12:02:36,131 DEBUG [generic.user] Calling keys on <wfcommon.storage.YamlCsvStorage object at 0x7f7d991858d0>
+2017-01-07 12:02:36,132 DEBUG [datasource.accumulator] Update from 2017-01-07 12:00:24 
+2017-01-07 12:02:36,132 DEBUG [generic.service] Calling samples on <wfcommon.generic.YamlIncludeElement object at 0x7f7d991e49d0>
+2017-01-07 12:02:36,132 DEBUG [generic.include] Calling samples on <wfcommon.generic.YamlUserChoiceElement object at 0x7f7d99185c50>
+2017-01-07 12:02:36,132 DEBUG [generic.user] Calling samples on <wfcommon.storage.YamlCsvStorage object at 0x7f7d991858d0>
+2017-01-07 12:02:36,132 DEBUG [datasource.accumulator] Deleted 0 slices
+2017-01-07 12:02:36,132 DEBUG [datasource.accumulator] Last timestamp: 2017-01-07 12:00:23
+2017-01-07 12:02:36,147 DEBUG [generic.multi] Calling render on child current
+2017-01-07 12:02:36,147 DEBUG [generic.include] Calling render on <wfrender.renderer.YamlDataRenderer object at 0x7f7d988256d0>
+2017-01-07 12:02:36,147 DEBUG [generic.user] Calling execute on <wfrender.datasource.YamlCurrentConditionsXmlDataSource object at 0x7f7d987e0b50>
+2017-01-07 12:02:36,148 DEBUG [generic.multi] Calling render on child timestamp
+2017-01-07 12:02:36,148 DEBUG [renderer.value] Getting value for 'info.timestamp'
+2017-01-07 12:02:36,148 DEBUG [generic.multi] Calling render on child hum0
+2017-01-07 12:02:36,148 DEBUG [renderer.value] Getting value for 'hum0.value'
+2017-01-07 12:02:36,148 DEBUG [generic.multi] Calling render on child hum1
+2017-01-07 12:02:36,148 DEBUG [renderer.value] Getting value for 'hum1.value'
+2017-01-07 12:02:36,148 DEBUG [generic.multi] Calling render on child rain
+2017-01-07 12:02:36,148 DEBUG [renderer.value] Getting value for 'rain.value'
+2017-01-07 12:02:36,149 DEBUG [generic.multi] Calling render on child temp1
+2017-01-07 12:02:36,149 DEBUG [renderer.value] Getting value for 'temp1.value'
+2017-01-07 12:02:36,149 DEBUG [generic.multi] Calling render on child temp0
+2017-01-07 12:02:36,149 DEBUG [renderer.value] Getting value for 'temp0.value'
+2017-01-07 12:02:36,149 DEBUG [generic.multi] Calling render on child press
+2017-01-07 12:02:36,149 DEBUG [renderer.value] Getting value for 'press.value'
+2017-01-07 12:02:36,149 DEBUG [generic.multi] Calling render on child wind
+2017-01-07 12:02:36,149 DEBUG [generic.multi] Calling render on child gust
+2017-01-07 12:02:36,149 DEBUG [renderer.value] Getting value for 'wind.max'
+2017-01-07 12:02:36,149 DEBUG [generic.multi] Calling render on child speed
+2017-01-07 12:02:36,149 DEBUG [renderer.value] Getting value for 'wind.value'
+2017-01-07 12:02:36,149 DEBUG [generic.multi] Calling render on child dir
+2017-01-07 12:02:36,150 DEBUG [generic.multi] Calling render on child chart
+2017-01-07 12:02:36,150 DEBUG [generic.include] Calling render on <wfcommon.generic.YamlMultiElement object at 0x7f7d98726950>
+2017-01-07 12:02:36,150 DEBUG [generic.multi] Calling render on child wind
+2017-01-07 12:02:36,151 DEBUG [renderer.chart] Y range: 0.0 15.0
+2017-01-07 12:02:36,151 DEBUG [generic.multi] Calling render on child wind_dir
+2017-01-07 12:02:36,153 DEBUG [generic.multi] Calling render on child temp
+2017-01-07 12:02:36,153 DEBUG [renderer.chart] Y range: 19.0 31.0
+2017-01-07 12:02:36,154 DEBUG [generic.multi] Calling render on child press
+2017-01-07 12:02:36,154 DEBUG [renderer.chart] Y range: 1017.0 1022.0
+2017-01-07 12:02:36,155 DEBUG [generic.multi] Calling render on child hum
+2017-01-07 12:02:36,155 DEBUG [renderer.chart] Y range: 50.0 81.0
+2017-01-07 12:02:36,155 DEBUG [generic.multi] Calling render on child rain_rate
+2017-01-07 12:02:36,156 DEBUG [renderer.chart] Y range: 0.0 10.0
+2017-01-07 12:02:36,156 DEBUG [generic.multi] Calling render on child rain
+2017-01-07 12:02:36,156 DEBUG [renderer.chart] Y range: 0.0 10.0
+2017-01-07 12:02:36,157 DEBUG [generic.multi] Calling render on child summary
+2017-01-07 12:02:36,162 DEBUG [renderer.template] Rendering with template /home/td/.wfrog//wfrender/config/default/../../templates/default/main.html
+2017-01-07 12:02:36,171 INFO [renderer.http] 192.168.3.60 - "GET /3hours.html HTTP/1.1" 200 -
+2017-01-07 12:02:36,995 INFO [renderer.http] 192.168.3.60 - code 404, message File Not Found: '/images/sdown-666666.png'
+2017-01-07 12:02:36,995 INFO [renderer.http] 192.168.3.60 - "GET /images/sdown-666666.png HTTP/1.1" 404 -
+2017-01-07 12:02:36,995 INFO [renderer.http] 192.168.3.60 - code 404, message File Not Found: '/images/gricon.png'
+2017-01-07 12:02:36,995 INFO [renderer.http] 192.168.3.60 - "GET /images/gricon.png HTTP/1.1" 404 -
+2017-01-07 21:54:12,530 ERROR [renderer.http] a float is required
+Traceback (most recent call last):
+  File "/home/var/opt/wfrog/wfrender/renderer/http.py", line 191, in do_GET
+    [ mime, content ] = renderers[name].render(data=data, context=context)
+  File "/home/var/opt/wfrog/wfcommon/generic/include.py", line 79, in _call
+    return self.target.__getattribute__(attr).__call__(*args, **keywords)
+  File "/home/var/opt/wfrog/wfrender/renderer/template.py", line 86, in render
+    return [ self.mime, str(self.compiled_template(searchList=[content, context])) ]
+  File "/usr/lib/python2.7/dist-packages/Cheetah/Template.py", line 1005, in __str__
+    rc = getattr(self, mainMethName)()
+  File "cheetah_DynamicallyCompiledCheetahTemplate_1483840452_52_48455.py", line 543, in respond
+  File "/home/var/opt/wfrog/wfrender/renderer/template.py", line 25, in rnd
+    if value == round(value):
+TypeError: a float is required
+2017-01-07 21:57:15,586 ERROR [renderer.http] year is out of range
+Traceback (most recent call last):
+  File "/home/var/opt/wfrog/wfrender/renderer/http.py", line 191, in do_GET
+    [ mime, content ] = renderers[name].render(data=data, context=context)
+  File "/home/var/opt/wfrog/wfcommon/generic/include.py", line 79, in _call
+    return self.target.__getattribute__(attr).__call__(*args, **keywords)
+  File "/home/var/opt/wfrog/wfrender/renderer/template.py", line 67, in render
+    content = self.renderer.render(data=data, context=context)
+  File "/home/var/opt/wfrog/wfrender/renderer/data.py", line 46, in render
+    return self.renderer.render(data=new_data, context=context)
+  File "/home/var/opt/wfrog/wfcommon/generic/multi.py", line 62, in _call
+    result[name] = r.__getattribute__(attr).__call__(*args, **keywords)
+  File "/home/var/opt/wfrog/wfcommon/generic/include.py", line 79, in _call
+    return self.target.__getattribute__(attr).__call__(*args, **keywords)
+  File "/home/var/opt/wfrog/wfrender/renderer/data.py", line 44, in render
+    new_data = self.source.execute(data=data, context=context)
+  File "/home/var/opt/wfrog/wfcommon/generic/user.py", line 65, in _call
+    return self.target.__getattribute__(attr).__call__(*args, **keywords)
+  File "/home/var/opt/wfrog/wfrender/datasource/xmlquery.py", line 65, in execute
+    result['info']['timestamp'] = datetime(0, 0, 0)
+ValueError: year is out of range
+2017-01-07 21:57:19,520 ERROR [renderer.http] year is out of range
+Traceback (most recent call last):
+  File "/home/var/opt/wfrog/wfrender/renderer/http.py", line 191, in do_GET
+    [ mime, content ] = renderers[name].render(data=data, context=context)
+  File "/home/var/opt/wfrog/wfcommon/generic/include.py", line 79, in _call
+    return self.target.__getattribute__(attr).__call__(*args, **keywords)
+  File "/home/var/opt/wfrog/wfrender/renderer/template.py", line 67, in render
+    content = self.renderer.render(data=data, context=context)
+  File "/home/var/opt/wfrog/wfrender/renderer/data.py", line 46, in render
+    return self.renderer.render(data=new_data, context=context)
+  File "/home/var/opt/wfrog/wfcommon/generic/multi.py", line 62, in _call
+    result[name] = r.__getattribute__(attr).__call__(*args, **keywords)
+  File "/home/var/opt/wfrog/wfcommon/generic/include.py", line 79, in _call
+    return self.target.__getattribute__(attr).__call__(*args, **keywords)
+  File "/home/var/opt/wfrog/wfrender/renderer/data.py", line 44, in render
+    new_data = self.source.execute(data=data, context=context)
+  File "/home/var/opt/wfrog/wfcommon/generic/user.py", line 65, in _call
+    return self.target.__getattribute__(attr).__call__(*args, **keywords)
+  File "/home/var/opt/wfrog/wfrender/datasource/xmlquery.py", line 65, in execute
+    result['info']['timestamp'] = datetime(0, 0, 0)
+ValueError: year is out of range
+2017-01-07 21:57:20,458 ERROR [renderer.http] year is out of range
+Traceback (most recent call last):
+  File "/home/var/opt/wfrog/wfrender/renderer/http.py", line 191, in do_GET
+    [ mime, content ] = renderers[name].render(data=data, context=context)
+  File "/home/var/opt/wfrog/wfcommon/generic/include.py", line 79, in _call
+    return self.target.__getattribute__(attr).__call__(*args, **keywords)
+  File "/home/var/opt/wfrog/wfrender/renderer/template.py", line 67, in render
+    content = self.renderer.render(data=data, context=context)
+  File "/home/var/opt/wfrog/wfrender/renderer/data.py", line 46, in render
+    return self.renderer.render(data=new_data, context=context)
+  File "/home/var/opt/wfrog/wfcommon/generic/multi.py", line 62, in _call
+    result[name] = r.__getattribute__(attr).__call__(*args, **keywords)
+  File "/home/var/opt/wfrog/wfcommon/generic/include.py", line 79, in _call
+    return self.target.__getattribute__(attr).__call__(*args, **keywords)
+  File "/home/var/opt/wfrog/wfrender/renderer/data.py", line 44, in render
+    new_data = self.source.execute(data=data, context=context)
+  File "/home/var/opt/wfrog/wfcommon/generic/user.py", line 65, in _call
+    return self.target.__getattribute__(attr).__call__(*args, **keywords)
+  File "/home/var/opt/wfrog/wfrender/datasource/xmlquery.py", line 65, in execute
+    result['info']['timestamp'] = datetime(0, 0, 0)
+ValueError: year is out of range
