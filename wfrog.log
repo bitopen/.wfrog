@@ -566,3 +566,7 @@ Traceback (most recent call last):
   File "/usr/lib/python2.7/xml/dom/expatbuilder.py", line 922, in parse
     fp = open(file, 'rb')
 IOError: [Errno 2] No such file or directory: 'data/wfrog-current.xml'
+2018-01-03 16:44:22,541 ERROR [station.wh1080] Exception IOError: Weather station device not found
+2018-01-03 16:44:52,579 ERROR [station.wh1080] Exception IOError: Weather station device not found
+2018-01-03 16:45:22,616 ERROR [station.wh1080] Exception IOError: Weather station device not found
+2018-01-03 16:45:52,644 ERROR [station.wh1080] Exception IOError: Weather station device not found

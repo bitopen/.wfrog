@@ -1,273 +1,136 @@
-2017-01-07 12:00:22,049 DEBUG [collector.buffer] Forwarding event: <rain><total>168.3</total><rate>0</rate><timestamp>2017-01-07 11:59:34.043859</timestamp></rain>
-2017-01-07 12:00:22,050 DEBUG [collector.buffer] Forwarding event: <wind><mean><speed>3.1</speed><dir>90.0</dir></mean><gust><speed>5.1</speed><dir>90.0</dir></gust><timestamp>2017-01-07 11:59:34.044303</timestamp></wind>
-2017-01-07 12:00:22,050 DEBUG [generic.multi] Calling send_event on child current
-2017-01-07 12:00:22,050 DEBUG [generic.user] Calling send_event on <wflogger.collector.YamlXmlFileCollector object at 0x7f2c4c09d190>
-2017-01-07 12:00:22,050 DEBUG [generic.multi] Calling send_event on child aggregator
-2017-01-07 12:00:22,050 DEBUG [collector.buffer] Got a recent temp event, keep it in retention queue
-2017-01-07 12:00:22,051 DEBUG [collector.buffer] Dumping retention queue.
-2017-01-07 12:00:22,051 DEBUG [generic.multi] Calling send_event on child current
-2017-01-07 12:00:22,051 DEBUG [generic.user] Calling send_event on <wflogger.collector.YamlXmlFileCollector object at 0x7f2c4c09d190>
-2017-01-07 12:00:22,051 DEBUG [generic.multi] Calling send_event on child aggregator
-2017-01-07 12:00:22,051 DEBUG [collector.buffer] Got a recent hum event, keep it in retention queue
-2017-01-07 12:00:22,051 DEBUG [collector.buffer] Dumping retention queue.
-2017-01-07 12:00:22,051 DEBUG [generic.multi] Calling send_event on child current
-2017-01-07 12:00:22,051 DEBUG [generic.user] Calling send_event on <wflogger.collector.YamlXmlFileCollector object at 0x7f2c4c09d190>
-2017-01-07 12:00:22,051 DEBUG [generic.multi] Calling send_event on child aggregator
-2017-01-07 12:00:22,051 DEBUG [collector.buffer] Got a recent temp event, keep it in retention queue
-2017-01-07 12:00:22,051 DEBUG [collector.buffer] Dumping retention queue.
-2017-01-07 12:00:22,052 DEBUG [generic.multi] Calling send_event on child current
-2017-01-07 12:00:22,052 DEBUG [generic.user] Calling send_event on <wflogger.collector.YamlXmlFileCollector object at 0x7f2c4c09d190>
-2017-01-07 12:00:22,052 DEBUG [generic.multi] Calling send_event on child aggregator
-2017-01-07 12:00:22,052 DEBUG [collector.buffer] Got a recent hum event, keep it in retention queue
-2017-01-07 12:00:22,052 DEBUG [collector.buffer] Dumping retention queue.
-2017-01-07 12:00:22,052 DEBUG [generic.multi] Calling send_event on child current
-2017-01-07 12:00:22,052 DEBUG [generic.user] Calling send_event on <wflogger.collector.YamlXmlFileCollector object at 0x7f2c4c09d190>
-2017-01-07 12:00:22,052 DEBUG [generic.multi] Calling send_event on child aggregator
-2017-01-07 12:00:22,052 DEBUG [collector.buffer] Got a recent rain event, keep it in retention queue
-2017-01-07 12:00:22,052 DEBUG [collector.buffer] Dumping retention queue.
-2017-01-07 12:00:22,052 DEBUG [generic.multi] Calling send_event on child current
-2017-01-07 12:00:22,053 DEBUG [generic.user] Calling send_event on <wflogger.collector.YamlXmlFileCollector object at 0x7f2c4c09d190>
-2017-01-07 12:00:22,053 DEBUG [generic.multi] Calling send_event on child aggregator
-2017-01-07 12:00:22,053 DEBUG [collector.buffer] Got a recent wind event, keep it in retention queue
-2017-01-07 12:00:22,053 DEBUG [collector.buffer] Dumping retention queue.
-2017-01-07 12:01:03,413 DEBUG [pywws.weather_station] avoid 0.194622039795
-2017-01-07 12:01:03,771 DEBUG [pywws.weather_station] delay 3, pause 0.5
-2017-01-07 12:01:04,272 DEBUG [pywws.weather_station] avoid 5.59953093529
-2017-01-07 12:01:10,035 DEBUG [pywws.weather_station] live_data new data
-2017-01-07 12:01:10,036 DEBUG [wfdriver] Enqueuing: <press><value>1018.6</value></press>, Queue size: 0
-2017-01-07 12:01:10,036 DEBUG [wfdriver] Enqueuing: <temp><sensor>0</sensor><value>26.3</value></temp>, Queue size: 1
-2017-01-07 12:01:10,036 DEBUG [generic.service] Calling send_event on <wflogger.input.YamlFunctionInput object at 0x7f2c4c094ed0>
-2017-01-07 12:01:10,036 DEBUG [wfdriver] Enqueuing: <hum><sensor>0</sensor><value>82</value></hum>, Queue size: 1
-2017-01-07 12:01:10,036 DEBUG [wflogger] Got 'press' event. Queue size: 0
-2017-01-07 12:01:10,036 DEBUG [wfdriver] Enqueuing: <temp><sensor>1</sensor><value>29.6</value></temp>, Queue size: 2
-2017-01-07 12:01:10,037 DEBUG [generic.multi] Calling send_event on child current
-2017-01-07 12:01:10,037 DEBUG [generic.service] Calling send_event on <wflogger.input.YamlFunctionInput object at 0x7f2c4c094ed0>
-2017-01-07 12:01:10,037 DEBUG [wfdriver] Enqueuing: <hum><sensor>1</sensor><value>60</value></hum>, Queue size: 2
-2017-01-07 12:01:10,037 DEBUG [generic.user] Calling send_event on <wflogger.collector.YamlXmlFileCollector object at 0x7f2c4c09d190>
-2017-01-07 12:01:10,037 DEBUG [wflogger] Got 'temp' event. Queue size: 0
-2017-01-07 12:01:10,037 DEBUG [wfdriver] Enqueuing: <rain><total>168.3</total><rate>0</rate></rain>, Queue size: 3
-2017-01-07 12:01:10,037 DEBUG [collector.flush] Flushing
-2017-01-07 12:01:10,038 DEBUG [generic.service] Calling send_event on <wflogger.input.YamlFunctionInput object at 0x7f2c4c094ed0>
-2017-01-07 12:01:10,038 DEBUG [wfdriver] Enqueuing: <wind><mean><speed>5.8</speed><dir>135.0</dir></mean><gust><speed>7.5</speed><dir>135.0</dir></gust></wind>, Queue size: 3
-2017-01-07 12:01:10,038 DEBUG [generic.user] Calling send_event on <wflogger.collector.YamlXmlFileCollector object at 0x7f2c4c09d190>
-2017-01-07 12:01:10,038 DEBUG [wflogger] Got 'hum' event. Queue size: 1
-2017-01-07 12:01:10,038 DEBUG [pywws.weather_station] delay 4, pause 41.3331
-2017-01-07 12:01:10,039 DEBUG [collector.xmlfile] Flushing: <current><thInt><temp>26.3</temp><humidity>82</humidity></thInt><th1><temp>29.5</temp><humidity>60</humidity></th1><rain><rate>0</rate></rain><wind><avgSpeed>1.7</avgSpeed><dirDeg>180.0</dirDeg><gustSpeed>2.7</gustSpeed></wind><barometer><pressure>1018.6</pressure></barometer><time>2017-01-07 12:01:10</time></current> to data/wfrog-current.xml
-2017-01-07 12:01:10,039 DEBUG [generic.service] Calling send_event on <wflogger.input.YamlFunctionInput object at 0x7f2c4c094ed0>
-2017-01-07 12:01:10,039 DEBUG [wflogger] Got 'temp' event. Queue size: 2
-2017-01-07 12:01:10,039 DEBUG [generic.service] Calling send_event on <wflogger.input.YamlFunctionInput object at 0x7f2c4c094ed0>
-2017-01-07 12:01:10,039 DEBUG [wflogger] Got 'hum' event. Queue size: 3
-2017-01-07 12:01:10,039 DEBUG [generic.multi] Calling send_event on child aggregator
-2017-01-07 12:01:10,039 DEBUG [generic.service] Calling send_event on <wflogger.input.YamlFunctionInput object at 0x7f2c4c094ed0>
-2017-01-07 12:01:10,040 DEBUG [collector.buffer] Got a recent press event, keep it in retention queue
-2017-01-07 12:01:10,040 DEBUG [wflogger] Got 'rain' event. Queue size: 4
-2017-01-07 12:01:10,040 DEBUG [collector.buffer] Dumping retention queue.
-2017-01-07 12:01:10,040 DEBUG [generic.service] Calling send_event on <wflogger.input.YamlFunctionInput object at 0x7f2c4c094ed0>
-2017-01-07 12:01:10,040 DEBUG [collector.buffer] Forwarding event: *FLUSH*
-2017-01-07 12:01:10,040 DEBUG [wflogger] Got 'wind' event. Queue size: 5
-2017-01-07 12:01:10,040 DEBUG [collector.aggregator] data = {'hum': 60.0, 'rain_rate': 0.0, 'rain': 0.0, 'pressure': 1018.6, 'humint': 82.0, 'solar_rad': None, 'wind_gust_dir': 90.0, 'wind_dir': 270.0, 'wind_gust': 5.1000000000000005, 'uv_index': None, 'temp': 29.5, 'dew_point': 20.9, 'tempint': 26.3, 'wind': 3.1, 'localtime': datetime.datetime(2017, 1, 7, 11, 59, 35, 39196)}
-2017-01-07 12:01:10,040 INFO [collector.aggregator] New period
-2017-01-07 12:01:10,041 DEBUG [collector.aggregator] Flushing sample: {'hum': 60.0, 'rain_rate': 0.0, 'rain': 0.0, 'pressure': 1018.6, 'humint': 82.0, 'solar_rad': None, 'wind_gust_dir': 90.0, 'wind_dir': 270.0, 'wind_gust': 5.1000000000000005, 'uv_index': None, 'temp': 29.5, 'dew_point': 20.9, 'tempint': 26.3, 'wind': 3.1, 'localtime': datetime.datetime(2017, 1, 7, 11, 59, 35, 39196)}
-2017-01-07 12:01:10,041 DEBUG [generic.service] Calling write_sample on <wfcommon.generic.YamlIncludeElement object at 0x7f2c4c094ad0>
-2017-01-07 12:01:10,041 DEBUG [generic.include] Calling write_sample on <wfcommon.generic.YamlUserChoiceElement object at 0x7f2c4c09cc50>
-2017-01-07 12:01:10,041 DEBUG [generic.user] Calling write_sample on <wfcommon.storage.YamlCsvStorage object at 0x7f2c4c094a10>
-2017-01-07 12:01:10,041 DEBUG [storage.csv] {'hum': 60.0, 'rain_rate': 0.0, 'rain': 0.0, 'pressure': 1018.6, 'humint': 82.0, 'solar_rad': None, 'wind_gust_dir': 90.0, 'wind_dir': 270.0, 'wind_gust': 5.1000000000000005, 'uv_index': None, 'temp': 29.5, 'dew_point': 20.9, 'tempint': 26.3, 'wind': 3.1, 'localtime': datetime.datetime(2017, 1, 7, 11, 59, 35, 39196)}
-2017-01-07 12:01:10,041 DEBUG [storage.csv] Writing row: [1483804775, '2017-01-07 11:59:35', 29.5, 60.0, 3.1, 270.0, 5.1000000000000005, 90.0, 20.9, 0.0, 0.0, 1018.6, None]
-2017-01-07 12:01:10,041 DEBUG [collector.buffer] Forwarding event: <press><value>1018.5</value><timestamp>2017-01-07 12:00:22.047682</timestamp></press>
-2017-01-07 12:01:10,042 DEBUG [collector.buffer] Forwarding event: <temp><sensor>0</sensor><value>26.3</value><timestamp>2017-01-07 12:00:22.050978</timestamp></temp>
-2017-01-07 12:01:10,042 DEBUG [collector.buffer] Forwarding event: <hum><sensor>0</sensor><value>82</value><timestamp>2017-01-07 12:00:22.051443</timestamp></hum>
-2017-01-07 12:01:10,042 DEBUG [collector.buffer] Forwarding event: <temp><sensor>1</sensor><value>29.5</value><timestamp>2017-01-07 12:00:22.051899</timestamp></temp>
-2017-01-07 12:01:10,042 DEBUG [collector.buffer] Forwarding event: <hum><sensor>1</sensor><value>60</value><timestamp>2017-01-07 12:00:22.052348</timestamp></hum>
-2017-01-07 12:01:10,042 DEBUG [collector.buffer] Forwarding event: <rain><total>168.3</total><rate>0</rate><timestamp>2017-01-07 12:00:22.052795</timestamp></rain>
-2017-01-07 12:01:10,042 DEBUG [collector.buffer] Forwarding event: <wind><mean><speed>1.7</speed><dir>180.0</dir></mean><gust><speed>2.7</speed><dir>180.0</dir></gust><timestamp>2017-01-07 12:00:22.053271</timestamp></wind>
-2017-01-07 12:01:10,042 DEBUG [generic.multi] Calling send_event on child current
-2017-01-07 12:01:10,042 DEBUG [generic.user] Calling send_event on <wflogger.collector.YamlXmlFileCollector object at 0x7f2c4c09d190>
-2017-01-07 12:01:10,042 DEBUG [generic.multi] Calling send_event on child aggregator
-2017-01-07 12:01:10,043 DEBUG [collector.buffer] Got a recent temp event, keep it in retention queue
-2017-01-07 12:01:10,043 DEBUG [collector.buffer] Dumping retention queue.
-2017-01-07 12:01:10,043 DEBUG [generic.multi] Calling send_event on child current
-2017-01-07 12:01:10,043 DEBUG [generic.user] Calling send_event on <wflogger.collector.YamlXmlFileCollector object at 0x7f2c4c09d190>
-2017-01-07 12:01:10,043 DEBUG [generic.multi] Calling send_event on child aggregator
-2017-01-07 12:01:10,043 DEBUG [collector.buffer] Got a recent hum event, keep it in retention queue
-2017-01-07 12:01:10,043 DEBUG [collector.buffer] Dumping retention queue.
-2017-01-07 12:01:10,043 DEBUG [generic.multi] Calling send_event on child current
-2017-01-07 12:01:10,043 DEBUG [generic.user] Calling send_event on <wflogger.collector.YamlXmlFileCollector object at 0x7f2c4c09d190>
-2017-01-07 12:01:10,043 DEBUG [generic.multi] Calling send_event on child aggregator
-2017-01-07 12:01:10,043 DEBUG [collector.buffer] Got a recent temp event, keep it in retention queue
-2017-01-07 12:01:10,043 DEBUG [collector.buffer] Dumping retention queue.
-2017-01-07 12:01:10,043 DEBUG [generic.multi] Calling send_event on child current
-2017-01-07 12:01:10,044 DEBUG [generic.user] Calling send_event on <wflogger.collector.YamlXmlFileCollector object at 0x7f2c4c09d190>
-2017-01-07 12:01:10,044 DEBUG [generic.multi] Calling send_event on child aggregator
-2017-01-07 12:01:10,044 DEBUG [collector.buffer] Got a recent hum event, keep it in retention queue
-2017-01-07 12:01:10,044 DEBUG [collector.buffer] Dumping retention queue.
-2017-01-07 12:01:10,044 DEBUG [generic.multi] Calling send_event on child current
-2017-01-07 12:01:10,044 DEBUG [generic.user] Calling send_event on <wflogger.collector.YamlXmlFileCollector object at 0x7f2c4c09d190>
-2017-01-07 12:01:10,044 DEBUG [generic.multi] Calling send_event on child aggregator
-2017-01-07 12:01:10,044 DEBUG [collector.buffer] Got a recent rain event, keep it in retention queue
-2017-01-07 12:01:10,044 DEBUG [collector.buffer] Dumping retention queue.
-2017-01-07 12:01:10,044 DEBUG [generic.multi] Calling send_event on child current
-2017-01-07 12:01:10,044 DEBUG [generic.user] Calling send_event on <wflogger.collector.YamlXmlFileCollector object at 0x7f2c4c09d190>
-2017-01-07 12:01:10,044 DEBUG [generic.multi] Calling send_event on child aggregator
-2017-01-07 12:01:10,045 DEBUG [collector.buffer] Got a recent wind event, keep it in retention queue
-2017-01-07 12:01:10,045 DEBUG [collector.buffer] Dumping retention queue.
-2017-01-07 12:01:51,572 DEBUG [pywws.weather_station] delay 4, pause 0.5
-2017-01-07 12:01:52,072 DEBUG [pywws.weather_station] avoid 5.7990489006
-2017-01-07 12:01:57,878 DEBUG [pywws.weather_station] avoid 5.73044610023
-2017-01-07 12:02:03,780 DEBUG [pywws.weather_station] live_data new data
-2017-01-07 12:02:03,780 DEBUG [wfdriver] Enqueuing: <press><value>1018.7</value></press>, Queue size: 0
-2017-01-07 12:02:03,780 DEBUG [wfdriver] Enqueuing: <temp><sensor>0</sensor><value>26.3</value></temp>, Queue size: 1
-2017-01-07 12:02:03,780 DEBUG [generic.service] Calling send_event on <wflogger.input.YamlFunctionInput object at 0x7f2c4c094ed0>
-2017-01-07 12:02:03,780 DEBUG [wfdriver] Enqueuing: <hum><sensor>0</sensor><value>82</value></hum>, Queue size: 1
-2017-01-07 12:02:03,781 DEBUG [wflogger] Got 'press' event. Queue size: 0
-2017-01-07 12:02:03,781 DEBUG [wfdriver] Enqueuing: <temp><sensor>1</sensor><value>29.6</value></temp>, Queue size: 2
-2017-01-07 12:02:03,781 DEBUG [generic.service] Calling send_event on <wflogger.input.YamlFunctionInput object at 0x7f2c4c094ed0>
-2017-01-07 12:02:03,781 DEBUG [generic.multi] Calling send_event on child current
-2017-01-07 12:02:03,781 DEBUG [wfdriver] Enqueuing: <hum><sensor>1</sensor><value>60</value></hum>, Queue size: 2
-2017-01-07 12:02:03,781 DEBUG [wflogger] Got 'temp' event. Queue size: 0
-2017-01-07 12:02:03,782 DEBUG [generic.user] Calling send_event on <wflogger.collector.YamlXmlFileCollector object at 0x7f2c4c09d190>
-2017-01-07 12:02:03,782 DEBUG [wfdriver] Enqueuing: <rain><total>168.3</total><rate>0</rate></rain>, Queue size: 3
-2017-01-07 12:02:03,782 DEBUG [generic.service] Calling send_event on <wflogger.input.YamlFunctionInput object at 0x7f2c4c094ed0>
-2017-01-07 12:02:03,782 DEBUG [collector.flush] Flushing
-2017-01-07 12:02:03,782 DEBUG [wfdriver] Enqueuing: <wind><mean><speed>2.7</speed><dir>135.0</dir></mean><gust><speed>5.1</speed><dir>135.0</dir></gust></wind>, Queue size: 3
-2017-01-07 12:02:03,783 DEBUG [wflogger] Got 'hum' event. Queue size: 1
-2017-01-07 12:02:03,783 DEBUG [generic.user] Calling send_event on <wflogger.collector.YamlXmlFileCollector object at 0x7f2c4c09d190>
-2017-01-07 12:02:03,783 INFO [pywws.weather_station] live_data new ptr: 0024b0
-2017-01-07 12:02:03,783 DEBUG [generic.service] Calling send_event on <wflogger.input.YamlFunctionInput object at 0x7f2c4c094ed0>
-2017-01-07 12:02:03,784 DEBUG [collector.xmlfile] Flushing: <current><thInt><temp>26.3</temp><humidity>82</humidity></thInt><th1><temp>29.6</temp><humidity>60</humidity></th1><rain><rate>0</rate></rain><wind><avgSpeed>5.8</avgSpeed><dirDeg>135.0</dirDeg><gustSpeed>7.5</gustSpeed></wind><barometer><pressure>1018.7</pressure></barometer><time>2017-01-07 12:02:03</time></current> to data/wfrog-current.xml
-2017-01-07 12:02:03,784 DEBUG [pywws.weather_station] delay 0, pause 35.5877
-2017-01-07 12:02:03,784 DEBUG [wflogger] Got 'temp' event. Queue size: 2
-2017-01-07 12:02:03,785 DEBUG [generic.service] Calling send_event on <wflogger.input.YamlFunctionInput object at 0x7f2c4c094ed0>
-2017-01-07 12:02:03,785 DEBUG [generic.multi] Calling send_event on child aggregator
-2017-01-07 12:02:03,785 DEBUG [wflogger] Got 'hum' event. Queue size: 3
-2017-01-07 12:02:03,785 DEBUG [collector.buffer] Got a recent press event, keep it in retention queue
-2017-01-07 12:02:03,785 DEBUG [generic.service] Calling send_event on <wflogger.input.YamlFunctionInput object at 0x7f2c4c094ed0>
-2017-01-07 12:02:03,785 DEBUG [collector.buffer] Dumping retention queue.
-2017-01-07 12:02:03,786 DEBUG [wflogger] Got 'rain' event. Queue size: 4
-2017-01-07 12:02:03,786 DEBUG [collector.buffer] Forwarding event: *FLUSH*
-2017-01-07 12:02:03,786 DEBUG [generic.service] Calling send_event on <wflogger.input.YamlFunctionInput object at 0x7f2c4c094ed0>
-2017-01-07 12:02:03,786 DEBUG [collector.aggregator] data = {'hum': 60.0, 'rain_rate': 0.0, 'rain': 0.0, 'pressure': 1018.5, 'humint': 82.0, 'solar_rad': None, 'wind_gust_dir': 180.0, 'wind_dir': 180.0, 'wind_gust': 2.7, 'uv_index': None, 'temp': 29.5, 'dew_point': 20.9, 'tempint': 26.3, 'wind': 1.7, 'localtime': datetime.datetime(2017, 1, 7, 12, 0, 23, 47682)}
-2017-01-07 12:02:03,786 DEBUG [wflogger] Got 'wind' event. Queue size: 5
-2017-01-07 12:02:03,786 INFO [collector.aggregator] New period
-2017-01-07 12:02:03,787 DEBUG [collector.aggregator] Flushing sample: {'hum': 60.0, 'rain_rate': 0.0, 'rain': 0.0, 'pressure': 1018.5, 'humint': 82.0, 'solar_rad': None, 'wind_gust_dir': 180.0, 'wind_dir': 180.0, 'wind_gust': 2.7, 'uv_index': None, 'temp': 29.5, 'dew_point': 20.9, 'tempint': 26.3, 'wind': 1.7, 'localtime': datetime.datetime(2017, 1, 7, 12, 0, 23, 47682)}
-2017-01-07 12:02:03,787 DEBUG [generic.service] Calling write_sample on <wfcommon.generic.YamlIncludeElement object at 0x7f2c4c094ad0>
-2017-01-07 12:02:03,787 DEBUG [generic.include] Calling write_sample on <wfcommon.generic.YamlUserChoiceElement object at 0x7f2c4c09cc50>
-2017-01-07 12:02:03,787 DEBUG [generic.user] Calling write_sample on <wfcommon.storage.YamlCsvStorage object at 0x7f2c4c094a10>
-2017-01-07 12:02:03,787 DEBUG [storage.csv] {'hum': 60.0, 'rain_rate': 0.0, 'rain': 0.0, 'pressure': 1018.5, 'humint': 82.0, 'solar_rad': None, 'wind_gust_dir': 180.0, 'wind_dir': 180.0, 'wind_gust': 2.7, 'uv_index': None, 'temp': 29.5, 'dew_point': 20.9, 'tempint': 26.3, 'wind': 1.7, 'localtime': datetime.datetime(2017, 1, 7, 12, 0, 23, 47682)}
-2017-01-07 12:02:03,787 DEBUG [storage.csv] Writing row: [1483804823, '2017-01-07 12:00:23', 29.5, 60.0, 1.7, 180.0, 2.7, 180.0, 20.9, 0.0, 0.0, 1018.5, None]
-2017-01-07 12:02:03,787 DEBUG [collector.buffer] Forwarding event: <press><value>1018.6</value><timestamp>2017-01-07 12:01:10.039989</timestamp></press>
-2017-01-07 12:02:03,788 DEBUG [collector.buffer] Forwarding event: <temp><sensor>0</sensor><value>26.3</value><timestamp>2017-01-07 12:01:10.043025</timestamp></temp>
-2017-01-07 12:02:03,788 DEBUG [collector.buffer] Forwarding event: <hum><sensor>0</sensor><value>82</value><timestamp>2017-01-07 12:01:10.043426</timestamp></hum>
-2017-01-07 12:02:03,788 DEBUG [collector.buffer] Forwarding event: <temp><sensor>1</sensor><value>29.6</value><timestamp>2017-01-07 12:01:10.043801</timestamp></temp>
-2017-01-07 12:02:03,788 DEBUG [collector.buffer] Forwarding event: <hum><sensor>1</sensor><value>60</value><timestamp>2017-01-07 12:01:10.044200</timestamp></hum>
-2017-01-07 12:02:03,788 DEBUG [collector.buffer] Forwarding event: <rain><total>168.3</total><rate>0</rate><timestamp>2017-01-07 12:01:10.044593</timestamp></rain>
-2017-01-07 12:02:03,788 DEBUG [collector.buffer] Forwarding event: <wind><mean><speed>5.8</speed><dir>135.0</dir></mean><gust><speed>7.5</speed><dir>135.0</dir></gust><timestamp>2017-01-07 12:01:10.045002</timestamp></wind>
-2017-01-07 12:02:03,788 DEBUG [generic.multi] Calling send_event on child current
-2017-01-07 12:02:03,788 DEBUG [generic.user] Calling send_event on <wflogger.collector.YamlXmlFileCollector object at 0x7f2c4c09d190>
-2017-01-07 12:02:03,788 DEBUG [generic.multi] Calling send_event on child aggregator
-2017-01-07 12:02:03,789 DEBUG [collector.buffer] Got a recent temp event, keep it in retention queue
-2017-01-07 12:02:03,789 DEBUG [collector.buffer] Dumping retention queue.
-2017-01-07 12:02:03,789 DEBUG [generic.multi] Calling send_event on child current
-2017-01-07 12:02:03,789 DEBUG [generic.user] Calling send_event on <wflogger.collector.YamlXmlFileCollector object at 0x7f2c4c09d190>
-2017-01-07 12:02:03,789 DEBUG [generic.multi] Calling send_event on child aggregator
-2017-01-07 12:02:03,789 DEBUG [collector.buffer] Got a recent hum event, keep it in retention queue
-2017-01-07 12:02:03,789 DEBUG [collector.buffer] Dumping retention queue.
-2017-01-07 12:02:03,789 DEBUG [generic.multi] Calling send_event on child current
-2017-01-07 12:02:03,789 DEBUG [generic.user] Calling send_event on <wflogger.collector.YamlXmlFileCollector object at 0x7f2c4c09d190>
-2017-01-07 12:02:03,789 DEBUG [generic.multi] Calling send_event on child aggregator
-2017-01-07 12:02:03,789 DEBUG [collector.buffer] Got a recent temp event, keep it in retention queue
-2017-01-07 12:02:03,789 DEBUG [collector.buffer] Dumping retention queue.
-2017-01-07 12:02:03,790 DEBUG [generic.multi] Calling send_event on child current
-2017-01-07 12:02:03,790 DEBUG [generic.user] Calling send_event on <wflogger.collector.YamlXmlFileCollector object at 0x7f2c4c09d190>
-2017-01-07 12:02:03,790 DEBUG [generic.multi] Calling send_event on child aggregator
-2017-01-07 12:02:03,790 DEBUG [collector.buffer] Got a recent hum event, keep it in retention queue
-2017-01-07 12:02:03,790 DEBUG [collector.buffer] Dumping retention queue.
-2017-01-07 12:02:03,790 DEBUG [generic.multi] Calling send_event on child current
-2017-01-07 12:02:03,790 DEBUG [generic.user] Calling send_event on <wflogger.collector.YamlXmlFileCollector object at 0x7f2c4c09d190>
-2017-01-07 12:02:03,790 DEBUG [generic.multi] Calling send_event on child aggregator
-2017-01-07 12:02:03,790 DEBUG [collector.buffer] Got a recent rain event, keep it in retention queue
-2017-01-07 12:02:03,790 DEBUG [collector.buffer] Dumping retention queue.
-2017-01-07 12:02:03,790 DEBUG [generic.multi] Calling send_event on child current
-2017-01-07 12:02:03,790 DEBUG [generic.user] Calling send_event on <wflogger.collector.YamlXmlFileCollector object at 0x7f2c4c09d190>
-2017-01-07 12:02:03,791 DEBUG [generic.multi] Calling send_event on child aggregator
-2017-01-07 12:02:03,791 DEBUG [collector.buffer] Got a recent wind event, keep it in retention queue
-2017-01-07 12:02:03,791 DEBUG [collector.buffer] Dumping retention queue.
-2017-01-07 12:02:39,572 DEBUG [pywws.weather_station] delay 0, pause 0.5
-2017-01-07 12:02:40,073 DEBUG [pywws.weather_station] avoid 5.79858589172
-2017-01-07 12:02:46,036 DEBUG [pywws.weather_station] live_data new data
-2017-01-07 12:02:46,036 DEBUG [wfdriver] Enqueuing: <press><value>1018.4</value></press>, Queue size: 0
-2017-01-07 12:02:46,037 DEBUG [generic.service] Calling send_event on <wflogger.input.YamlFunctionInput object at 0x7f2c4c094ed0>
-2017-01-07 12:02:46,037 DEBUG [wfdriver] Enqueuing: <temp><sensor>0</sensor><value>26.3</value></temp>, Queue size: 1
-2017-01-07 12:02:46,037 DEBUG [wflogger] Got 'press' event. Queue size: 0
-2017-01-07 12:02:46,037 DEBUG [wfdriver] Enqueuing: <hum><sensor>0</sensor><value>82</value></hum>, Queue size: 1
-2017-01-07 12:02:46,037 DEBUG [generic.multi] Calling send_event on child current
-2017-01-07 12:02:46,037 DEBUG [generic.service] Calling send_event on <wflogger.input.YamlFunctionInput object at 0x7f2c4c094ed0>
-2017-01-07 12:02:46,037 DEBUG [wfdriver] Enqueuing: <temp><sensor>1</sensor><value>29.6</value></temp>, Queue size: 1
-2017-01-07 12:02:46,038 DEBUG [generic.user] Calling send_event on <wflogger.collector.YamlXmlFileCollector object at 0x7f2c4c09d190>
-2017-01-07 12:02:46,038 DEBUG [wflogger] Got 'temp' event. Queue size: 0
-2017-01-07 12:02:46,038 DEBUG [wfdriver] Enqueuing: <hum><sensor>1</sensor><value>59</value></hum>, Queue size: 2
-2017-01-07 12:02:46,038 DEBUG [collector.flush] Flushing
-2017-01-07 12:02:46,038 DEBUG [generic.service] Calling send_event on <wflogger.input.YamlFunctionInput object at 0x7f2c4c094ed0>
-2017-01-07 12:02:46,039 DEBUG [wfdriver] Enqueuing: <rain><total>168.3</total><rate>0</rate></rain>, Queue size: 2
-2017-01-07 12:02:46,039 DEBUG [generic.user] Calling send_event on <wflogger.collector.YamlXmlFileCollector object at 0x7f2c4c09d190>
-2017-01-07 12:02:46,039 DEBUG [wflogger] Got 'hum' event. Queue size: 1
-2017-01-07 12:02:46,039 DEBUG [wfdriver] Enqueuing: <wind><mean><speed>3.1</speed><dir>90.0</dir></mean><gust><speed>5.1</speed><dir>90.0</dir></gust></wind>, Queue size: 3
-2017-01-07 12:02:46,039 DEBUG [collector.xmlfile] Flushing: <current><thInt><temp>26.3</temp><humidity>82</humidity></thInt><th1><temp>29.6</temp><humidity>60</humidity></th1><rain><rate>0</rate></rain><wind><avgSpeed>2.7</avgSpeed><dirDeg>135.0</dirDeg><gustSpeed>5.1</gustSpeed></wind><barometer><pressure>1018.4</pressure></barometer><time>2017-01-07 12:02:46</time></current> to data/wfrog-current.xml
-2017-01-07 12:02:46,039 DEBUG [generic.service] Calling send_event on <wflogger.input.YamlFunctionInput object at 0x7f2c4c094ed0>
-2017-01-07 12:02:46,040 DEBUG [pywws.weather_station] delay 0, pause 41.3319
-2017-01-07 12:02:46,040 DEBUG [wflogger] Got 'temp' event. Queue size: 2
-2017-01-07 12:02:46,040 DEBUG [generic.multi] Calling send_event on child aggregator
-2017-01-07 12:02:46,040 DEBUG [generic.service] Calling send_event on <wflogger.input.YamlFunctionInput object at 0x7f2c4c094ed0>
-2017-01-07 12:02:46,040 DEBUG [collector.buffer] Got a recent press event, keep it in retention queue
-2017-01-07 12:02:46,040 DEBUG [wflogger] Got 'hum' event. Queue size: 3
-2017-01-07 12:02:46,041 DEBUG [collector.buffer] Dumping retention queue.
-2017-01-07 12:02:46,041 DEBUG [generic.service] Calling send_event on <wflogger.input.YamlFunctionInput object at 0x7f2c4c094ed0>
-2017-01-07 12:02:46,041 DEBUG [collector.buffer] Forwarding event: *FLUSH*
-2017-01-07 12:02:46,041 DEBUG [wflogger] Got 'rain' event. Queue size: 4
-2017-01-07 12:02:46,041 DEBUG [collector.aggregator] data = {'hum': 60.0, 'rain_rate': 0.0, 'rain': 0.0, 'pressure': 1018.6, 'humint': 82.0, 'solar_rad': None, 'wind_gust_dir': 135.0, 'wind_dir': 135.0, 'wind_gust': 7.5, 'uv_index': None, 'temp': 29.6, 'dew_point': 21.0, 'tempint': 26.3, 'wind': 5.8, 'localtime': datetime.datetime(2017, 1, 7, 12, 1, 11, 39989)}
-2017-01-07 12:02:46,041 DEBUG [generic.service] Calling send_event on <wflogger.input.YamlFunctionInput object at 0x7f2c4c094ed0>
-2017-01-07 12:02:46,041 INFO [collector.aggregator] New period
-2017-01-07 12:02:46,041 DEBUG [wflogger] Got 'wind' event. Queue size: 5
-2017-01-07 12:02:46,042 DEBUG [collector.aggregator] Flushing sample: {'hum': 60.0, 'rain_rate': 0.0, 'rain': 0.0, 'pressure': 1018.6, 'humint': 82.0, 'solar_rad': None, 'wind_gust_dir': 135.0, 'wind_dir': 135.0, 'wind_gust': 7.5, 'uv_index': None, 'temp': 29.6, 'dew_point': 21.0, 'tempint': 26.3, 'wind': 5.8, 'localtime': datetime.datetime(2017, 1, 7, 12, 1, 11, 39989)}
-2017-01-07 12:02:46,042 DEBUG [generic.service] Calling write_sample on <wfcommon.generic.YamlIncludeElement object at 0x7f2c4c094ad0>
-2017-01-07 12:02:46,042 DEBUG [generic.include] Calling write_sample on <wfcommon.generic.YamlUserChoiceElement object at 0x7f2c4c09cc50>
-2017-01-07 12:02:46,042 DEBUG [generic.user] Calling write_sample on <wfcommon.storage.YamlCsvStorage object at 0x7f2c4c094a10>
-2017-01-07 12:02:46,042 DEBUG [storage.csv] {'hum': 60.0, 'rain_rate': 0.0, 'rain': 0.0, 'pressure': 1018.6, 'humint': 82.0, 'solar_rad': None, 'wind_gust_dir': 135.0, 'wind_dir': 135.0, 'wind_gust': 7.5, 'uv_index': None, 'temp': 29.6, 'dew_point': 21.0, 'tempint': 26.3, 'wind': 5.8, 'localtime': datetime.datetime(2017, 1, 7, 12, 1, 11, 39989)}
-2017-01-07 12:02:46,042 DEBUG [storage.csv] Writing row: [1483804871, '2017-01-07 12:01:11', 29.6, 60.0, 5.8, 135.0, 7.5, 135.0, 21.0, 0.0, 0.0, 1018.6, None]
-2017-01-07 12:02:46,042 DEBUG [collector.buffer] Forwarding event: <press><value>1018.7</value><timestamp>2017-01-07 12:02:03.785447</timestamp></press>
-2017-01-07 12:02:46,043 DEBUG [collector.buffer] Forwarding event: <temp><sensor>0</sensor><value>26.3</value><timestamp>2017-01-07 12:02:03.789063</timestamp></temp>
-2017-01-07 12:02:46,043 DEBUG [collector.buffer] Forwarding event: <hum><sensor>0</sensor><value>82</value><timestamp>2017-01-07 12:02:03.789456</timestamp></hum>
-2017-01-07 12:02:46,043 DEBUG [collector.buffer] Forwarding event: <temp><sensor>1</sensor><value>29.6</value><timestamp>2017-01-07 12:02:03.789860</timestamp></temp>
-2017-01-07 12:02:46,043 DEBUG [collector.buffer] Forwarding event: <hum><sensor>1</sensor><value>60</value><timestamp>2017-01-07 12:02:03.790250</timestamp></hum>
-2017-01-07 12:02:46,043 DEBUG [collector.buffer] Forwarding event: <rain><total>168.3</total><rate>0</rate><timestamp>2017-01-07 12:02:03.790664</timestamp></rain>
-2017-01-07 12:02:46,043 DEBUG [collector.buffer] Forwarding event: <wind><mean><speed>2.7</speed><dir>135.0</dir></mean><gust><speed>5.1</speed><dir>135.0</dir></gust><timestamp>2017-01-07 12:02:03.791069</timestamp></wind>
-2017-01-07 12:02:46,043 DEBUG [generic.multi] Calling send_event on child current
-2017-01-07 12:02:46,043 DEBUG [generic.user] Calling send_event on <wflogger.collector.YamlXmlFileCollector object at 0x7f2c4c09d190>
-2017-01-07 12:02:46,044 DEBUG [generic.multi] Calling send_event on child aggregator
-2017-01-07 12:02:46,044 DEBUG [collector.buffer] Got a recent temp event, keep it in retention queue
-2017-01-07 12:02:46,044 DEBUG [collector.buffer] Dumping retention queue.
-2017-01-07 12:02:46,044 DEBUG [generic.multi] Calling send_event on child current
-2017-01-07 12:02:46,044 DEBUG [generic.user] Calling send_event on <wflogger.collector.YamlXmlFileCollector object at 0x7f2c4c09d190>
-2017-01-07 12:02:46,044 DEBUG [generic.multi] Calling send_event on child aggregator
-2017-01-07 12:02:46,044 DEBUG [collector.buffer] Got a recent hum event, keep it in retention queue
-2017-01-07 12:02:46,044 DEBUG [collector.buffer] Dumping retention queue.
-2017-01-07 12:02:46,044 DEBUG [generic.multi] Calling send_event on child current
-2017-01-07 12:02:46,044 DEBUG [generic.user] Calling send_event on <wflogger.collector.YamlXmlFileCollector object at 0x7f2c4c09d190>
-2017-01-07 12:02:46,044 DEBUG [generic.multi] Calling send_event on child aggregator
-2017-01-07 12:02:46,044 DEBUG [collector.buffer] Got a recent temp event, keep it in retention queue
-2017-01-07 12:02:46,045 DEBUG [collector.buffer] Dumping retention queue.
-2017-01-07 12:02:46,045 DEBUG [generic.multi] Calling send_event on child current
-2017-01-07 12:02:46,045 DEBUG [generic.user] Calling send_event on <wflogger.collector.YamlXmlFileCollector object at 0x7f2c4c09d190>
-2017-01-07 12:02:46,045 DEBUG [generic.multi] Calling send_event on child aggregator
-2017-01-07 12:02:46,045 DEBUG [collector.buffer] Got a recent hum event, keep it in retention queue
-2017-01-07 12:02:46,045 DEBUG [collector.buffer] Dumping retention queue.
-2017-01-07 12:02:46,045 DEBUG [generic.multi] Calling send_event on child current
-2017-01-07 12:02:46,045 DEBUG [generic.user] Calling send_event on <wflogger.collector.YamlXmlFileCollector object at 0x7f2c4c09d190>
-2017-01-07 12:02:46,045 DEBUG [generic.multi] Calling send_event on child aggregator
-2017-01-07 12:02:46,045 DEBUG [collector.buffer] Got a recent rain event, keep it in retention queue
-2017-01-07 12:02:46,045 DEBUG [collector.buffer] Dumping retention queue.
-2017-01-07 12:02:46,045 DEBUG [generic.multi] Calling send_event on child current
-2017-01-07 12:02:46,045 DEBUG [generic.user] Calling send_event on <wflogger.collector.YamlXmlFileCollector object at 0x7f2c4c09d190>
-2017-01-07 12:02:46,046 DEBUG [generic.multi] Calling send_event on child aggregator
-2017-01-07 12:02:46,046 DEBUG [collector.buffer] Got a recent wind event, keep it in retention queue
-2017-01-07 12:02:46,046 DEBUG [collector.buffer] Dumping retention queue.
-2017-01-07 14:00:21,830 ERROR [station.wh1080] unsupported operand type(s) for *: 'float' and 'NoneType'
+2018-01-20 16:21:17,425 DEBUG [collector.xmlfile] Flushing: <current><thInt><temp>27.2</temp><humidity>84</humidity></thInt><th1><temp>26.8</temp><humidity>72</humidity></th1><rain><rate>0</rate></rain><wind><avgSpeed>4.4</avgSpeed><dirDeg>90.0</dirDeg><gustSpeed>4.8</gustSpeed></wind><barometer><pressure>1017.2</pressure></barometer><time>2018-01-20 16:21:17</time></current> to data/wfrog-current.xml
+2018-01-20 16:21:17,426 DEBUG [wflogger] Got 'temp' event. Queue size: 2
+2018-01-20 16:21:17,427 DEBUG [generic.service] Calling send_event on <wflogger.input.YamlFunctionInput object at 0x7f73f0028ad0>
+2018-01-20 16:21:17,427 DEBUG [generic.multi] Calling send_event on child aggregator
+2018-01-20 16:21:17,428 DEBUG [wflogger] Got 'hum' event. Queue size: 3
+2018-01-20 16:21:17,428 DEBUG [collector.buffer] Got a recent press event, keep it in retention queue
+2018-01-20 16:21:17,428 DEBUG [generic.service] Calling send_event on <wflogger.input.YamlFunctionInput object at 0x7f73f0028ad0>
+2018-01-20 16:21:17,428 DEBUG [collector.buffer] Dumping retention queue.
+2018-01-20 16:21:17,428 DEBUG [wflogger] Got 'rain' event. Queue size: 4
+2018-01-20 16:21:17,429 DEBUG [collector.buffer] Forwarding event: *FLUSH*
+2018-01-20 16:21:17,429 DEBUG [generic.service] Calling send_event on <wflogger.input.YamlFunctionInput object at 0x7f73f0028ad0>
+2018-01-20 16:21:17,429 DEBUG [collector.aggregator] data = {'hum': 72.0, 'rain_rate': 0.0, 'rain': 0.0, 'pressure': 1017.0, 'humint': 84.0, 'solar_rad': None, 'wind_gust_dir': 135.0, 'wind_dir': 135.0, 'wind_gust': 4.8, 'uv_index': None, 'temp': 26.7, 'dew_point': 21.2, 'tempint': 27.2, 'wind': 4.1, 'localtime': datetime.datetime(2018, 1, 20, 16, 19, 42, 426484)}
+2018-01-20 16:21:17,429 DEBUG [wflogger] Got 'wind' event. Queue size: 5
+2018-01-20 16:21:17,430 INFO [collector.aggregator] New period
+2018-01-20 16:21:17,430 DEBUG [collector.aggregator] Flushing sample: {'hum': 72.0, 'rain_rate': 0.0, 'rain': 0.0, 'pressure': 1017.0, 'humint': 84.0, 'solar_rad': None, 'wind_gust_dir': 135.0, 'wind_dir': 135.0, 'wind_gust': 4.8, 'uv_index': None, 'temp': 26.7, 'dew_point': 21.2, 'tempint': 27.2, 'wind': 4.1, 'localtime': datetime.datetime(2018, 1, 20, 16, 19, 42, 426484)}
+2018-01-20 16:21:17,430 DEBUG [generic.service] Calling write_sample on <wfcommon.generic.YamlIncludeElement object at 0x7f73f00286d0>
+2018-01-20 16:21:17,430 DEBUG [generic.include] Calling write_sample on <wfcommon.generic.YamlUserChoiceElement object at 0x7f73f00979d0>
+2018-01-20 16:21:17,431 DEBUG [generic.user] Calling write_sample on <wfcommon.storage.YamlCsvStorage object at 0x7f73f00287d0>
+2018-01-20 16:21:17,431 DEBUG [storage.csv] {'hum': 72.0, 'rain_rate': 0.0, 'rain': 0.0, 'pressure': 1017.0, 'humint': 84.0, 'solar_rad': None, 'wind_gust_dir': 135.0, 'wind_dir': 135.0, 'wind_gust': 4.8, 'uv_index': None, 'temp': 26.7, 'dew_point': 21.2, 'tempint': 27.2, 'wind': 4.1, 'localtime': datetime.datetime(2018, 1, 20, 16, 19, 42, 426484)}
+2018-01-20 16:21:17,431 DEBUG [storage.csv] Writing row: [1516479582, '2018-01-20 16:19:42', 26.7, 72.0, 4.1, 135.0, 4.8, 135.0, 21.2, 0.0, 0.0, 1017.0, None]
+2018-01-20 16:21:17,431 DEBUG [collector.buffer] Forwarding event: <press><value>1017.2</value><timestamp>2018-01-20 16:20:29.427741</timestamp></press>
+2018-01-20 16:21:17,432 DEBUG [collector.buffer] Forwarding event: <temp><sensor>0</sensor><value>27.2</value><timestamp>2018-01-20 16:20:29.433106</timestamp></temp>
+2018-01-20 16:21:17,432 DEBUG [collector.buffer] Forwarding event: <hum><sensor>0</sensor><value>84</value><timestamp>2018-01-20 16:20:29.433826</timestamp></hum>
+2018-01-20 16:21:17,432 DEBUG [collector.buffer] Forwarding event: <temp><sensor>1</sensor><value>26.8</value><timestamp>2018-01-20 16:20:29.434487</timestamp></temp>
+2018-01-20 16:21:17,432 DEBUG [collector.buffer] Forwarding event: <hum><sensor>1</sensor><value>72</value><timestamp>2018-01-20 16:20:29.435039</timestamp></hum>
+2018-01-20 16:21:17,433 DEBUG [collector.buffer] Forwarding event: <rain><total>386.4</total><rate>0</rate><timestamp>2018-01-20 16:20:29.435533</timestamp></rain>
+2018-01-20 16:21:17,433 DEBUG [collector.buffer] Forwarding event: <wind><mean><speed>4.4</speed><dir>90.0</dir></mean><gust><speed>4.8</speed><dir>90.0</dir></gust><timestamp>2018-01-20 16:20:29.436036</timestamp></wind>
+2018-01-20 16:21:17,433 DEBUG [generic.multi] Calling send_event on child current
+2018-01-20 16:21:17,434 DEBUG [generic.user] Calling send_event on <wflogger.collector.YamlXmlFileCollector object at 0x7f73f0028d50>
+2018-01-20 16:21:17,434 DEBUG [generic.multi] Calling send_event on child aggregator
+2018-01-20 16:21:17,434 DEBUG [collector.buffer] Got a recent temp event, keep it in retention queue
+2018-01-20 16:21:17,434 DEBUG [collector.buffer] Dumping retention queue.
+2018-01-20 16:21:17,434 DEBUG [generic.multi] Calling send_event on child current
+2018-01-20 16:21:17,435 DEBUG [generic.user] Calling send_event on <wflogger.collector.YamlXmlFileCollector object at 0x7f73f0028d50>
+2018-01-20 16:21:17,435 DEBUG [generic.multi] Calling send_event on child aggregator
+2018-01-20 16:21:17,435 DEBUG [collector.buffer] Got a recent hum event, keep it in retention queue
+2018-01-20 16:21:17,435 DEBUG [collector.buffer] Dumping retention queue.
+2018-01-20 16:21:17,435 DEBUG [generic.multi] Calling send_event on child current
+2018-01-20 16:21:17,435 DEBUG [generic.user] Calling send_event on <wflogger.collector.YamlXmlFileCollector object at 0x7f73f0028d50>
+2018-01-20 16:21:17,436 DEBUG [generic.multi] Calling send_event on child aggregator
+2018-01-20 16:21:17,436 DEBUG [collector.buffer] Got a recent temp event, keep it in retention queue
+2018-01-20 16:21:17,436 DEBUG [collector.buffer] Dumping retention queue.
+2018-01-20 16:21:17,436 DEBUG [generic.multi] Calling send_event on child current
+2018-01-20 16:21:17,436 DEBUG [generic.user] Calling send_event on <wflogger.collector.YamlXmlFileCollector object at 0x7f73f0028d50>
+2018-01-20 16:21:17,437 DEBUG [generic.multi] Calling send_event on child aggregator
+2018-01-20 16:21:17,437 DEBUG [collector.buffer] Got a recent hum event, keep it in retention queue
+2018-01-20 16:21:17,437 DEBUG [collector.buffer] Dumping retention queue.
+2018-01-20 16:21:17,437 DEBUG [generic.multi] Calling send_event on child current
+2018-01-20 16:21:17,437 DEBUG [generic.user] Calling send_event on <wflogger.collector.YamlXmlFileCollector object at 0x7f73f0028d50>
+2018-01-20 16:21:17,438 DEBUG [generic.multi] Calling send_event on child aggregator
+2018-01-20 16:21:17,438 DEBUG [collector.buffer] Got a recent rain event, keep it in retention queue
+2018-01-20 16:21:17,438 DEBUG [collector.buffer] Dumping retention queue.
+2018-01-20 16:21:17,438 DEBUG [generic.multi] Calling send_event on child current
+2018-01-20 16:21:17,438 DEBUG [generic.user] Calling send_event on <wflogger.collector.YamlXmlFileCollector object at 0x7f73f0028d50>
+2018-01-20 16:21:17,438 DEBUG [generic.multi] Calling send_event on child aggregator
+2018-01-20 16:21:17,438 DEBUG [collector.buffer] Got a recent wind event, keep it in retention queue
+2018-01-20 16:21:17,438 DEBUG [collector.buffer] Dumping retention queue.
+2018-01-20 16:21:58,921 DEBUG [pywws.weather_station] delay 2, pause 0.5
+2018-01-20 16:21:59,422 DEBUG [pywws.weather_station] avoid 5.82815790176
+2018-01-20 16:22:05,417 DEBUG [pywws.weather_station] live_data new data
+2018-01-20 16:22:05,417 DEBUG [wfdriver] Enqueuing: <press><value>1017.2</value></press>, Queue size: 0
+2018-01-20 16:22:05,417 DEBUG [wfdriver] Enqueuing: <temp><sensor>0</sensor><value>27.2</value></temp>, Queue size: 1
+2018-01-20 16:22:05,418 DEBUG [generic.service] Calling send_event on <wflogger.input.YamlFunctionInput object at 0x7f73f0028ad0>
+2018-01-20 16:22:05,418 DEBUG [wfdriver] Enqueuing: <hum><sensor>0</sensor><value>84</value></hum>, Queue size: 1
+2018-01-20 16:22:05,418 DEBUG [wflogger] Got 'press' event. Queue size: 0
+2018-01-20 16:22:05,418 DEBUG [wfdriver] Enqueuing: <temp><sensor>1</sensor><value>26.7</value></temp>, Queue size: 2
+2018-01-20 16:22:05,419 DEBUG [generic.service] Calling send_event on <wflogger.input.YamlFunctionInput object at 0x7f73f0028ad0>
+2018-01-20 16:22:05,419 DEBUG [generic.multi] Calling send_event on child current
+2018-01-20 16:22:05,419 DEBUG [wfdriver] Enqueuing: <hum><sensor>1</sensor><value>72</value></hum>, Queue size: 2
+2018-01-20 16:22:05,419 DEBUG [wflogger] Got 'temp' event. Queue size: 0
+2018-01-20 16:22:05,420 DEBUG [generic.user] Calling send_event on <wflogger.collector.YamlXmlFileCollector object at 0x7f73f0028d50>
+2018-01-20 16:22:05,420 DEBUG [wfdriver] Enqueuing: <rain><total>386.4</total><rate>0</rate></rain>, Queue size: 3
+2018-01-20 16:22:05,420 DEBUG [generic.service] Calling send_event on <wflogger.input.YamlFunctionInput object at 0x7f73f0028ad0>
+2018-01-20 16:22:05,421 DEBUG [collector.flush] Flushing
+2018-01-20 16:22:05,421 DEBUG [wfdriver] Enqueuing: <wind><mean><speed>3.4</speed><dir>90.0</dir></mean><gust><speed>4.1</speed><dir>90.0</dir></gust></wind>, Queue size: 3
+2018-01-20 16:22:05,421 DEBUG [wflogger] Got 'hum' event. Queue size: 1
+2018-01-20 16:22:05,421 DEBUG [generic.user] Calling send_event on <wflogger.collector.YamlXmlFileCollector object at 0x7f73f0028d50>
+2018-01-20 16:22:05,422 DEBUG [pywws.weather_station] delay 3, pause 41.3281
+2018-01-20 16:22:05,422 DEBUG [generic.service] Calling send_event on <wflogger.input.YamlFunctionInput object at 0x7f73f0028ad0>
+2018-01-20 16:22:05,422 DEBUG [collector.xmlfile] Flushing: <current><thInt><temp>27.2</temp><humidity>84</humidity></thInt><th1><temp>26.7</temp><humidity>72</humidity></th1><rain><rate>0</rate></rain><wind><avgSpeed>4.1</avgSpeed><dirDeg>90.0</dirDeg><gustSpeed>4.4</gustSpeed></wind><barometer><pressure>1017.2</pressure></barometer><time>2018-01-20 16:22:05</time></current> to data/wfrog-current.xml
+2018-01-20 16:22:05,423 DEBUG [wflogger] Got 'temp' event. Queue size: 2
+2018-01-20 16:22:05,423 DEBUG [generic.service] Calling send_event on <wflogger.input.YamlFunctionInput object at 0x7f73f0028ad0>
+2018-01-20 16:22:05,423 DEBUG [generic.multi] Calling send_event on child aggregator
+2018-01-20 16:22:05,423 DEBUG [wflogger] Got 'hum' event. Queue size: 3
+2018-01-20 16:22:05,424 DEBUG [collector.buffer] Got a recent press event, keep it in retention queue
+2018-01-20 16:22:05,424 DEBUG [generic.service] Calling send_event on <wflogger.input.YamlFunctionInput object at 0x7f73f0028ad0>
+2018-01-20 16:22:05,424 DEBUG [collector.buffer] Dumping retention queue.
+2018-01-20 16:22:05,424 DEBUG [wflogger] Got 'rain' event. Queue size: 4
+2018-01-20 16:22:05,424 DEBUG [collector.buffer] Forwarding event: *FLUSH*
+2018-01-20 16:22:05,425 DEBUG [generic.service] Calling send_event on <wflogger.input.YamlFunctionInput object at 0x7f73f0028ad0>
+2018-01-20 16:22:05,425 DEBUG [collector.aggregator] data = {'hum': 72.0, 'rain_rate': 0.0, 'rain': 0.0, 'pressure': 1017.2, 'humint': 84.0, 'solar_rad': None, 'wind_gust_dir': 90.0, 'wind_dir': 90.0, 'wind_gust': 4.8, 'uv_index': None, 'temp': 26.8, 'dew_point': 21.3, 'tempint': 27.2, 'wind': 4.4, 'localtime': datetime.datetime(2018, 1, 20, 16, 20, 30, 427741)}
+2018-01-20 16:22:05,425 DEBUG [wflogger] Got 'wind' event. Queue size: 5
+2018-01-20 16:22:05,425 INFO [collector.aggregator] New period
+2018-01-20 16:22:05,426 DEBUG [collector.aggregator] Flushing sample: {'hum': 72.0, 'rain_rate': 0.0, 'rain': 0.0, 'pressure': 1017.2, 'humint': 84.0, 'solar_rad': None, 'wind_gust_dir': 90.0, 'wind_dir': 90.0, 'wind_gust': 4.8, 'uv_index': None, 'temp': 26.8, 'dew_point': 21.3, 'tempint': 27.2, 'wind': 4.4, 'localtime': datetime.datetime(2018, 1, 20, 16, 20, 30, 427741)}
+2018-01-20 16:22:05,426 DEBUG [generic.service] Calling write_sample on <wfcommon.generic.YamlIncludeElement object at 0x7f73f00286d0>
+2018-01-20 16:22:05,426 DEBUG [generic.include] Calling write_sample on <wfcommon.generic.YamlUserChoiceElement object at 0x7f73f00979d0>
+2018-01-20 16:22:05,426 DEBUG [generic.user] Calling write_sample on <wfcommon.storage.YamlCsvStorage object at 0x7f73f00287d0>
+2018-01-20 16:22:05,426 DEBUG [storage.csv] {'hum': 72.0, 'rain_rate': 0.0, 'rain': 0.0, 'pressure': 1017.2, 'humint': 84.0, 'solar_rad': None, 'wind_gust_dir': 90.0, 'wind_dir': 90.0, 'wind_gust': 4.8, 'uv_index': None, 'temp': 26.8, 'dew_point': 21.3, 'tempint': 27.2, 'wind': 4.4, 'localtime': datetime.datetime(2018, 1, 20, 16, 20, 30, 427741)}
+2018-01-20 16:22:05,427 DEBUG [storage.csv] Writing row: [1516479630, '2018-01-20 16:20:30', 26.8, 72.0, 4.4, 90.0, 4.8, 90.0, 21.3, 0.0, 0.0, 1017.2, None]
+2018-01-20 16:22:05,427 DEBUG [collector.buffer] Forwarding event: <press><value>1017.2</value><timestamp>2018-01-20 16:21:17.428268</timestamp></press>
+2018-01-20 16:22:05,427 DEBUG [collector.buffer] Forwarding event: <temp><sensor>0</sensor><value>27.2</value><timestamp>2018-01-20 16:21:17.434443</timestamp></temp>
+2018-01-20 16:22:05,428 DEBUG [collector.buffer] Forwarding event: <hum><sensor>0</sensor><value>84</value><timestamp>2018-01-20 16:21:17.435385</timestamp></hum>
+2018-01-20 16:22:05,428 DEBUG [collector.buffer] Forwarding event: <temp><sensor>1</sensor><value>26.7</value><timestamp>2018-01-20 16:21:17.436324</timestamp></temp>
+2018-01-20 16:22:05,428 DEBUG [collector.buffer] Forwarding event: <hum><sensor>1</sensor><value>72</value><timestamp>2018-01-20 16:21:17.437246</timestamp></hum>
+2018-01-20 16:22:05,428 DEBUG [collector.buffer] Forwarding event: <rain><total>386.4</total><rate>0</rate><timestamp>2018-01-20 16:21:17.438146</timestamp></rain>
+2018-01-20 16:22:05,428 DEBUG [collector.buffer] Forwarding event: <wind><mean><speed>4.1</speed><dir>90.0</dir></mean><gust><speed>4.4</speed><dir>90.0</dir></gust><timestamp>2018-01-20 16:21:17.438748</timestamp></wind>
+2018-01-20 16:22:05,429 DEBUG [generic.multi] Calling send_event on child current
+2018-01-20 16:22:05,429 DEBUG [generic.user] Calling send_event on <wflogger.collector.YamlXmlFileCollector object at 0x7f73f0028d50>
+2018-01-20 16:22:05,429 DEBUG [generic.multi] Calling send_event on child aggregator
+2018-01-20 16:22:05,429 DEBUG [collector.buffer] Got a recent temp event, keep it in retention queue
+2018-01-20 16:22:05,430 DEBUG [collector.buffer] Dumping retention queue.
+2018-01-20 16:22:05,430 DEBUG [generic.multi] Calling send_event on child current
+2018-01-20 16:22:05,430 DEBUG [generic.user] Calling send_event on <wflogger.collector.YamlXmlFileCollector object at 0x7f73f0028d50>
+2018-01-20 16:22:05,430 DEBUG [generic.multi] Calling send_event on child aggregator
+2018-01-20 16:22:05,430 DEBUG [collector.buffer] Got a recent hum event, keep it in retention queue
+2018-01-20 16:22:05,430 DEBUG [collector.buffer] Dumping retention queue.
+2018-01-20 16:22:05,430 DEBUG [generic.multi] Calling send_event on child current
+2018-01-20 16:22:05,430 DEBUG [generic.user] Calling send_event on <wflogger.collector.YamlXmlFileCollector object at 0x7f73f0028d50>
+2018-01-20 16:22:05,430 DEBUG [generic.multi] Calling send_event on child aggregator
+2018-01-20 16:22:05,431 DEBUG [collector.buffer] Got a recent temp event, keep it in retention queue
+2018-01-20 16:22:05,431 DEBUG [collector.buffer] Dumping retention queue.
+2018-01-20 16:22:05,431 DEBUG [generic.multi] Calling send_event on child current
+2018-01-20 16:22:05,431 DEBUG [generic.user] Calling send_event on <wflogger.collector.YamlXmlFileCollector object at 0x7f73f0028d50>
+2018-01-20 16:22:05,431 DEBUG [generic.multi] Calling send_event on child aggregator
+2018-01-20 16:22:05,431 DEBUG [collector.buffer] Got a recent hum event, keep it in retention queue
+2018-01-20 16:22:05,431 DEBUG [collector.buffer] Dumping retention queue.
+2018-01-20 16:22:05,431 DEBUG [generic.multi] Calling send_event on child current
+2018-01-20 16:22:05,431 DEBUG [generic.user] Calling send_event on <wflogger.collector.YamlXmlFileCollector object at 0x7f73f0028d50>
+2018-01-20 16:22:05,432 DEBUG [generic.multi] Calling send_event on child aggregator
+2018-01-20 16:22:05,432 DEBUG [collector.buffer] Got a recent rain event, keep it in retention queue
+2018-01-20 16:22:05,432 DEBUG [collector.buffer] Dumping retention queue.
+2018-01-20 16:22:05,432 DEBUG [generic.multi] Calling send_event on child current
+2018-01-20 16:22:05,432 DEBUG [generic.user] Calling send_event on <wflogger.collector.YamlXmlFileCollector object at 0x7f73f0028d50>
+2018-01-20 16:22:05,432 DEBUG [generic.multi] Calling send_event on child aggregator
+2018-01-20 16:22:05,432 DEBUG [collector.buffer] Got a recent wind event, keep it in retention queue
+2018-01-20 16:22:05,432 DEBUG [collector.buffer] Dumping retention queue.
