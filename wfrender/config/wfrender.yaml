@@ -161,6 +161,10 @@ renderer: !multi
                 #    storage: !service
                 #        name: storage
 
+            # serve static files as http://example.com:7680/static/
+            static: "static"
+            docroot: "wfrender/templates/default/static"
+
 logging:
     level: info
     filename: !user
