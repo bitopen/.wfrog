@@ -14,9 +14,9 @@ $u#slurp
     <title>El Pueblito - Weather Dashboard - wfrog</title>
     #if $getVar('http', False)
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/prototype/1.7.0.0/prototype.js"></script>
-    <script type="text/javascript" src="http://calendarview.org/releases/1.2/javascripts/calendarview.js"></script>
+    <script type="text/javascript" src="static/calendarview.org/releases/1.2/javascripts/calendarview.js"></script>
     
-    <link  rel="stylesheet" href="http://calendarview.org/releases/1.2/stylesheets/calendarview.css" />
+    <link  rel="stylesheet" href="static/calendarview.org/releases/1.2/stylesheets/calendarview.css" />
     
     <script type="text/javascript">
         window.onload = function() {
@@ -410,7 +410,7 @@ $u#slurp
     </div>
     <div class="bordered headerNoPad">
         <div class="headerContent">
-            <a href="http://www.wfrog.org" target="_blank"><img border="0" src="http://www.wfrog.org/logo.png?s=$station.driver&o=$os" alt="wfrog"/></a>
+            <a href="http://www.wfrog.org" target="_blank"><img border="0" src="static/images/logo.png" alt="wfrog"/></a>
         </div>
     </div>
     <div class="tabPane">
@@ -881,23 +881,27 @@ ${"%7d" % $value.solar_rad_max  if $value.solar_rad_max != None else "      -"}#
 <div>
     <div class="bordered cell graph" style="clear: both">
         <div class="leftCell">Location</div>
-        <div><a href="http://www.bitopen.ch/wfrog/images/location.jpg" target="_blank"><img src="http://www.bitopen.ch/wfrog/images/thumbnails/location.jpg" alt="location"/></a></div>
+        <div><a href="static/images/location.jpg" target="_blank"><img src="static/images/thumbnails/location.jpg" alt="location"/></a></div>
     </div>
     <div class="bordered cell graph">
-        <div class="leftCell">Map</div><br/>
+        <div class="leftCell">Map <small><a href="https://www.openstreetmap.org/?mlat=19.7744&amp;mlon=-70.6520#map=14/19.7744/-70.6520&amp;layers=N" target="_blank">(View Larger Map)</a></small></div><br/>
         <div>
-        <iframe
-            width="250"
-            height="150"
-            frameborder="0" style="border:0"
-            src="https://www.google.com/maps/embed/v1/view?key=AIzaSyBsPs1vtM3jzRl76GEJPaCrCSWYI0v7JS8&center=19.774660,-70.652320&zoom=16&maptype=satellite" allowfullscreen>
-        </iframe>
+            <iframe
+                    width=250"
+                    height="150"
+                    frameborder="0"
+                    scrolling="no"
+                    marginheight="0"
+                    marginwidth="0"
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=-70.68449020385744%2C19.724130329564524%2C-70.61951637268068%2C19.824607499586644&amp;layer=mapnik&amp;marker=19.774376833052134%2C-70.65200328826904"
+                    style=""
+            ></iframe>
         </div>
     </div>
     #if None # todo: webcam
     <div class="bordered cell graph">
         <div class="leftCell">Webcam</div>
-        <div><a href="http://www.bitopen.ch/wfrog/images/location.jpg" target="_blank"><img src="http://www.bitopen.ch/wfrog/images/thumbnails/location.jpg" alt="webcam"/></a></div>
+        <div><a href="static/webcam.jpg" target="_blank"><img src="static/images/thumbnails/webcam.jpg" alt="webcam"/></a></div>
     </div>
     #end if
 </div>
@@ -906,7 +910,7 @@ ${"%7d" % $value.solar_rad_max  if $value.solar_rad_max != None else "      -"}#
     <div class="bordered cell graph">
         <div class="leftCell">Prediction</div><br/>
         <div>
-            <script src="http://widget.windguru.cz/js/wg_widget.php" type="text/javascript"></script>
+            <script src="https://widget.windguru.cz/js/wg_widget.php" type="text/javascript"></script>
             <script language="JavaScript" type="text/javascript">
             //<![CDATA[
             WgWidget({
