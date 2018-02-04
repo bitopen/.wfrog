@@ -906,6 +906,7 @@ ${"%7d" % $value.solar_rad_max  if $value.solar_rad_max != None else "      -"}#
     #end if
 </div>
 <div style="width:100%;clear:both;"></div>
+#if None # todo: replace disabled windguru which provoked error 404: # "GET /images/sdown-666666.png HTTP/1.1" 404 - # "GET /images/gricon.png HTTP/1.1" 404 -
 <div>
     <div class="bordered cell graph">
         <div class="leftCell">Prediction</div><br/>
@@ -931,6 +932,17 @@ ${"%7d" % $value.solar_rad_max  if $value.solar_rad_max != None else "      -"}#
             //]]>
             </script>
             <div id="wg_target_div_574715_2211953"></div>
+        </div>
+    </div>
+</div>
+#end if
+<div>
+    <div class="bordered cell graph">
+        <div class="leftCell">Prediction</div><br/>
+        <div>
+            <a href="https://www.windguru.cz/574715" target="_blank">
+                <img src="static/old.windguru.cz/images/windguru_logo.png" width="80" height="30"/>
+            </a>
         </div>
     </div>
 </div>
