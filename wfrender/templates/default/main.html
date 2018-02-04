@@ -402,16 +402,23 @@ $u#slurp
                 Humidity <span class="value">$rnd($current.hum1)</span> % <br>
                 Pressure <span class="value">$rnd($current.press, 1)</span> $unitstr('press',$units.press) <br>
             </div>
+            #if None # old
             <div class="leftCell leftpad rightAlign">
                 <span class="bigger">&#8962;</span>
                 <span class="value">$rnd($current.temp0,1)</span>&deg;$unitstr('temp',$units.temp) <br>
+                <span class="value">$rnd($current.hum0)</span> %
+            </div>
+            #end if
+            <div class="leftCell" style="clear: both">
+                <span class="bigger">&#8962;</span>
+                <span class="value">$rnd($current.temp0,1)</span>&deg;$unitstr('temp',$units.temp)
                 <span class="value">$rnd($current.hum0)</span> %
             </div>
         </div>
     </div>
     <div class="bordered headerNoPad">
         <div class="headerContent">
-            <a href="http://www.wfrog.org" target="_blank"><img border="0" src="static/images/wfrog.png" alt="wfrog" width="55" height="55"/></a>
+            <a href="http://www.wfrog.org" target="_blank"><img border="0" src="static/images/wfrog.png" alt="wfrog" width="40" height="40"/></a>
         </div>
     </div>
     <div class="tabPane">
