@@ -889,8 +889,9 @@ ${"%7d" % $value.solar_rad_max  if $value.solar_rad_max != None else "      -"}#
 <div>
     <div class="bordered cell graph" style="clear: both">
         <div class="leftCell">Location</div>
-        <div><a href="static/images/location.jpg" target="_blank"><img src="static/images/thumbnails/location.jpg" alt="location"/></a></div>
+        <div><a href="static/images/location.jpg" target="_blank"><img src="static/images/thumbnails/location.jpg" alt="location" width="250" height="150"/></a></div>
     </div>
+    #if None # old slow iframe openstreetmap
     <div class="bordered cell graph">
         <div class="leftCell">Map <small><a href="https://www.openstreetmap.org/?mlat=19.7744&amp;mlon=-70.6520#map=14/19.7744/-70.6520&amp;layers=N" target="_blank">(View Larger Map)</a></small></div><br/>
         <div>
@@ -906,10 +907,19 @@ ${"%7d" % $value.solar_rad_max  if $value.solar_rad_max != None else "      -"}#
             ></iframe>
         </div>
     </div>
+    #end if
+    <div class="bordered cell graph">
+        <div class="leftCell">Map</div>
+        <div>
+            <a href="https://www.openstreetmap.org/?mlat=19.7744&mlon=-70.6520#map=11/19.7745/-70.6517" target="_blank">
+                <img src="static/images/thumbnails/map.jpg" alt="map" width="250" height="150"/>
+            </a>
+        </div>
+    </div>
     #if None # todo: webcam
     <div class="bordered cell graph">
         <div class="leftCell">Webcam</div>
-        <div><a href="static/webcam.jpg" target="_blank"><img src="static/images/thumbnails/webcam.jpg" alt="webcam"/></a></div>
+        <div><a href="https://www.openstreetmap.org/?mlat=19.7744&mlon=-70.6520#map=11/19.9036/-70.6472" target="_blank"><img src="static/images/thumbnails/webcam.jpg" alt="webcam"/></a></div>
     </div>
     #end if
 </div>
@@ -949,7 +959,7 @@ ${"%7d" % $value.solar_rad_max  if $value.solar_rad_max != None else "      -"}#
         <div class="leftCell">Prediction</div><br/>
         <div>
             <a href="https://www.windguru.cz/574715" target="_blank">
-                <img src="static/old.windguru.cz/images/windguru_logo.png" width="80" height="30"/>
+                <img src="static/old.windguru.cz/images/windguru_logo.png" alt="windguru_logo" width="80" height="30"/>
             </a>
         </div>
     </div>
